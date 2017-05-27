@@ -1,3 +1,154 @@
 
+@import 'common';
+@import 'font';
+
+/*/////////HEAD///////////*/
+
+.head {
+	height: 100vh;
+	border-top: 1px solid #fff;
+	background: url(../img/head-back.jpg)  no-repeat;
+	background-size: cover;
+
+
+}
+
+.autor {
+	display: inline-block;
+	margin-top: 30px;
+	width: 25%;
+	
+
+	&__photo {
+		float: left;
+		width: 120px;
+		height: 120px;
+		max-width: 100%;
+		border-radius: 50%;
+	}
+
+	&__name {
+		float: left;
+		margin-top: 10px;
+		margin-left: 5px;
+		margin-bottom: 5px;
+		font: 1.5em Roboto-Black, Arial, sans-serif;
+		font-weight: bold;
+	}
+
+	&__specialisation {
+		display: inline-block;
+		color: #008ec1;
+		margin-left: 5px;
+		text-transform: uppercase;
+		font: 1em Nord, Arial, sans-serif;
+		/*-webkit-animation: fadeIn 2.5s linear 1s forwards;
+		-o-animation: fadeIn 2.5s linear 1s forwards;
+		animation: fadeIn 2.5s linear 1s forwards;*/
+	}
+	/*@keyframes fadeIn {
+		from {opacity: 0;}
+		to {opacity: 1;}
+	}*/
+}
+.bounceInRight {
+	animation-delay: 0.5s;
+}
+.bounceInLeft {
+	animation-delay: 1.5s;
+}
+.fadeInDown {
+	animation-delay: 2s;
+}
+
+.head__nav {
+	float: right;
+	margin-top: 65px;
+}
+.menu {
+	&__item {
+		float: left;
+		padding-bottom: 20px;
+		margin-right: 15px;
+		color: #00ffe9;
+		text-transform: uppercase;
+		font: 1.1em Rubik-Bold, Arial, sans-serif;
+		transition: all 0.3s;
+		cursor: pointer;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&:hover {
+			color: #fff;
+			border-bottom: 3px solid #00ffe9;
+		}
+	}
+}
+
+.site-heading {
+	text-align: center;
+	margin-top: 140px;
+	font-weight: bold;
+	font: 4.5em Nord, Arial, sans-serif;
+	letter-spacing: 2px;
+	color: #00ffe9;
+	text-transform: uppercase;
+	text-shadow: -3px -3px #000,
+               0 3px 0 #000;
+
+    &_black {
+    	color: #000;
+    	text-shadow: -3px -3px #00ffe9,
+               0 3px 0 #00ffe9;
+    }
+}
+.site-descript {
+	text-align: center;
+	margin-top: 20px;
+	color: #00ffd4;
+	font: 1.2em Rubik-Bold, Arial, sans-serif;
+
+	&_black {
+		color: #000;
+	}
+}
+
+.head__button {
+	position: relative;
+	left: 49%;
+	height: 75px;
+	margin-top: 75px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	transition: all 0.5s;
+	animation-name: move;
+	animation-iteration-count: infinite;
+	animation-duration: 1.5s;
+
+	&:hover {
+		-webkit-animation-play-state: paused;
+		-o-animation-play-state: paused;
+		animation-play-state: paused;
+		color: #00ffe9;
+	}
+}
+.icon-circle-down {
+	font-size: 3.5em;
+}
+@keyframes move{
+	from {
+		transform: translateY(0);
+	}
+	to {
+		transform: translateY(65px);
+		color: #00ffe9;
+	}
+}
+
+/*/////////HEAD///////////*/
+
 
 
