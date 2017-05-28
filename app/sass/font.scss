@@ -30,6 +30,17 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Gotham-Bold';
+	src: url('../font/GothamPro-Bold.eot');
+	src: url('../font/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../font/GothamPro-Bold.woff') format('woff'),
+		url('../font/GothamPro-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
 
 
 
@@ -62,3 +73,126 @@
 .icon-circle-down:before {
   content: "\ea43";
 }
+
+@font-face {
+  font-family: 'html-icon';
+  src:  url('../font/html-icon.eot?b9zdnh');
+  src:  url('../font/html-icon.eot?b9zdnh#iefix') format('embedded-opentype'),
+    url('../font/html-icon.ttf?b9zdnh') format('truetype'),
+    url('../font/html-icon.woff?b9zdnh') format('woff'),
+    url('../font/html-icon.svg?b9zdnh#html-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^=""], [class*=""] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'html-icon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.html-five:before {
+  content: "\eae4";
+}
+
+@font-face {
+  font-family: 'css-icon';
+  src:  url('../font/css-icon.eot?cwj2od');
+  src:  url('../font/css-icon.eot?cwj2od#iefix') format('embedded-opentype'),
+    url('../font/css-icon.ttf?cwj2od') format('truetype'),
+    url('../font/css-icon.woff?cwj2od') format('woff'),
+    url('../font/css-icon.svg?cwj2od#css-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'css-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-css:before {
+  content: "\e900";
+  color: #1572b6;
+}
+
+@font-face {
+  font-family: 'js-icon';
+  src:  url('../font/js-icon.eot?xv588m');
+  src:  url('../font/js-icon.eot?xv588m#iefix') format('embedded-opentype'),
+    url('../font/js-icon.ttf?xv588m') format('truetype'),
+    url('../font/js-icon.woff?xv588m') format('woff'),
+    url('../font/js-icon.svg?xv588m#js-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'js-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-js:before {
+  content: "\e900";
+  color: #f7df1e;
+}
+
+@font-face {
+  font-family: 'mobile-icon';
+  src:  url('../font/mobile-icon.eot?nlawqj');
+  src:  url('../font/mobile-icon.eot?nlawqj#iefix') format('embedded-opentype'),
+    url('../font/mobile-icon.ttf?nlawqj') format('truetype'),
+    url('../font/mobile-icon.woff?nlawqj') format('woff'),
+    url('../font/mobile-icon.svg?nlawqj#mobile-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'mobile-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mobile:before {
+  content: "\e900";
+}
+
