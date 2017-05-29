@@ -153,6 +153,7 @@
 
 /*/////////KNOWLEGE////////*/
 .knowledge {
+	padding-bottom: 50px;
 	background: url(../img/bg.jpg) no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -204,6 +205,73 @@
 	font-size: 10em;
 	color: #00ffe9;
 	font-family: 'mobile-icon' !important;
+}
+
+.l-tools {
+	padding: 15px 0;
+}
+.tools {
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 60px;
+	background-color: #0d0a54;
+	border-radius: 15px;
+
+	&__heading {
+		margin-bottom: 10px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #fff;
+		letter-spacing: 3px;
+		font: 2.2em Rubik-Bold, Arial, sans-serif;
+	}
+
+	&__descript {
+		margin: 0 8%;
+		text-align: justify;
+		color: #75fff1;
+		line-height: 1.3;
+		font: 1.3em Georgia, "Times New Roman", sans-serif;
+	}
+}
+a.tools__link {
+	color: #02f90e;
+	text-decoration: underline;
+	&:hover {
+		color: #fff;
+	}
+}
+
+.text-color {
+  &_pink {
+    color: #C6538C;
+    font-size: 1.5em;
+  }
+
+  &_purpure {
+  	color: #E84C50;
+    font-size: 1.5em;
+  }
+
+  &_orange {
+	color: #ffaa00;
+    font-size: 1.5em;
+  }
+
+  &_violet {
+  	color: #8e00cc;
+    font-size: 1.5em;
+  }
+
+  &_red {
+	color: red;
+    font-size: 1.5em;
+  }
+
+  &_gray {
+	color: #9e9e9e;
+    font-size: 1.5em;
+  }
 }
 
 /*/////////KNOWLEGE////////*/
