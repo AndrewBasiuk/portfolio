@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".work__wrap").hover(function(){$(this).find(".icon-link").css("display","block")},function(){$(".icon-link").css("display","none")}),$('a[href^="#"]').click(function(){elementClick=$(this).attr("href"),destination=$(elementClick).offset().top,$("body").animate({scrollTop:destination},1e3)})});

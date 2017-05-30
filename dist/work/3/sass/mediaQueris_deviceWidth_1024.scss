@@ -1,0 +1,161 @@
+@media only screen and (max-width: 1024px) {
+	.section_heading{
+		margin-top: 50px;
+		font-size: 2.5em;
+	}
+	.section_heading_pargraph{
+		font-size: 0.9em;
+	}
+	.header{
+		height: 600px;
+
+		h1{
+			margin-top: 200px;
+			font-size: 5em;
+		}
+		h3{
+			font-size: 2.5em;
+		}
+		h6{
+			font-size: 1em;
+		}
+	}
+	.header_nav .header_nav_item{
+		font-size: 1em;
+	}
+
+	.about {
+		.about_descript{
+			font-size: 0.7em;
+		}
+		.our_team_item .worker_name{
+			font-size: 0.65em;
+			margin-bottom: 15px;
+		}
+		.our_team_item .worker_role{
+			font-size: 0.8em;
+			margin-bottom: 15px;
+		}
+		.our_team_item .worker_description{
+			width: 95%;
+			font-size: 0.65em
+		}
+		.our_team_item .social_media_item{
+			margin-right: 10px;
+		}
+	}
+
+	.portfolio{
+		.section_heading{
+			margin-top: 120px;
+			margin-bottom: 30px;
+		}
+		.portfolio_nav{
+	    	margin-bottom: 50px;
+	    }
+	    .design_photo_item{
+	    	height: 164px;
+
+	    	.portfolio_hover{
+	    		top: 35px;
+	    		left: 30px;
+			.portfolio_hover_heading{
+				margin-bottom: 18px;
+				font: 18px Signika_Bold, Arial, sans-serif;
+			}
+			p{
+				margin-bottom: 15px;
+				font: 12px Open_Sans_Semibold, Arial, sans-serif;
+			}
+			img{
+				height: 38px;
+				width: 38px;
+			}
+		}
+	    }
+	    .portfolio_nav_item{
+	    	font-size: 1em;
+	    }
+	}
+	.services{
+		.section_heading{
+			margin-top: 60px;
+		}
+		.icon{
+			width: 95px;
+			height: 95px;
+			line-height: 95px;
+		}
+		&_item{
+			width: 45.35714%;
+			margin-bottom: 50px;
+			.service_heading{
+				font-size: 1.8em;
+			}
+			.service_description{
+				font-size: 0.75em;
+			}
+		}
+	}
+
+	.blog {
+		.section_heading{
+			margin-top: 60px;
+		}
+		.blog_content_item{
+			height: 500px;
+		}
+		.division_name{
+			font-size: 12px;
+			margin-left: 10px;
+		}
+		.blog_content_header{
+	    	margin-right: 15px;
+	    	margin-left: 10px;
+	    	font-size: 19px;
+	    	margin-bottom: 15px;
+	    }
+	    .blog_content_item_description{
+	    	font-size: 12px;
+	    	margin-right: 10px;
+	    	margin-left: 10px;
+	    }
+    }
+
+    .contact_us{
+    	.section_heading{
+    		margin-top: 50px;
+    	}
+    	input{
+    		height: 50px;
+    		font-size: 0.8em;
+    	}
+    	textarea{
+    		height: 136px;
+    		width: 36.35714%; 
+    		font-size: 0.8em;
+    	}
+    	.form_button{
+    		width: 120px;
+    		font-size: 0.8em;
+    		margin-bottom: 90px;
+    	}
+    }
+
+    .all_contact{
+	    .contact_list{
+	    	margin-left: 0;
+	    	margin-right: 30px;
+	    }
+	    .contact_item{
+	    	font-size: 0.9em;
+	    }
+	    .social_contact{
+	    	margin-right: 0;
+	    	img{
+	    		width: 30px;
+	    		height: 30px;
+	    	}
+	    }
+	}
+}

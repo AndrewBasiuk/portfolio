@@ -1,0 +1,489 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "font";
+
+// ///////COMMON
+a{
+	text-decoration: none;
+}
+a:link{
+	color: inherit;
+	text-decoration: none;
+}
+a:visited{
+	color: inherit;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container{
+	position: relative;
+	width: 90%;
+	// width: 1110px;
+	margin: 0 auto;
+}
+
+.blue-word {
+	color: #5DBBC1;
+}
+// ///////COMMON
+
+
+// //////HEAD
+
+.head-section {
+	height: 690px;
+	background-color: #130E27;
+	background: url('../img/background_head.jpg') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	border-top: 1px solid #0E0922;
+	box-sizing: border-box;
+	color: #fff;
+}
+
+.header {
+	position: relative;
+	margin-top: 60px;
+
+	&__logo {
+		position: absolute;
+		left: -17px;
+	}
+
+	&__nav {
+		float: right;
+	}
+}
+
+.nav {
+
+	&__item {
+		float: left;
+		padding: 12px 18px;
+		box-sizing: border-box;
+		border-radius: 4px;
+
+		&:hover {
+			background: #5DBBC1;
+		}
+	}
+
+	&__link {
+		color: #fff;
+		text-transform: uppercase;
+		font: 18/16*1em Montserrat-Regular, Arial, sans-serif;
+	}
+}
+.humburger {
+	display: none;
+}
+
+.header-section__heading {
+	width: 43.09009%;  /*445/1110*100%;*/
+	margin-top: 255px;
+	margin-left: 24/1110*100%;
+}
+.heading {
+	font: 90/16*1em Montserrat-Bold, Arial, sans-serif;
+	line-height: 1;
+}
+.descript {
+	margin-top: 35px;
+	font: 20/16*1em "Times New Roman", serif;
+}
+
+.form {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 380/1110*100%;
+	background: #5DBBC1;
+	text-align: center;
+	border-radius: 5px;
+
+	&__heading {
+		margin: 30px 0 35px 0;
+		text-transform: uppercase;
+		font: 22/16*1em Montserrat-Regular, Arial, sans-serif;
+	}
+
+	&__item {
+		height: 57px;
+		width: 353/380*100%;
+		padding-left: 20px;
+		margin-bottom: 16px;
+		border: none;
+		border-radius: 5px;
+		box-sizing: border-box;
+		font: 20/16*1em PTSerif-Regular, "Times New Roman", serif;
+	}
+}
+
+	:focus::-webkit-input-placeholder {color: transparent}
+	:focus::-moz-placeholder          {color: transparent}
+	:focus:-moz-placeholder           {color: transparent}
+	:focus:-ms-input-placeholder      {color: transparent}
+
+.checkbox {
+	text-align: left;
+	margin-left: 11px;
+
+	&__field {
+		width: 15px;
+		height: 15px;
+		margin-right: 15px;
+	}
+
+	&__lable {
+		font: 20/16*1em PTSerif-Regular, "Times New Roman", serif;
+	}
+}
+
+.form__button {
+	margin-top: 20px;
+	margin-bottom: 28px;
+	width: 353/380*100%;
+	color: #fff;
+}
+
+
+// //////HEAD
+
+
+// //////SERVICES
+.services-section {
+	padding-bottom: 65px;
+}
+
+.services-section__heading {
+	margin-top: 35px;
+	margin-bottom: 85px;
+	margin-left: 15/1110*100%;
+}
+.section-heading {
+	font: 50/16*1em Couture, Arial, sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.services__item {
+	float: left;
+	width: 15.41441%; /*160/1110*100%;*/
+	text-align: center;
+	margin-right: 12.7%; /*120/1110*100%;*/
+
+	&:last-child {
+		margin-right: 0;
+	};
+}
+.services-section__list {
+	margin-left: 15/1110*100%;
+}
+.services__icon {
+	width: 156px;
+	height: 156px;
+	max-width: 100%;
+
+	&_rectangular {
+		width: 115px;
+	}
+}
+.services__descript {
+	margin-top: 50px;
+	font: 20/16*1em PTSerif-Regular, "Times New Roman", serif;
+}
+// //////SERVICES
+
+
+// /////////ABOUT
+
+.about-section {
+	position: relative;
+	background-size: cover;
+	background: #5DBBC1;
+	padding: 30px 0 25px 15/1110*100%; 
+	color: #fff;
+
+	&__about-us {
+		display: inline-block;
+		width: 605/1110*100%;
+		font: 20/16*1em PTSerif-Regular, "Times New Roman", serif;
+	}
+
+	&__our-story {
+		width: 270/1110*100%;
+		position: absolute;
+    	top: 50%;
+    	transform: translateY(-50%);
+    	right: 0;
+		color: #fff;
+	}
+}
+.button {
+	height: 65px;
+	background: #000;
+	text-transform: uppercase;
+	font: 22/16*1em Montserrat-Regular, Arial, sans-serif;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+
+	&:hover {
+		background: #44266C;
+	}
+}
+
+
+// /////////ABOUT
+
+// ////////PRICE
+
+.price-section__heading {
+	margin-top: 55px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+.price-section {
+	background: #EFEFEF;
+	border-top: 1px solid #EFEFEF;
+	box-sizing: border-box;
+
+	&__option {
+		margin-left: 15/1110*100%;
+	}
+}
+.option-descript {
+	width: 31.3%; /*318/995*100%;*/
+	float: left;
+	margin-right: 3.01005%; /*20/995*100%;*/
+	text-align: center;
+	border-radius: 5px;
+	background: #fff;
+
+	/*&:last-child {
+		margin-right: 0;
+	}*/
+
+	&__item {
+		font: 22/16*1em PTSerif-Regular, "Times New Roman", serif;
+		
+		&:first-child {
+			margin-top: 30px;
+		}
+	}
+
+	&__item_bold {
+		margin: 30px 0;
+		font: 60/16*1em Montserrat-Bold, Arial, sans-serif;
+	}
+
+	&__button {
+		margin-top: 30px; 
+		color: #fff;
+		width: 205/318*100%;
+	}
+
+}
+.professional .option-descript {
+	margin-right: 0;
+}
+.button_blue {
+	background: #5DBBC1;
+	color: #000;
+}
+
+.business {
+	position: relative;
+}
+.business__popular {
+	position: absolute;
+	top: 21px;
+	left: 419px;
+
+	&_angle {
+		transform: rotate(-45deg);
+		color: #000;
+		font: 1em PTSerif-Regular, "Times New Roman", serif;
+	}
+}
+.option-descript_gradient {
+	background: linear-gradient(bottom right, #fff 85%, #5DBBC1 10%);
+}
+
+// ////////PRICE
+
+
+// //////OUR-WORK
+
+// ///testimonial
+.our-work {
+	background: #fff;
+	padding-top: 140px;
+	padding-bottom: 120px;
+}
+.section-heading_align_center {
+	text-align: center;
+}
+.testimonial {
+	float: left;
+	width: 475/1110*100%;
+}
+
+.review {
+	&__item {
+		color: #000;
+		position: relative;
+		width: 440/445*100%;
+		/*height: 142px;*/
+		padding: 25px 0 28px 25px;
+		border-radius: 5px;
+		box-sizing: border-box;
+
+		&:hover {
+			background: #93CED3;
+			color: #fff;
+		}
+
+		&:first-child {
+			margin-top: 47px;
+		}
+
+	}
+
+	&__text {
+		width: 335/440*100%;
+		font: 20/16*1em PTSerif-Regular, "Times New Roman", serif;
+	}
+
+	&__author {
+		margin-top: 28px;
+		color: #000;
+		font: bold 20/16*1em Montserrat-Regular, Arial, sans-serif;
+	}
+
+	&__photo {
+		position: absolute;
+		top: 20px;
+		right: -50px;
+	}
+}
+
+.photo {
+	width: 105px;
+	height: 105px;
+	border-radius: 50%;
+	box-shadow: 0 -5px 20px rgba(0,0,0,0.3);
+
+	&:hover {
+		box-shadow: 0 -5px 20px rgba(0,0,0,0.5);
+	}
+}
+
+
+.review__photo_1 {
+		background: url("../img/review_1.jpg") -70px -3px no-repeat;
+}
+.review__photo_2 {
+		background: url("../img/review_2.jpg") -10px 0 no-repeat;
+}
+// ////testimonial
+
+// ////gallery
+.our-gallery {
+	float: right;
+	width: 370/1110*100%;
+	text-align: center;
+}
+
+.gallery {
+
+	&__item {
+		display: inline-block;
+		margin-right: 35px;
+		margin-bottom: 30px;
+		cursor: pointer;
+
+		&:nth-child(3n) {
+			margin-right: 0;
+		}
+	}
+}
+.gallery_margin {
+	margin-top: 55px;
+	margin-bottom: 30px;
+}
+
+.galleru__photo_1 {
+	background: url("../img/gallery_1.jpg") -140px -10px no-repeat;
+}
+.galleru__photo_2 {
+	background: url("../img/gallery_2.jpg") -80px -50px no-repeat;
+}
+.galleru__photo_3 {
+	background: url("../img/gallery_3.jpg") -15px -10px no-repeat;
+}
+.galleru__photo_4 {
+	background: url("../img/gallery_4.jpg") -45px -2px no-repeat;
+}
+.galleru__photo_5 {
+	background: url("../img/gallery_5.jpg") -10px 0px no-repeat;
+}
+.galleru__photo_6 {
+	background: url("../img/gallery_6.jpg") -205px -145px no-repeat;
+}
+
+a.our-gallery__link {
+	text-decoration: underline;
+	text-transform: uppercase;
+	font: 20/16*1em Montserrat-Regular, Arial, sans-serif;;
+	
+	&:hover {
+		color: #5DBBC1;
+	}
+}
+// ////gallery
+
+// //////OUR-WORK
+
+
+// //////FOOTER
+
+.footer {
+	background: #130E27;
+	background-size: cover;
+
+	&__text {
+		padding: 85px 0;
+		color: #fff;
+		font: 20/16*1em PTSerif-Regular, "Times New Roman", serif;
+	}
+
+	&__logo {
+		position: absolute;
+		top: 75px;
+		right: 0px;
+	}
+}
+
+// //////FOOTER
+
+
+
+
+// ////////MEDIA_QUERIS
+
+@import 'mediaQueris_1024-1280';
+@import 'mediaQueris_960-1023';
+@import 'mediaQueris_768-959';
+@import 'mediaQueris_600-767';
+@import 'mediaQueris_320-500';
+
+
+// ////////MEDIA_QUERIS

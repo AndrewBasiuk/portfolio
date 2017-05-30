@@ -1,0 +1,90 @@
+@media only screen and (max-width: 320px) {
+
+	.item_delimiter{
+			display: none;
+		}
+
+	.header{
+		height: 300px;
+		h1{
+			margin-top: 40px;
+			font-size: 2.5em;
+		}
+		h6{
+			font-size: 0.7em;
+		}
+	}
+	.header_nav .humburger .menu{
+		left: 39%;
+	}
+
+	.about{
+		.our_team_item{
+			width: 60%;
+			&:nth-child(n){
+				margin-left: 22%;
+			}
+		}
+	}
+
+	.portfolio{
+		.design_photo_item{
+			width: 90%;
+			height: 184px;
+			margin-bottom: 20px;
+		}
+	}
+
+	.services{
+		.section_heading_pargraph{
+			margin-bottom: 30px;
+		}
+		&_item{
+			.service_description{
+				font-size: 0.7em;
+				line-height: 1.6;
+			}
+			&:hover{
+				.read_more_button{
+					display: none;
+				}
+			}
+		}
+	}
+
+	.blog{
+		.division_name{
+			margin-left: 0;
+		}
+		.blog_content_item{
+			text-align: center;
+			width: 70%;
+			height: auto;
+			margin-left: 16.5%;
+			padding-bottom: 10px;
+		}
+	}
+
+	.all_contact {
+		.contact_list{
+	    	width: 49%;
+	    	font-size: 0.85em;
+	    	&:last-child{
+	    		margin-top: 10px;
+	    	}
+	    }
+	    .social_contact{
+	    	position: absolute;
+	    	top: 138px;
+	    	left: 5px;
+	    	img{
+				width: 37px;
+				height: 37px;
+	    	}
+	    }
+	    .social_contact_item{
+	    	margin-right: 20px;
+	    }
+    }
+
+}

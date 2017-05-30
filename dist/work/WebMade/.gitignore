@@ -1,0 +1,4 @@
+#Ignoring files:
+
+.sass-cache
+config.rb

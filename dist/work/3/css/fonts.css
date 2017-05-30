@@ -1,0 +1,67 @@
+
+@font-face {
+	font-family: 'Signika_Regular';
+	src: url('../fonts/Signika-Regular.eot');
+	src: url('../fonts/Signika-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Signika-Regular.woff') format('woff'),
+		url('../fonts/Signika-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Signika_Bold';
+	src: url('../fonts/Signika-Bold.eot');
+	src: url('../fonts/Signika-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Signika-Bold.woff') format('woff'),
+		url('../fonts/Signika-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Signika_Semibold';
+	src: url('../fonts/Signika-Semibold.eot');
+	src: url('../fonts/Signika-Semibold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Signika-Semibold.woff') format('woff'),
+		url('../fonts/Signika-Semibold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Open_Sans';
+	src: url('../fonts/OpenSans-Light.eot');
+	src: url('../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/OpenSans-Light.woff') format('woff'),
+		url('../fonts/OpenSans-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Roboto_Regular';
+	src: url('../fonts/Roboto-Regular.eot');
+	src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Roboto-Regular.woff2') format('woff2'),
+		url('../fonts/Roboto-Regular.woff') format('woff'),
+		url('../fonts/Roboto-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Open_Sans_Semibold';
+	src: url('../OpenSans-Semibold.eot');
+	src: url('../OpenSans-Semibold.eot?#iefix') format('embedded-opentype'),
+		url('../OpenSans-Semibold.woff') format('woff'),
+		url('../OpenSans-Semibold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+

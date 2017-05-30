@@ -144,7 +144,7 @@
 
 /*/////////KNOWLEGE////////*/
 .knowledge {
-	padding-bottom: 50px;
+	padding-bottom: 75px;
 	background: url(../img/bg.jpg) no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -330,8 +330,11 @@ a.tools__link {
 /*/////////MY_WORK////////*/
 
 .my-work {
-	background-color: #75fff1;
+	/*background-color: #75fff1;*/
+	background: url(../img/work-bg1.jpg)  no-repeat;
+	background-size: cover;
 	border-top: 1px solid #75fff1;
+	padding-bottom: 50px;
 }
 
 .section-heading_color_white {
@@ -339,32 +342,70 @@ a.tools__link {
 }
 
 .l-work {
-	margin-top: 50px;
+	margin-top: 30px;
 }
 .work {
 	&__item {
 		float: left;
-		height: 230px;
-		width: 230px;
-		margin-right: 8%;
+		height: 220px;
+		width: 370px;
+		margin-top: 20px;
+		margin-right: 4%;
 		border-radius: 15px;
 		background-color: #000;
 		box-sizing: border-box;
 
-		&:last-child {
+		/*&:last-child {
 			margin-right: 0;
+		}*/
+
+		&:nth-child(3n) {
+			margin-right: 0;
+		}
+
+		&:hover {
+			box-shadow: 0 5px 20px 5px rgba(0, 0, 0,1);
 		}
 	}
 
 	&__img {
-		width: 230px;
-		height: 230px;
+		width: 370px;
+		height: 220px;
 		max-width: 100%;
 		border-radius: 15px;
+		/*origin width 1115*/
+
+		&:hover {
+			opacity: 0.1;
+		}
+	}
+
+	&__wrap {
+		position: relative;
+		background-color: #000;
+		width: 370px;
+		height: 220px;
+		line-height: 280px;
+		border-radius: 15px;
+		text-align: center;
+		&:hover {
+			box-shadow: 0 5px 20px 5px rgba(255, 255, 255,1);
+		}
 	}
 }
 a.work__link {
 	border-radius: 15px;
+}
+.icon-link {
+	display: none;
+	position: absolute;
+	top: 35%;
+	left: 42%;
+	text-align: center;
+	font-size: 5em;
+	color: #fff;
+	font-family: 'link-icon' !important;
+	/*z-index: 2;*/
 }
 
 /*/////////MY_WORK////////*/

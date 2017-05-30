@@ -1,0 +1,136 @@
+@media only screen and (max-width: 900px) {
+	.section_heading{
+		margin-top: 40px;
+		margin-bottom: 10px;
+		font-size: 2em;
+	}
+	.section_heading_pargraph{
+		font-size: 0.75em;
+	}
+	.header{
+		height: 450px;
+
+		h1{
+			margin-top: 170px;
+			font-size: 4em;
+		}
+		h3{
+			font-size: 1.5em;
+		}
+		h6{
+			font-size: 0.8em;
+		}
+	}
+	.header_nav .header_nav_item{
+		font-size: 0.75em;
+	}
+
+	.about {
+		.section_heading{
+			margin-top: 40px;
+		}
+		.about_descript{
+			font-size: 0.7em;
+			line-height: 1.7;
+			overflow: hidden;
+		}
+		.our_team_item{
+			width: 30.28571%;
+			margin: 60px 10% 0 0;
+			&:nth-child(n){
+			margin-left: 10%;
+			}
+			&:nth-child(2n){
+			margin-right: 0;
+			}
+			.worker_name{
+				font-size: 0.65em;
+				margin-bottom: 15px;
+			}
+			.worker_role{
+				font-size: 0.8em;
+				margin-bottom: 15px;
+			}
+			.worker_description{
+				width: 95%;
+				font-size: 0.65em
+			}
+			.social_media_item{
+				margin-right: 10px;
+			}
+		}
+	}
+
+	.portfolio{
+		.section_heading{
+			margin-top: 90px;
+			margin-bottom: 20px;
+		}
+		.portfolio_nav{
+	    	margin-bottom: 40px;
+	    }
+	    .design_photo_item{
+	    	height: 144px;
+			img:hover{
+				opacity: 1;
+			}
+	    	&:hover{
+	    		.portfolio_hover{
+	    			display: none;
+	    		}
+	    	}
+	    }
+	    .portfolio_nav_item{
+	    	font-size: 0.8em;
+	    }
+	}
+	
+	.services .services_item .read_more_button{
+		font-size: 0.8em;
+	}
+
+	.blog {
+		padding-bottom: 90px;
+	}
+
+    .contact_us{
+    	.input_position{
+    		width: 60%;
+    		margin-bottom: 35px;
+    		margin-left: 20%;
+    	}
+    	input{
+    		margin-bottom: 15px;
+    	}
+    	textarea{
+    		width: 60%; 
+    		margin: 35px auto;
+    	}
+    }
+    
+    .all_contact{
+    	.container{
+    		position:relative;
+    		text-align: center;
+    	}
+	    .contact_list{
+	    	margin: 80px 30px 100px 0;
+	    }
+	    .social_contact{
+	    	margin: 0;
+	    	position: absolute;
+	    	top: 190px;
+	    	left: 40%;
+	    }
+	}
+
+	.footer_nav .footer_nav_item{
+		font-size: 0.75em;
+	}
+
+	footer{
+		.footer_paragraph{
+			font-size: 0.65em;
+		}
+	}
+}

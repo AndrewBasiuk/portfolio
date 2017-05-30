@@ -1,0 +1,1281 @@
+@import url("fonts.css");
+/* line 5, C:/Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, C:/Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, C:/Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, C:/Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, C:/Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, C:/Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, C:/Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, C:/Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, C:/Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/* line 11, ../sass/main.scss */
+a {
+  text-decoration: none; }
+
+/* line 14, ../sass/main.scss */
+a:link {
+  color: inherit;
+  text-decoration: none; }
+
+/* line 18, ../sass/main.scss */
+a:visited {
+  color: inherit; }
+
+/* line 21, ../sass/main.scss */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* line 27, ../sass/main.scss */
+.container {
+  position: relative;
+  width: 90%;
+  margin: 0 auto; }
+
+/* line 33, ../sass/main.scss */
+.item_delimiter {
+  margin: 0 15px; }
+
+/* line 36, ../sass/main.scss */
+.section_heading {
+  text-align: center;
+  text-transform: uppercase;
+  font: 3em Signika_Semibold, sans-serif, Arial;
+  color: #000; }
+
+/* line 42, ../sass/main.scss */
+.section_heading_pargraph {
+  font: 1em Signika_Regular, sans-serif, Arial;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase; }
+
+/* line 48, ../sass/main.scss */
+.doted {
+  display: block;
+  margin-top: -30px; }
+
+/* line 59, ../sass/main.scss */
+.header {
+  height: calc(100vh - 79px);
+  background: url("../img/header_background.jpg") no-repeat #999788;
+  background-size: cover;
+  text-align: center;
+  border-top: 1px solid #999788;
+  box-sizing: border-box; }
+  /* line 68, ../sass/main.scss */
+  .header h1 {
+    margin-top: 20%;
+    font: 6.75em Signika_Regular, sans-serif, Arial;
+    color: #FFF; }
+  /* line 74, ../sass/main.scss */
+  .header h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font: 3em Signika_Bold, sans-serif, Arial;
+    color: #FFF; }
+  /* line 81, ../sass/main.scss */
+  .header h6 {
+    margin-bottom: 300px;
+    font: 1.125em Signika_Bold, sans-serif, Arial;
+    color: #FFF; }
+
+/* line 89, ../sass/main.scss */
+.header_nav {
+  background-color: #00A388;
+  border-top: 1px solid #2CD3C7;
+  border-bottom: 1px solid #2CD3C7;
+  box-sizing: border-box;
+  text-align: center; }
+  /* line 97, ../sass/main.scss */
+  .header_nav .header_nav_list {
+    display: inline-block; }
+  /* line 100, ../sass/main.scss */
+  .header_nav .header_nav_item {
+    float: left;
+    margin: 24px 0;
+    font: 1.25em Signika_Regular, sans-serif, Arial;
+    color: #fff;
+    text-transform: uppercase; }
+  /* line 107, ../sass/main.scss */
+  .header_nav .humburger {
+    display: none; }
+
+/* line 120, ../sass/main.scss */
+.about {
+  background: #ECFFFC;
+  border-top: 1px solid #ECFFFC;
+  color: #000; }
+  /* line 124, ../sass/main.scss */
+  .about .section_heading {
+    margin-top: 90px;
+    margin-bottom: 10px; }
+  /* line 128, ../sass/main.scss */
+  .about .about_descript {
+    width: 44.28571428571429%;
+    height: 160px;
+    margin-top: 55px;
+    font: 0.875em Open_Sans, sans-serif, Arial;
+    line-height: 2;
+    text-align: justify; }
+  /* line 136, ../sass/main.scss */
+  .about .about_descript_col_left {
+    float: left; }
+  /* line 139, ../sass/main.scss */
+  .about .about_descript_col_right {
+    float: right; }
+  /* line 142, ../sass/main.scss */
+  .about .green_back {
+    background: #00A388; }
+  /* line 146, ../sass/main.scss */
+  .about .our_team_item {
+    float: left;
+    width: 19.28571%;
+    margin-top: 120px;
+    margin-right: 7.6%;
+    /*95/1400*100%;*/
+    text-align: center;
+    padding-bottom: 25px; }
+    /* line 155, ../sass/main.scss */
+    .about .our_team_item img {
+      max-width: 100%; }
+    /* line 162, ../sass/main.scss */
+    .about .our_team_item:last-child {
+      margin-right: 0; }
+    /* line 166, ../sass/main.scss */
+    .about .our_team_item .worker_name {
+      margin: 30px 0;
+      font: 1.125em Signika_Regular, sans-serif, Arial;
+      text-transform: uppercase; }
+    /* line 171, ../sass/main.scss */
+    .about .our_team_item .worker_role {
+      margin-bottom: 30px;
+      font: 1em Signika_Regular, sans-serif, Arial; }
+    /* line 175, ../sass/main.scss */
+    .about .our_team_item .worker_description {
+      display: none;
+      width: 225px;
+      margin: 0 auto;
+      font: 0.75em Open_Sans, sans-serif, Arial;
+      text-align: justify;
+      overflow: hidden;
+      box-sizing: border-box; }
+    /* line 184, ../sass/main.scss */
+    .about .our_team_item .social_media {
+      display: none; }
+    /* line 187, ../sass/main.scss */
+    .about .our_team_item .social_media_item {
+      display: inline-block;
+      margin-top: 35px;
+      margin-right: 15px;
+      background: url("../img/C-L-F-N.png") no-repeat; }
+      /* line 192, ../sass/main.scss */
+      .about .our_team_item .social_media_item a {
+        display: block;
+        width: 20px;
+        height: 20px; }
+    /* line 198, ../sass/main.scss */
+    .about .our_team_item .tweeter {
+      background-position: -36px 0; }
+    /* line 201, ../sass/main.scss */
+    .about .our_team_item .LinkedIn {
+      background-position: -72px 0; }
+    /* line 204, ../sass/main.scss */
+    .about .our_team_item .VK {
+      background-position: -108px 0; }
+
+/* line 213, ../sass/main.scss */
+.portfolio {
+  background: #ECFFFC;
+  border-top: 1px solid #ECFFFC;
+  text-align: center; }
+  /* line 218, ../sass/main.scss */
+  .portfolio .section_heading {
+    margin-top: 170px;
+    margin-bottom: 45px; }
+  /* line 224, ../sass/main.scss */
+  .portfolio .portfolio_button {
+    display: none; }
+  /* line 228, ../sass/main.scss */
+  .portfolio .portfolio_nav {
+    display: inline-block;
+    height: 16px;
+    margin-bottom: 85px; }
+  /* line 233, ../sass/main.scss */
+  .portfolio .portfolio_nav_item {
+    float: left;
+    color: #000;
+    font: 1.125em Signika_Regular, sans-serif, Arial;
+    text-transform: uppercase;
+    text-align: center; }
+  /* line 241, ../sass/main.scss */
+  .portfolio .design_photo {
+    position: relative;
+    font-size: 0; }
+  /* line 276, ../sass/main.scss */
+  .portfolio .design_photo_item {
+    position: relative;
+    display: inline-block;
+    width: 24.07143%;
+    height: 216px; }
+    /* line 281, ../sass/main.scss */
+    .portfolio .design_photo_item .portfolio_hover {
+      display: none;
+      position: absolute;
+      width: 80.11869%;
+      height: 135px;
+      top: 45px;
+      left: 34px;
+      text-align: center;
+      color: #fff;
+      text-transform: uppercase; }
+      /* line 291, ../sass/main.scss */
+      .portfolio .design_photo_item .portfolio_hover .portfolio_hover_heading {
+        height: 23px;
+        margin-bottom: 25px;
+        font: 20px Signika_Bold, Arial, sans-serif; }
+      /* line 296, ../sass/main.scss */
+      .portfolio .design_photo_item .portfolio_hover p {
+        height: 14px;
+        margin-bottom: 20px;
+        font: 14px Open_Sans_Semibold, Arial, sans-serif; }
+      /* line 301, ../sass/main.scss */
+      .portfolio .design_photo_item .portfolio_hover img {
+        position: static;
+        min-width: 42px;
+        height: 42px; }
+    /* line 307, ../sass/main.scss */
+    .portfolio .design_photo_item:hover {
+      background: #00A388; }
+      /* line 309, ../sass/main.scss */
+      .portfolio .design_photo_item:hover .portfolio_hover {
+        display: block; }
+    /* line 313, ../sass/main.scss */
+    .portfolio .design_photo_item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      min-width: 100%;
+      overflow: hidden; }
+      /* line 320, ../sass/main.scss */
+      .portfolio .design_photo_item img:hover {
+        opacity: 0.3; }
+
+/* line 329, ../sass/main.scss */
+.services {
+  background: #FFF;
+  border-top: 1px solid #fff; }
+  /* line 333, ../sass/main.scss */
+  .services .section_heading {
+    margin-top: 115px; }
+  /* line 336, ../sass/main.scss */
+  .services .section_heading_pargraph {
+    margin-bottom: 75px; }
+  /* line 340, ../sass/main.scss */
+  .services .icon {
+    width: 113px;
+    height: 113px;
+    line-height: 113px;
+    background: #00A388;
+    text-align: center; }
+    /* line 346, ../sass/main.scss */
+    .services .icon img {
+      vertical-align: middle;
+      max-width: 100%; }
+  /* line 351, ../sass/main.scss */
+  .services_item {
+    position: relative;
+    width: 46.35714%;
+    height: 335px;
+    display: inline-block;
+    margin-bottom: 70px;
+    margin-right: 6.92857%; }
+    /* line 358, ../sass/main.scss */
+    .services_item .service_heading {
+      margin-top: 24px;
+      margin-bottom: 13px;
+      font: 2.25em Signika_Regular, sans-serif, Arial; }
+    /* line 363, ../sass/main.scss */
+    .services_item .service_description {
+      display: block;
+      margin: 0 auto;
+      width: 96.61017%;
+      text-align: justify;
+      font: 0.875em Open_Sans, sans-serif, Arial;
+      line-height: 1.8; }
+    /* line 371, ../sass/main.scss */
+    .services_item .read_more_button {
+      display: none;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      margin-top: 5px;
+      background: inherit;
+      font: 1em Signika_Regular, sans-serif, Arial;
+      border: none;
+      cursor: pointer; }
+    /* line 382, ../sass/main.scss */
+    .services_item:nth-child(2n) {
+      margin-right: 0; }
+    /* line 385, ../sass/main.scss */
+    .services_item:hover {
+      background: #F5FFFD; }
+      /* line 387, ../sass/main.scss */
+      .services_item:hover .read_more_button {
+        display: block; }
+
+/* line 397, ../sass/main.scss */
+.blog {
+  padding-bottom: 200px;
+  background: #ECFFFC;
+  border-top: 1px solid #ECFFFC; }
+  /* line 402, ../sass/main.scss */
+  .blog .section_heading {
+    margin-top: 100px; }
+  /* line 406, ../sass/main.scss */
+  .blog .blog_content {
+    margin-top: 67px;
+    font-size: 0; }
+  /* line 411, ../sass/main.scss */
+  .blog .blog_content_item {
+    float: left;
+    width: 23%;
+    height: 690px;
+    margin-right: 2.35714%;
+    margin-bottom: 35px;
+    padding-bottom: 30px;
+    background: #FFF;
+    box-sizing: border-box; }
+    /* line 421, ../sass/main.scss */
+    .blog .blog_content_item:nth-child(4) {
+      margin-right: 0; }
+    /* line 424, ../sass/main.scss */
+    .blog .blog_content_item:last-child {
+      margin-right: 0; }
+    /* line 427, ../sass/main.scss */
+    .blog .blog_content_item img {
+      max-width: 100%; }
+  /* line 432, ../sass/main.scss */
+  .blog .division_name {
+    color: #2DB49D;
+    font: 16.7px Roboto_Regular, sans-serif, Arial;
+    margin: 30px 0 25px 30px; }
+  /* line 437, ../sass/main.scss */
+  .blog .blog_content_header {
+    max-width: 265px;
+    font: 28.6px Signika_Regular, sans-serif, Arial;
+    margin: 0 0 30px 30px; }
+  /* line 442, ../sass/main.scss */
+  .blog .blog_content_item_description {
+    display: block;
+    max-height: 130px;
+    max-width: 265px;
+    margin-left: 30px;
+    font: 16.7px Open_Sans, sans-serif, Arial;
+    font-weight: 600;
+    line-height: 1.6;
+    overflow: hidden; }
+
+/* line 455, ../sass/main.scss */
+.map img {
+  max-width: 100%; }
+
+/* line 460, ../sass/main.scss */
+.contact_us {
+  background: #fff; }
+  /* line 463, ../sass/main.scss */
+  .contact_us .section_heading {
+    margin-top: 100px; }
+  /* line 467, ../sass/main.scss */
+  .contact_us form {
+    margin-top: 50px;
+    text-align: center; }
+  /* line 471, ../sass/main.scss */
+  .contact_us .input_position {
+    float: left;
+    width: 40.35714%;
+    margin-right: 40px;
+    margin-left: 135px; }
+  /* line 477, ../sass/main.scss */
+  .contact_us input {
+    padding-left: 25px;
+    margin-bottom: 35px;
+    width: 100%;
+    height: 70px;
+    background: #000;
+    font: 1.125em Open_Sans, sans-serif, Arial;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    box-sizing: border-box; }
+    /* line 489, ../sass/main.scss */
+    .contact_us input:last-child {
+      margin-bottom: 0; }
+  /* line 494, ../sass/main.scss */
+  .contact_us ::-webkit-input-placeholder {
+    color: #fff; }
+  /* line 495, ../sass/main.scss */
+  .contact_us ::-moz-placeholder {
+    color: #fff; }
+  /* line 496, ../sass/main.scss */
+  .contact_us :-moz-placeholder {
+    color: #fff; }
+  /* line 497, ../sass/main.scss */
+  .contact_us :-ms-input-placeholder {
+    color: #fff; }
+  /* line 499, ../sass/main.scss */
+  .contact_us :focus::-webkit-input-placeholder {
+    color: transparent; }
+  /* line 500, ../sass/main.scss */
+  .contact_us :focus::-moz-placeholder {
+    color: transparent; }
+  /* line 501, ../sass/main.scss */
+  .contact_us :focus:-moz-placeholder {
+    color: transparent; }
+  /* line 502, ../sass/main.scss */
+  .contact_us :focus:-ms-input-placeholder {
+    color: transparent; }
+  /* line 504, ../sass/main.scss */
+  .contact_us textarea {
+    display: block;
+    padding-left: 25px;
+    padding-top: 20px;
+    margin-bottom: 35px;
+    width: 40.35714%;
+    height: 175px;
+    background: #000;
+    font: 1.125em Open_Sans, sans-serif, Arial;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    box-sizing: border-box; }
+  /* line 518, ../sass/main.scss */
+  .contact_us .form_button {
+    display: inline-block;
+    margin-bottom: 145px;
+    width: 145px;
+    height: 47px;
+    background: #000;
+    font: 1.125em Open_Sans_Semibold, sans-serif, Arial;
+    color: #fff;
+    line-height: 47px;
+    vertical-align: middle;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 6px;
+    box-sizing: border-box;
+    cursor: pointer; }
+
+/* line 544, ../sass/main.scss */
+.footer_nav {
+  height: 90px;
+  background-color: #02C5A5;
+  border-top: 1px solid #2CD3C7;
+  box-sizing: border-box;
+  text-align: center; }
+  /* line 551, ../sass/main.scss */
+  .footer_nav .footer_nav_list {
+    display: inline-block; }
+  /* line 554, ../sass/main.scss */
+  .footer_nav .footer_nav_item {
+    float: left;
+    margin-top: 36px;
+    margin-bottom: 36px;
+    font: 0.875em Signika_Regular, sans-serif, Arial;
+    color: #fff;
+    text-transform: uppercase; }
+
+/* line 564, ../sass/main.scss */
+.all_contact {
+  background: #00A388; }
+  /* line 567, ../sass/main.scss */
+  .all_contact .contact_list {
+    display: inline-block;
+    margin: 120px 62px 130px 13px; }
+  /* line 571, ../sass/main.scss */
+  .all_contact .contact_item {
+    color: #fff;
+    font: 1.125em Open_Sans, sans-serif, Arial; }
+  /* line 576, ../sass/main.scss */
+  .all_contact .social_contact {
+    float: right;
+    margin: 150px 9.28571% 130px 0;
+    font-size: 0; }
+  /* line 581, ../sass/main.scss */
+  .all_contact .social_contact_item {
+    display: inline-block;
+    margin-right: 10px; }
+    /* line 584, ../sass/main.scss */
+    .all_contact .social_contact_item:last-child {
+      margin-right: 0; }
+    /* line 587, ../sass/main.scss */
+    .all_contact .social_contact_item img {
+      max-width: 100%; }
+
+/* line 596, ../sass/main.scss */
+footer {
+  background: #000;
+  color: #FFF;
+  padding: 40px 0; }
+  /* line 601, ../sass/main.scss */
+  footer .footer_paragraph {
+    font: 0.875em Signika_Regular, sans-serif, Arial;
+    text-align: center;
+    text-transform: uppercase; }
+
+@media only screen and (max-width: 1280px) {
+  /* line 3, ../sass/mediaQueris_deviceWidth_1280.scss */
+  .about .about_descript {
+    font-size: 0.8em; }
+  /* line 6, ../sass/mediaQueris_deviceWidth_1280.scss */
+  .about .our_team_item .worker_name {
+    font-size: 0.875em; }
+  /* line 9, ../sass/mediaQueris_deviceWidth_1280.scss */
+  .about .our_team_item .worker_description {
+    width: 95%; }
+
+  /* line 14, ../sass/mediaQueris_deviceWidth_1280.scss */
+  .portfolio .design_photo_item {
+    height: 205px; }
+
+  /* line 17, ../sass/mediaQueris_deviceWidth_1280.scss */
+  .services_item {
+    margin-right: 6.8%; }
+
+  /* line 22, ../sass/mediaQueris_deviceWidth_1280.scss */
+  .blog .blog_content_item {
+    height: 600px; }
+  /* line 25, ../sass/mediaQueris_deviceWidth_1280.scss */
+  .blog .blog_content_header {
+    margin-right: 15px;
+    font-size: 22px;
+    margin-bottom: 20px; }
+  /* line 30, ../sass/mediaQueris_deviceWidth_1280.scss */
+  .blog .blog_content_item_description {
+    font-size: 14px;
+    margin-right: 15px; }
+
+  /* line 37, ../sass/mediaQueris_deviceWidth_1280.scss */
+  .all_contact .contact_list {
+    margin-left: 0;
+    margin-right: 50px; }
+  /* line 41, ../sass/mediaQueris_deviceWidth_1280.scss */
+  .all_contact .social_contact {
+    margin-right: 0; } }
+@media only screen and (max-width: 1024px) {
+  /* line 2, ../sass/mediaQueris_deviceWidth_1024.scss */
+  .section_heading {
+    margin-top: 50px;
+    font-size: 2.5em; }
+
+  /* line 6, ../sass/mediaQueris_deviceWidth_1024.scss */
+  .section_heading_pargraph {
+    font-size: 0.9em; }
+
+  /* line 9, ../sass/mediaQueris_deviceWidth_1024.scss */
+  .header {
+    height: 600px; }
+    /* line 12, ../sass/mediaQueris_deviceWidth_1024.scss */
+    .header h1 {
+      margin-top: 200px;
+      font-size: 5em; }
+    /* line 16, ../sass/mediaQueris_deviceWidth_1024.scss */
+    .header h3 {
+      font-size: 2.5em; }
+    /* line 19, ../sass/mediaQueris_deviceWidth_1024.scss */
+    .header h6 {
+      font-size: 1em; }
+
+  /* line 23, ../sass/mediaQueris_deviceWidth_1024.scss */
+  .header_nav .header_nav_item {
+    font-size: 1em; }
+
+  /* line 28, ../sass/mediaQueris_deviceWidth_1024.scss */
+  .about .about_descript {
+    font-size: 0.7em; }
+  /* line 31, ../sass/mediaQueris_deviceWidth_1024.scss */
+  .about .our_team_item .worker_name {
+    font-size: 0.65em;
+    margin-bottom: 15px; }
+  /* line 35, ../sass/mediaQueris_deviceWidth_1024.scss */
+  .about .our_team_item .worker_role {
+    font-size: 0.8em;
+    margin-bottom: 15px; }
+  /* line 39, ../sass/mediaQueris_deviceWidth_1024.scss */
+  .about .our_team_item .worker_description {
+    width: 95%;
+    font-size: 0.65em; }
+  /* line 43, ../sass/mediaQueris_deviceWidth_1024.scss */
+  .about .our_team_item .social_media_item {
+    margin-right: 10px; }
+
+  /* line 49, ../sass/mediaQueris_deviceWidth_1024.scss */
+  .portfolio .section_heading {
+    margin-top: 120px;
+    margin-bottom: 30px; }
+  /* line 53, ../sass/mediaQueris_deviceWidth_1024.scss */
+  .portfolio .portfolio_nav {
+    margin-bottom: 50px; }
+  /* line 56, ../sass/mediaQueris_deviceWidth_1024.scss */
+  .portfolio .design_photo_item {
+    height: 164px; }
+    /* line 59, ../sass/mediaQueris_deviceWidth_1024.scss */
+    .portfolio .design_photo_item .portfolio_hover {
+      top: 35px;
+      left: 30px; }
+      /* line 62, ../sass/mediaQueris_deviceWidth_1024.scss */
+      .portfolio .design_photo_item .portfolio_hover .portfolio_hover_heading {
+        margin-bottom: 18px;
+        font: 18px Signika_Bold, Arial, sans-serif; }
+      /* line 66, ../sass/mediaQueris_deviceWidth_1024.scss */
+      .portfolio .design_photo_item .portfolio_hover p {
+        margin-bottom: 15px;
+        font: 12px Open_Sans_Semibold, Arial, sans-serif; }
+      /* line 70, ../sass/mediaQueris_deviceWidth_1024.scss */
+      .portfolio .design_photo_item .portfolio_hover img {
+        height: 38px;
+        width: 38px; }
+  /* line 76, ../sass/mediaQueris_deviceWidth_1024.scss */
+  .portfolio .portfolio_nav_item {
+    font-size: 1em; }
+
+  /* line 81, ../sass/mediaQueris_deviceWidth_1024.scss */
+  .services .section_heading {
+    margin-top: 60px; }
+  /* line 84, ../sass/mediaQueris_deviceWidth_1024.scss */
+  .services .icon {
+    width: 95px;
+    height: 95px;
+    line-height: 95px; }
+  /* line 89, ../sass/mediaQueris_deviceWidth_1024.scss */
+  .services_item {
+    width: 45.35714%;
+    margin-bottom: 50px; }
+    /* line 92, ../sass/mediaQueris_deviceWidth_1024.scss */
+    .services_item .service_heading {
+      font-size: 1.8em; }
+    /* line 95, ../sass/mediaQueris_deviceWidth_1024.scss */
+    .services_item .service_description {
+      font-size: 0.75em; }
+
+  /* line 102, ../sass/mediaQueris_deviceWidth_1024.scss */
+  .blog .section_heading {
+    margin-top: 60px; }
+  /* line 105, ../sass/mediaQueris_deviceWidth_1024.scss */
+  .blog .blog_content_item {
+    height: 500px; }
+  /* line 108, ../sass/mediaQueris_deviceWidth_1024.scss */
+  .blog .division_name {
+    font-size: 12px;
+    margin-left: 10px; }
+  /* line 112, ../sass/mediaQueris_deviceWidth_1024.scss */
+  .blog .blog_content_header {
+    margin-right: 15px;
+    margin-left: 10px;
+    font-size: 19px;
+    margin-bottom: 15px; }
+  /* line 118, ../sass/mediaQueris_deviceWidth_1024.scss */
+  .blog .blog_content_item_description {
+    font-size: 12px;
+    margin-right: 10px;
+    margin-left: 10px; }
+
+  /* line 126, ../sass/mediaQueris_deviceWidth_1024.scss */
+  .contact_us .section_heading {
+    margin-top: 50px; }
+  /* line 129, ../sass/mediaQueris_deviceWidth_1024.scss */
+  .contact_us input {
+    height: 50px;
+    font-size: 0.8em; }
+  /* line 133, ../sass/mediaQueris_deviceWidth_1024.scss */
+  .contact_us textarea {
+    height: 136px;
+    width: 36.35714%;
+    font-size: 0.8em; }
+  /* line 138, ../sass/mediaQueris_deviceWidth_1024.scss */
+  .contact_us .form_button {
+    width: 120px;
+    font-size: 0.8em;
+    margin-bottom: 90px; }
+
+  /* line 146, ../sass/mediaQueris_deviceWidth_1024.scss */
+  .all_contact .contact_list {
+    margin-left: 0;
+    margin-right: 30px; }
+  /* line 150, ../sass/mediaQueris_deviceWidth_1024.scss */
+  .all_contact .contact_item {
+    font-size: 0.9em; }
+  /* line 153, ../sass/mediaQueris_deviceWidth_1024.scss */
+  .all_contact .social_contact {
+    margin-right: 0; }
+    /* line 155, ../sass/mediaQueris_deviceWidth_1024.scss */
+    .all_contact .social_contact img {
+      width: 30px;
+      height: 30px; } }
+@media only screen and (max-width: 900px) {
+  /* line 2, ../sass/mediaQueris_deviceWidth_900.scss */
+  .section_heading {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 2em; }
+
+  /* line 7, ../sass/mediaQueris_deviceWidth_900.scss */
+  .section_heading_pargraph {
+    font-size: 0.75em; }
+
+  /* line 10, ../sass/mediaQueris_deviceWidth_900.scss */
+  .header {
+    height: 450px; }
+    /* line 13, ../sass/mediaQueris_deviceWidth_900.scss */
+    .header h1 {
+      margin-top: 170px;
+      font-size: 4em; }
+    /* line 17, ../sass/mediaQueris_deviceWidth_900.scss */
+    .header h3 {
+      font-size: 1.5em; }
+    /* line 20, ../sass/mediaQueris_deviceWidth_900.scss */
+    .header h6 {
+      font-size: 0.8em; }
+
+  /* line 24, ../sass/mediaQueris_deviceWidth_900.scss */
+  .header_nav .header_nav_item {
+    font-size: 0.75em; }
+
+  /* line 29, ../sass/mediaQueris_deviceWidth_900.scss */
+  .about .section_heading {
+    margin-top: 40px; }
+  /* line 32, ../sass/mediaQueris_deviceWidth_900.scss */
+  .about .about_descript {
+    font-size: 0.7em;
+    line-height: 1.7;
+    overflow: hidden; }
+  /* line 37, ../sass/mediaQueris_deviceWidth_900.scss */
+  .about .our_team_item {
+    width: 30.28571%;
+    margin: 60px 10% 0 0; }
+    /* line 40, ../sass/mediaQueris_deviceWidth_900.scss */
+    .about .our_team_item:nth-child(n) {
+      margin-left: 10%; }
+    /* line 43, ../sass/mediaQueris_deviceWidth_900.scss */
+    .about .our_team_item:nth-child(2n) {
+      margin-right: 0; }
+    /* line 46, ../sass/mediaQueris_deviceWidth_900.scss */
+    .about .our_team_item .worker_name {
+      font-size: 0.65em;
+      margin-bottom: 15px; }
+    /* line 50, ../sass/mediaQueris_deviceWidth_900.scss */
+    .about .our_team_item .worker_role {
+      font-size: 0.8em;
+      margin-bottom: 15px; }
+    /* line 54, ../sass/mediaQueris_deviceWidth_900.scss */
+    .about .our_team_item .worker_description {
+      width: 95%;
+      font-size: 0.65em; }
+    /* line 58, ../sass/mediaQueris_deviceWidth_900.scss */
+    .about .our_team_item .social_media_item {
+      margin-right: 10px; }
+
+  /* line 65, ../sass/mediaQueris_deviceWidth_900.scss */
+  .portfolio .section_heading {
+    margin-top: 90px;
+    margin-bottom: 20px; }
+  /* line 69, ../sass/mediaQueris_deviceWidth_900.scss */
+  .portfolio .portfolio_nav {
+    margin-bottom: 40px; }
+  /* line 72, ../sass/mediaQueris_deviceWidth_900.scss */
+  .portfolio .design_photo_item {
+    height: 144px; }
+    /* line 74, ../sass/mediaQueris_deviceWidth_900.scss */
+    .portfolio .design_photo_item img:hover {
+      opacity: 1; }
+    /* line 78, ../sass/mediaQueris_deviceWidth_900.scss */
+    .portfolio .design_photo_item:hover .portfolio_hover {
+      display: none; }
+  /* line 83, ../sass/mediaQueris_deviceWidth_900.scss */
+  .portfolio .portfolio_nav_item {
+    font-size: 0.8em; }
+
+  /* line 88, ../sass/mediaQueris_deviceWidth_900.scss */
+  .services .services_item .read_more_button {
+    font-size: 0.8em; }
+
+  /* line 92, ../sass/mediaQueris_deviceWidth_900.scss */
+  .blog {
+    padding-bottom: 90px; }
+
+  /* line 97, ../sass/mediaQueris_deviceWidth_900.scss */
+  .contact_us .input_position {
+    width: 60%;
+    margin-bottom: 35px;
+    margin-left: 20%; }
+  /* line 102, ../sass/mediaQueris_deviceWidth_900.scss */
+  .contact_us input {
+    margin-bottom: 15px; }
+  /* line 105, ../sass/mediaQueris_deviceWidth_900.scss */
+  .contact_us textarea {
+    width: 60%;
+    margin: 35px auto; }
+
+  /* line 112, ../sass/mediaQueris_deviceWidth_900.scss */
+  .all_contact .container {
+    position: relative;
+    text-align: center; }
+  /* line 116, ../sass/mediaQueris_deviceWidth_900.scss */
+  .all_contact .contact_list {
+    margin: 80px 30px 100px 0; }
+  /* line 119, ../sass/mediaQueris_deviceWidth_900.scss */
+  .all_contact .social_contact {
+    margin: 0;
+    position: absolute;
+    top: 190px;
+    left: 40%; }
+
+  /* line 127, ../sass/mediaQueris_deviceWidth_900.scss */
+  .footer_nav .footer_nav_item {
+    font-size: 0.75em; }
+
+  /* line 132, ../sass/mediaQueris_deviceWidth_900.scss */
+  footer .footer_paragraph {
+    font-size: 0.65em; } }
+@media only screen and (max-width: 768px) {
+  /* line 3, ../sass/mediaQueris_deviceWidth_768.scss */
+  .about .about_descript {
+    width: 100%;
+    height: 120px;
+    float: none;
+    margin-top: 30px; }
+    /* line 8, ../sass/mediaQueris_deviceWidth_768.scss */
+    .about .about_descript:last-child {
+      margin-top: 20px; }
+
+  /* line 15, ../sass/mediaQueris_deviceWidth_768.scss */
+  .portfolio .section_heading {
+    margin-top: 90px;
+    margin-bottom: 20px; }
+  /* line 19, ../sass/mediaQueris_deviceWidth_768.scss */
+  .portfolio .portfolio_nav {
+    margin-bottom: 40px; }
+  /* line 22, ../sass/mediaQueris_deviceWidth_768.scss */
+  .portfolio .design_photo_item {
+    width: 36%;
+    height: 184px;
+    margin-bottom: 15px; }
+    /* line 26, ../sass/mediaQueris_deviceWidth_768.scss */
+    .portfolio .design_photo_item:nth-child(n) {
+      margin-right: 2%; }
+    /* line 29, ../sass/mediaQueris_deviceWidth_768.scss */
+    .portfolio .design_photo_item:nth-child(n) {
+      margin-left: 2%; }
+  /* line 33, ../sass/mediaQueris_deviceWidth_768.scss */
+  .portfolio .portfolio_nav_item {
+    font-size: 0.75em; }
+
+  /* line 39, ../sass/mediaQueris_deviceWidth_768.scss */
+  .all_contact .social_contact {
+    left: 260px; }
+
+  /* line 44, ../sass/mediaQueris_deviceWidth_768.scss */
+  .footer_nav {
+    height: 65px; }
+
+  /* line 47, ../sass/mediaQueris_deviceWidth_768.scss */
+  .footer_nav .footer_nav_item {
+    margin: 25px 0; }
+
+  /* line 53, ../sass/mediaQueris_deviceWidth_768.scss */
+  footer .footer_paragraph {
+    font-size: 0.65em; } }
+@media only screen and (max-width: 640px) {
+  /* line 2, ../sass/mediaQueris_deviceWidth_640.scss */
+  .header {
+    height: 400px; }
+    /* line 5, ../sass/mediaQueris_deviceWidth_640.scss */
+    .header h1 {
+      margin-top: 100px; }
+
+  /* line 11, ../sass/mediaQueris_deviceWidth_640.scss */
+  .portfolio .design_photo_item {
+    height: 153px;
+    margin-bottom: 5px; }
+
+  /* line 18, ../sass/mediaQueris_deviceWidth_640.scss */
+  .services .icon {
+    width: 95px;
+    height: 95px;
+    line-height: 95px;
+    margin: 0 auto; }
+  /* line 24, ../sass/mediaQueris_deviceWidth_640.scss */
+  .services .service_heading {
+    text-align: center; }
+  /* line 27, ../sass/mediaQueris_deviceWidth_640.scss */
+  .services_item {
+    width: 100%;
+    height: 275px;
+    margin-bottom: 10px; }
+    /* line 31, ../sass/mediaQueris_deviceWidth_640.scss */
+    .services_item .service_heading {
+      font-size: 1.8em; }
+    /* line 34, ../sass/mediaQueris_deviceWidth_640.scss */
+    .services_item .service_description {
+      font-size: 0.75em; }
+    /* line 37, ../sass/mediaQueris_deviceWidth_640.scss */
+    .services_item:last-child {
+      margin-bottom: 25px; }
+
+  /* line 44, ../sass/mediaQueris_deviceWidth_640.scss */
+  .blog .division_name {
+    font-size: 12px; }
+  /* line 47, ../sass/mediaQueris_deviceWidth_640.scss */
+  .blog .blog_content_header {
+    font-size: 15px; }
+  /* line 50, ../sass/mediaQueris_deviceWidth_640.scss */
+  .blog .blog_content_item_description {
+    font-size: 10px; }
+  /* line 53, ../sass/mediaQueris_deviceWidth_640.scss */
+  .blog .blog_content_item {
+    height: 400px;
+    width: 30%; }
+  /* line 57, ../sass/mediaQueris_deviceWidth_640.scss */
+  .blog .blog_content_item:nth-child(3) {
+    margin-right: 0; }
+  /* line 60, ../sass/mediaQueris_deviceWidth_640.scss */
+  .blog .blog_content_item:nth-child(4) {
+    margin-right: 2.35714%; }
+
+  /* line 66, ../sass/mediaQueris_deviceWidth_640.scss */
+  .contact_us .section_heading {
+    margin-top: 30px;
+    margin-bottom: 30px; }
+  /* line 70, ../sass/mediaQueris_deviceWidth_640.scss */
+  .contact_us form {
+    margin-top: 30px; }
+    /* line 72, ../sass/mediaQueris_deviceWidth_640.scss */
+    .contact_us form .input_position {
+      width: 55%; }
+    /* line 75, ../sass/mediaQueris_deviceWidth_640.scss */
+    .contact_us form textarea {
+      height: 136px;
+      width: 100%;
+      font-size: 0.8em; }
+    /* line 80, ../sass/mediaQueris_deviceWidth_640.scss */
+    .contact_us form .form_button {
+      width: 120px;
+      font-size: 0.8em;
+      margin-bottom: 40px; }
+
+  /* line 89, ../sass/mediaQueris_deviceWidth_640.scss */
+  .all_contact .social_contact {
+    left: 210px; } }
+@media only screen and (max-width: 600px) {
+  /* line 3, ../sass/mediaQueris_deviceWidth_600.scss */
+  .portfolio .design_photo_item {
+    height: 145px; }
+
+  /* line 7, ../sass/mediaQueris_deviceWidth_600.scss */
+  .all_contact .contact_list:first-child {
+    margin-left: 6%; } }
+@media only screen and (max-width: 480px) {
+  /* line 2, ../sass/mediaQueris_deviceWidth_480.scss */
+  .header_nav_item .item_delimiter {
+    display: none; }
+
+  /* line 5, ../sass/mediaQueris_deviceWidth_480.scss */
+  .header {
+    background-position: -80px 0; }
+
+  /* line 8, ../sass/mediaQueris_deviceWidth_480.scss */
+  .header_nav .header_nav_list {
+    margin: 0;
+    width: 100%; }
+  /* line 12, ../sass/mediaQueris_deviceWidth_480.scss */
+  .header_nav .header_nav_item {
+    display: none;
+    height: 40px;
+    width: 100%;
+    border-bottom: none;
+    background: #00A388;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 0.9em; }
+    /* line 21, ../sass/mediaQueris_deviceWidth_480.scss */
+    .header_nav .header_nav_item a:hover {
+      border-bottom: 1px solid #2CD3C7; }
+    /* line 24, ../sass/mediaQueris_deviceWidth_480.scss */
+    .header_nav .header_nav_item a {
+      line-height: 40px;
+      vertical-align: middle; }
+  /* line 29, ../sass/mediaQueris_deviceWidth_480.scss */
+  .header_nav .humburger {
+    position: relative;
+    display: block;
+    height: 30px;
+    cursor: pointer; }
+    /* line 34, ../sass/mediaQueris_deviceWidth_480.scss */
+    .header_nav .humburger .menu {
+      position: absolute;
+      left: 41%;
+      top: 17px;
+      display: block; }
+    /* line 41, ../sass/mediaQueris_deviceWidth_480.scss */
+    .header_nav .humburger .humburger_menu_item {
+      background: #fff;
+      width: 22px;
+      height: 3.5px;
+      margin-bottom: 2px; }
+      /* line 47, ../sass/mediaQueris_deviceWidth_480.scss */
+      .header_nav .humburger .humburger_menu_item:last-child {
+        margin-bottom: 0; }
+    /* line 52, ../sass/mediaQueris_deviceWidth_480.scss */
+    .header_nav .humburger .menu_title {
+      position: absolute;
+      left: 50%;
+      top: 14px;
+      font: 1em Signika_Regular, sans-serif, Arial;
+      color: #fff;
+      text-transform: uppercase; }
+
+  /* line 65, ../sass/mediaQueris_deviceWidth_480.scss */
+  .about .our_team_item {
+    width: 45%;
+    margin-top: 30px; }
+    /* line 68, ../sass/mediaQueris_deviceWidth_480.scss */
+    .about .our_team_item:nth-child(n) {
+      margin-left: 27%; }
+    /* line 71, ../sass/mediaQueris_deviceWidth_480.scss */
+    .about .our_team_item:nth-child(2n) {
+      margin-right: 27%; }
+
+  /* line 78, ../sass/mediaQueris_deviceWidth_480.scss */
+  .portfolio .section_heading {
+    margin-top: 60px;
+    margin-bottom: 20px; }
+  /* line 82, ../sass/mediaQueris_deviceWidth_480.scss */
+  .portfolio .item_delimiter {
+    display: none; }
+  /* line 85, ../sass/mediaQueris_deviceWidth_480.scss */
+  .portfolio .portfolio_button {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    height: 45px;
+    background: #00A388;
+    font: 0.8em Signika_Regular, sans-serif, Arial;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    box-shadow: 0 10px 10px #3e5552; }
+  /* line 100, ../sass/mediaQueris_deviceWidth_480.scss */
+  .portfolio .portfolio_nav {
+    margin-bottom: 40px;
+    height: auto; }
+  /* line 104, ../sass/mediaQueris_deviceWidth_480.scss */
+  .portfolio .portfolio_nav_item {
+    font-size: 0.8em;
+    display: none;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle; }
+    /* line 111, ../sass/mediaQueris_deviceWidth_480.scss */
+    .portfolio .portfolio_nav_item:first-child {
+      margin-top: 15px; }
+    /* line 114, ../sass/mediaQueris_deviceWidth_480.scss */
+    .portfolio .portfolio_nav_item:hover {
+      background: #2CD3C7;
+      color: #fff; }
+  /* line 119, ../sass/mediaQueris_deviceWidth_480.scss */
+  .portfolio .design_photo_item {
+    width: 80%;
+    height: 235px;
+    margin-bottom: 30px; }
+    /* line 123, ../sass/mediaQueris_deviceWidth_480.scss */
+    .portfolio .design_photo_item:last-child {
+      margin-bottom: 0; }
+
+  /* line 130, ../sass/mediaQueris_deviceWidth_480.scss */
+  .services_item {
+    margin-bottom: 40px; }
+    /* line 132, ../sass/mediaQueris_deviceWidth_480.scss */
+    .services_item .service_heading {
+      margin: 10px 0; }
+
+  /* line 138, ../sass/mediaQueris_deviceWidth_480.scss */
+  .blog {
+    padding-bottom: 10px; }
+    /* line 140, ../sass/mediaQueris_deviceWidth_480.scss */
+    .blog .section_heading {
+      margin-top: 40px; }
+    /* line 143, ../sass/mediaQueris_deviceWidth_480.scss */
+    .blog .blog_content {
+      margin-top: 30px; }
+    /* line 146, ../sass/mediaQueris_deviceWidth_480.scss */
+    .blog .blog_content_item {
+      height: auto;
+      width: 50%;
+      margin-right: 0;
+      margin-left: 27%; }
+    /* line 152, ../sass/mediaQueris_deviceWidth_480.scss */
+    .blog .division_name {
+      font-size: 12px;
+      margin: 15px 0 15px 10px; }
+    /* line 156, ../sass/mediaQueris_deviceWidth_480.scss */
+    .blog .blog_content_header {
+      font-size: 18px; }
+    /* line 159, ../sass/mediaQueris_deviceWidth_480.scss */
+    .blog .blog_content_item_description {
+      display: none; }
+
+  /* line 166, ../sass/mediaQueris_deviceWidth_480.scss */
+  .contact_us form .input_position {
+    width: 100%;
+    margin-left: 0; }
+
+  /* line 173, ../sass/mediaQueris_deviceWidth_480.scss */
+  .map {
+    display: none; }
+
+  /* line 177, ../sass/mediaQueris_deviceWidth_480.scss */
+  .footer_nav {
+    display: none; }
+
+  /* line 178, ../sass/mediaQueris_deviceWidth_480.scss */
+  .all_contact .contact_list {
+    width: 42%;
+    margin: 50px 0 20px 0; }
+    /* line 181, ../sass/mediaQueris_deviceWidth_480.scss */
+    .all_contact .contact_list:first-child {
+      margin-left: 0; }
+
+  /* line 185, ../sass/mediaQueris_deviceWidth_480.scss */
+  .all_contact .social_contact {
+    position: relative;
+    top: 75px;
+    left: -40px;
+    margin-left: 35px; } }
+@media only screen and (max-width: 320px) {
+  /* line 3, ../sass/mediaQueris_deviceWidth_320.scss */
+  .item_delimiter {
+    display: none; }
+
+  /* line 7, ../sass/mediaQueris_deviceWidth_320.scss */
+  .header {
+    height: 300px; }
+    /* line 9, ../sass/mediaQueris_deviceWidth_320.scss */
+    .header h1 {
+      margin-top: 40px;
+      font-size: 2.5em; }
+    /* line 13, ../sass/mediaQueris_deviceWidth_320.scss */
+    .header h6 {
+      font-size: 0.7em; }
+
+  /* line 17, ../sass/mediaQueris_deviceWidth_320.scss */
+  .header_nav .humburger .menu {
+    left: 39%; }
+
+  /* line 22, ../sass/mediaQueris_deviceWidth_320.scss */
+  .about .our_team_item {
+    width: 60%; }
+    /* line 24, ../sass/mediaQueris_deviceWidth_320.scss */
+    .about .our_team_item:nth-child(n) {
+      margin-left: 22%; }
+
+  /* line 31, ../sass/mediaQueris_deviceWidth_320.scss */
+  .portfolio .design_photo_item {
+    width: 90%;
+    height: 184px;
+    margin-bottom: 20px; }
+
+  /* line 39, ../sass/mediaQueris_deviceWidth_320.scss */
+  .services .section_heading_pargraph {
+    margin-bottom: 30px; }
+  /* line 43, ../sass/mediaQueris_deviceWidth_320.scss */
+  .services_item .service_description {
+    font-size: 0.7em;
+    line-height: 1.6; }
+  /* line 48, ../sass/mediaQueris_deviceWidth_320.scss */
+  .services_item:hover .read_more_button {
+    display: none; }
+
+  /* line 56, ../sass/mediaQueris_deviceWidth_320.scss */
+  .blog .division_name {
+    margin-left: 0; }
+  /* line 59, ../sass/mediaQueris_deviceWidth_320.scss */
+  .blog .blog_content_item {
+    text-align: center;
+    width: 70%;
+    height: auto;
+    margin-left: 16.5%;
+    padding-bottom: 10px; }
+
+  /* line 69, ../sass/mediaQueris_deviceWidth_320.scss */
+  .all_contact .contact_list {
+    width: 49%;
+    font-size: 0.85em; }
+    /* line 72, ../sass/mediaQueris_deviceWidth_320.scss */
+    .all_contact .contact_list:last-child {
+      margin-top: 10px; }
+  /* line 76, ../sass/mediaQueris_deviceWidth_320.scss */
+  .all_contact .social_contact {
+    position: absolute;
+    top: 138px;
+    left: 5px; }
+    /* line 80, ../sass/mediaQueris_deviceWidth_320.scss */
+    .all_contact .social_contact img {
+      width: 37px;
+      height: 37px; }
+  /* line 85, ../sass/mediaQueris_deviceWidth_320.scss */
+  .all_contact .social_contact_item {
+    margin-right: 20px; } }
