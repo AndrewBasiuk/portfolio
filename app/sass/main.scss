@@ -155,12 +155,14 @@
 .skill {
 
 	&__item {
-		padding: 12px 0;
+		padding: 12px 5px;
+		height: 340px;
 		float: left;
 		width: 20%;
 		margin-right: 6.5%;
 		text-align: center;
 		border-radius: 8px;
+		box-sizing: border-box;
 
 		&:last-child {
 			margin-right: 0;
@@ -168,50 +170,52 @@
 
 		&_shadow_red {
 			box-shadow: 0 5px 20px 5px rgba(244, 66, 66,0.7);
-			-webkit-animation: blinkRed 2s linear infinite;
-			-o-animation: blinkRed 2s linear infinite;
-			animation: blinkRed 2s linear infinite;
+			&:hover {
+			-webkit-animation: blinkRed 1s linear infinite;
+			-o-animation: blinkRed 1s linear infinite;
+			animation: blinkRed 1s linear infinite;
+			}
 		}
 		&_shadow_blue {
 			box-shadow: 0 5px 20px 5px rgba(21, 114, 182,0.7);
-			/*animation: blinkBlue 2s linear infinite;*/
+			&:hover {
+			 -webkit-animation: blinkBlue 1s linear infinite;
+			-o-animation: blinkBlue 1s linear infinite;
+			animation: blinkBlue 1s linear infinite;
+			}
 		}
 		&_shadow_yellow {
 			box-shadow: 0 5px 20px 5px rgba(247, 223, 30,0.8);
-			/*animation: blinkYellow 2s linear infinite;*/
+			&:hover {
+			 -webkit-animation: blinkYellow 1s linear infinite;
+			-o-animation: blinkYellow 1s linear infinite;
+			animation: blinkYellow 1s linear infinite;
+			}
 		}
 		&_shadow_sky {
 			box-shadow: 0 5px 20px 5px rgba(0, 255, 233,0.7);
-			/*animation: blinkSky 2s linear infinite;*/
+			&:hover {
+			 -webkit-animation: blinkSky 1s linear infinite;
+			-o-animation: blinkSky 1s linear infinite;
+			animation: blinkSky 1s linear infinite;
+			}
 		}
 		@keyframes blinkRed {
-			from {box-shadow: 0 5px 20px 5px rgba(244, 66, 66,0.7);}
-			20% {box-shadow: 0 5px 20px 5px rgba(244, 66, 66,0.2);}
-			/*40% {box-shadow: 0 5px 20px 5px rgba(244, 66, 66,0.9);}*/
-			60% {box-shadow: 0 5px 20px 5px rgba(244, 66, 66,0.5);}
+			from {box-shadow: 0 5px 20px 5px rgba(244, 66, 66,1);}
 			to {box-shadow: 0 5px 20px 5px rgba(244, 66, 66,0.1);}
 		}
-		/*@keyframes blinkBlue {
-			from {box-shadow: 0 5px 20px 5px rgba(21, 114, 182,0.7);}
-			20% {box-shadow: 0 5px 20px 5px rgba(21, 114, 182,0.2);}
-			40% {box-shadow: 0 5px 20px 5px rgba(21, 114, 182,0.9);}
-			60% {box-shadow: 0 5px 20px 5px rgba(21, 114, 182,0.5);}
+		@keyframes blinkBlue {
+			from {box-shadow: 0 5px 20px 5px rgba(21, 114, 182,1);}
 			to {box-shadow: 0 5px 20px 5px rgba(21, 114, 182,0.1);}
-		}*/
-		/*@keyframes blinkYellow {
-			from {box-shadow: 0 5px 20px 5px rgba(247, 223, 30,0.7);}
-			20% {box-shadow: 0 5px 20px 5px rgba(247, 223, 30,0.3);}
-			40% {box-shadow: 0 5px 20px 5px rgba(247, 223, 30,1);}
-			60% {box-shadow: 0 5px 20px 5px rgba(247, 223, 30,0.6);}
+		}
+		@keyframes blinkYellow {
+			from {box-shadow: 0 5px 20px 5px rgba(247, 223, 30,1);}
 			to {box-shadow: 0 5px 20px 5px rgba(247, 223, 30,0.2);}
-		}*/
-		/*@keyframes blinkSky {
-			from {box-shadow: 0 5px 20px 5px rgba(0, 255, 233,0.7);}
-			20% {box-shadow: 0 5px 20px 5px rgba(0, 255, 233,0.2);}
-			40% {box-shadow: 0 5px 20px 5px rgba(0, 255, 233,0.9);}
-			60% {box-shadow: 0 5px 20px 5px rgba(0, 255, 233,0.5);}
+		}
+		@keyframes blinkSky {
+			from {box-shadow: 0 5px 20px 5px rgba(0, 255, 233,1);}
 			to {box-shadow: 0 5px 20px 5px rgba(0, 255, 233,0.1);}
-		}*/
+		}
 	}
 
 	&__heading {
@@ -314,9 +318,57 @@ a.tools__link {
 	color: #9e9e9e;
     font-size: 1.5em;
   }
+  &_white {
+  	color: #fff;
+    font-size: 1.5em;
+  }
 }
 
 /*/////////KNOWLEGE////////*/
+
+
+/*/////////MY_WORK////////*/
+
+.my-work {
+	background-color: #75fff1;
+	border-top: 1px solid #75fff1;
+}
+
+.section-heading_color_white {
+	color: #fff;
+}
+
+.l-work {
+	margin-top: 50px;
+}
+.work {
+	&__item {
+		float: left;
+		height: 230px;
+		width: 230px;
+		margin-right: 8%;
+		border-radius: 15px;
+		background-color: #000;
+		box-sizing: border-box;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__img {
+		width: 230px;
+		height: 230px;
+		max-width: 100%;
+		border-radius: 15px;
+	}
+}
+a.work__link {
+	border-radius: 15px;
+}
+
+/*/////////MY_WORK////////*/
+
 
 
 
