@@ -360,7 +360,6 @@ a:visited {
   padding-bottom: 75px;
   background: url(../img/bg.jpg) no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   border-top: 1px solid #EDEDED; }
 
 .skill__item {
@@ -578,3 +577,33 @@ a.work__link {
   /*z-index: 2;*/ }
 
 /*/////////MY_WORK////////*/
+/*/////////ABOUT////////*/
+.about {
+  padding-bottom: 100px;
+  background-color: #00ffd4;
+  border-top: 1px solid #00ffd4; }
+  .about__wrap {
+    position: relative;
+    margin-top: 60px; }
+  .about__photo {
+    position: absolute;
+    width: 300px;
+    max-width: 100%;
+    height: 300px;
+    border-radius: 50%; }
+
+.about-descript {
+  float: right;
+  width: 60%;
+  padding: 20px 40px 20px 40px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 15px;
+  font: 1.2em Georgia, "Times New Roman", sans-serif; }
+  .about-descript__heading {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font: 1.5em Nord, Arial, sans-serif;
+    text-transform: uppercase; }
+
+/*/////////ABOUT////////*/
