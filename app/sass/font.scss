@@ -221,4 +221,44 @@
   color: #3abfe6;
 }
 
+@font-face {
+  font-family: 'footer-icon';
+  src:  url('../font/footer-icon.eot?hx63yp');
+  src:  url('../font/footer-icon.eot?hx63yp#iefix') format('embedded-opentype'),
+    url('../font/footer-icon.ttf?hx63yp') format('truetype'),
+    url('../font/footer-icon.woff?hx63yp') format('woff'),
+    url('../font/footer-icon.svg?hx63yp#footer-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'footer-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-git:before {
+  content: "\e900";
+}
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+
+
+
+
+
 
