@@ -329,7 +329,6 @@ a.tools__link {
 /*/////////MY_WORK////////*/
 
 .my-work {
-	/*background-color: #75fff1;*/
 	background: url(../img/work-bg1.jpg)  no-repeat;
 	background-size: cover;
 	border-top: 1px solid #75fff1;
@@ -394,13 +393,12 @@ a.work__link {
 .icon-link {
 	display: none;
 	position: absolute;
-	top: 35%;
+	top: 30%;
 	left: 42%;
 	text-align: center;
 	font-size: 5em;
 	color: #fff;
 	font-family: 'link-icon' !important;
-	/*z-index: 2;*/
 }
 
 /*/////////MY_WORK////////*/
@@ -462,27 +460,27 @@ a.work__link {
 	display: flex;
 	background-color: #000;
 	color: #fff;
-	height: 160px;
+	height: 150px;
 	border-top: 1px solid #000;
 }
 
-.contact {
- float: left;
-}
 .contact-icon {
 	margin-top: 60px;
 	position: relative;
 	float: left;
-	width: 500px;
+	width: 400px;
+	font-size: 2em;
 	&__item {
 		display: inline-block;
 		margin-right: 5%;
-		font-size: 2em;
 
 		&:hover {
 			color: #00ffd4;
 		}
 	}
+}
+.icon-git, .icon-facebook2, .icon-instagram {
+	font-family: 'footer-icon' !important;
 }
 
 .mail {
@@ -496,9 +494,34 @@ a.work__link {
 	margin-top: 70px;
 }
 
-/*/////////ABOUT////////*/
+/*/////////FOOTER////////*/
 
+a.to-top {
+	position: fixed;
+	right: 5px;
+	top: 400px;
+	padding-top: 10px;
+	width: 45px;
+	height: 45px;
+	text-align: center;
+	border: 3px solid #fff;
+	border-radius: 10px;
+	background: #000;
+	color: #fff;
+	opacity: 0.7;
+	cursor: pointer;
+	transition: all 0.3s;
+	box-sizing: border-box;
 
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.icon-arrow-up {
+	font-size: 1em;
+	font-family: 'toTop-icon' !important;
+}
 
 
 

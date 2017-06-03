@@ -16,7 +16,9 @@
   </head>
   <body>
 
-  <div class="head">
+  <a class="to-top" href="#head"><span class="icon-arrow-up"></span></a>
+
+  <div class="head" id="head">
     <div class="container">
       <header class="header">
         <div class="autor">
@@ -27,8 +29,8 @@
         <nav class="head__nav">
           <ul class="menu">
             <li class="menu__item"><a href="#knowledge-heading">Навыки</a></li>
-            <li class="menu__item"><a href="#my-work-heading">Мои Работы</a></li>
-            <li class="menu__item"><a href="#about-heading">Обо мне</a></li>
+            <li class="menu__item"><a href="#my-work">Мои Работы</a></li>
+            <li class="menu__item"><a href="#about">Обо мне</a></li>
             <li class="menu__item"><a href="#footer">Контакты</a></li>
           </ul>
         </nav>
@@ -61,24 +63,24 @@
         <li class="skill__item skill__item_shadow_sky">
           <span class="icon-mobile"></span>
           <h5 class="skill__heading">Адаптивность</h5>
-          <p class="skill__descript">Необходимый навык в эпоху мобильного интернета, с помощу которого контент сайта адаптируется под размеры екрана.</p>
+          <p class="skill__descript">В современном мире контен сайта должен хорошо выглядеть на устройстве с любым размером экрана</p>
         </li>
       </ul>
 
       <div class="tools l-tools">
         <h3 class="tools__heading">Инструменты</h3>
-        <p class="tools__descript">В своей работе я использую такие инструмсенты как CSS препроцессор <span class="text-color_pink">SASS</span>, применяю методологию <span class="text-color_orange">BEM</span>, сборщик проектов <span class="text-color_purpure">Gulp</span> и библиотеку <span class="text-color_white">jQuery</span>. У меня есть опыт работы с <span class="text-color_violet">Bootstrap</span>, системой контроля версий <span class="text-color_red">Git</span>, также я имею свой <a href="https://github.com/AndrewBasiuk" target="_blank" class="tools__link">акаунт</a> на <span class="text-color_gray">GitHub</span>.</p>
+        <p class="tools__descript">В своей работе я применяю методологию <span class="text-color_orange">BEM</span>, использую такие инструмсенты как CSS препроцессор <span class="text-color_pink">SASS</span>, сборщик проектов <span class="text-color_purpure">Gulp</span> и библиотеку <span class="text-color_white">jQuery</span>. У меня есть опыт работы с <span class="text-color_violet">Bootstrap</span>, системой контроля версий <span class="text-color_red">Git</span>, также я имею свой <a href="https://github.com/AndrewBasiuk" target="_blank" class="tools__link">акаунт</a> на <span class="text-color_gray">GitHub</span>.</p>
       </div>
     </div>
   </section>
 
-  <section class="my-work">
+  <section class="my-work" id="my-work">
     <div class="container">
       <h2 id="my-work-heading" class="section-heading section-heading_color_white">Мои работы</h2>
       <ul class="work l-work clearfix">
         <li class="work__item">
           <div class="work__wrap">
-            <span class="icon-link"></span><a target="_blank" href="#" class="work__list"><img src="img/maket1.png" alt="maket-1" class="work__img"></a>
+            <a target="_blank" href="#" class="work__list"><span class="icon-link"></span><img src="img/maket1.png" alt="maket-1" class="work__img"></a>
           </div>
         </li>
         <li class="work__item">
@@ -105,7 +107,7 @@
     </div>
   </section>
 
-  <section class="about">
+  <section class="about" id="about">
     <div class="container clearfix">
       <h2 id="about-heading" class="section-heading section-heading_color_black">Обо мне</h2>
         <div class="about-descript">
@@ -128,9 +130,11 @@
           <li class="contact-icon__item"><a href="https://www.instagram.com/andrew_basyuk/" class="contact-icon__link"><span class="icon-instagram"></span></a></li>
           <li class="contact-icon__item"><p class="mail">a.basyuk4779@gmail.com</p></li>
         </ul>
-      <div class="rights">&copy;ANDREW BASIUK KIEV 2017</div>
+      <div class="rights">&copy;ANDREW BASIUK</div>
     </div>
   </footer>
+
+
 
 
 

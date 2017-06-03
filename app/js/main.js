@@ -10,6 +10,19 @@ $(document).ready(function() {
 		}
 	);
 
+	$(window).scroll(function(){
+
+        var bo = $("body").scrollTop();
+
+        if ( bo > 400 ) { 
+           $(".to-top").css("display", "block"); 
+        } else { 
+           $(".to-top").css("display", "none"); 
+        };
+
+    })
+
+
 
 // плавная прокрутка
 	$('a[href^="#"]').click(function () { 
