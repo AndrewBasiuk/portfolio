@@ -918,78 +918,88 @@ a.to-top {
       width: 350px;
       height: 200px; } }
 @media screen and (min-width: 1024px) and (max-width: 1080px) {
-  /* line 121, ../sass/mediaQueris_1024-1280.scss */
+  /* line 122, ../sass/mediaQueris_1024-1280.scss */
   .work__item {
-    margin-right: 1%; } }
-@media screen and (min-width: 960px) and (max-width: 1023px) and (min-width: 1024px) and (max-width: 1279px) {
+    margin-right: 1%; }
+
+  /* line 126, ../sass/mediaQueris_1024-1280.scss */
+  .icon-link {
+    top: 25%;
+    left: 39%; } }
+@media screen and (min-width: 960px) and (max-width: 1023px) {
   /*HEAD*/
-  /* line 5, ../sass/mediaQueris_960-1023.scss */
+  /* line 4, ../sass/mediaQueris_960-1023.scss */
   .autor {
-    width: 30%; }
-    /* line 8, ../sass/mediaQueris_960-1023.scss */
+    width: 35%; }
+    /* line 7, ../sass/mediaQueris_960-1023.scss */
     .autor__name {
       font-size: 1.3em; }
-    /* line 12, ../sass/mediaQueris_960-1023.scss */
+    /* line 11, ../sass/mediaQueris_960-1023.scss */
     .autor__specialisation {
       font-size: 0.9em; }
 
-  /* line 17, ../sass/mediaQueris_960-1023.scss */
+  /* line 16, ../sass/mediaQueris_960-1023.scss */
   .menu__item {
     font-size: 0.9em; }
 
-  /* line 21, ../sass/mediaQueris_960-1023.scss */
+  /* line 20, ../sass/mediaQueris_960-1023.scss */
   .site-descript {
     font-size: 1.1em; }
 
   /*HEAD*/
   /*KNOWLEGE*/
-  /* line 29, ../sass/mediaQueris_960-1023.scss */
+  /* line 28, ../sass/mediaQueris_960-1023.scss */
   .skill__item {
     height: 300px; }
-  /* line 33, ../sass/mediaQueris_960-1023.scss */
+  /* line 32, ../sass/mediaQueris_960-1023.scss */
   .skill__heading {
     font-size: 1.3em; }
-  /* line 37, ../sass/mediaQueris_960-1023.scss */
+  /* line 36, ../sass/mediaQueris_960-1023.scss */
   .skill__descript {
     font-size: 0.9em; }
-  /* line 41, ../sass/mediaQueris_960-1023.scss */
+  /* line 40, ../sass/mediaQueris_960-1023.scss */
   .skill__icon {
     font-size: 8em; }
 
-  /* line 45, ../sass/mediaQueris_960-1023.scss */
+  /* line 44, ../sass/mediaQueris_960-1023.scss */
   .tools {
-    width: 70%; }
+    width: 80%; }
 
   /*KNOWLEGE*/
   /*MY-WORK*/
-  /* line 54, ../sass/mediaQueris_960-1023.scss */
-  .work__item {
-    width: 320px;
-    height: 170px;
-    margin-right: 3%; }
-  /* line 60, ../sass/mediaQueris_960-1023.scss */
-  .work__img {
-    width: 320px;
-    height: 170px; }
-  /* line 65, ../sass/mediaQueris_960-1023.scss */
-  .work__wrap {
-    width: 320px;
-    height: 170px; }
+  /* line 50, ../sass/mediaQueris_960-1023.scss */
+  .work {
+    text-align: center; }
+    /* line 55, ../sass/mediaQueris_960-1023.scss */
+    .work__item {
+      display: inline-block;
+      width: 270px;
+      height: 180px;
+      margin-right: 3%; }
+    /* line 62, ../sass/mediaQueris_960-1023.scss */
+    .work__img {
+      width: 270px;
+      height: 180px; }
+    /* line 67, ../sass/mediaQueris_960-1023.scss */
+    .work__wrap {
+      width: 270px;
+      height: 180px; }
 
-  /* line 70, ../sass/mediaQueris_960-1023.scss */
+  /* line 73, ../sass/mediaQueris_960-1023.scss */
   .icon-link {
     top: 26%;
-    left: 40%; }
+    left: 38%; }
 
   /*MY-WORK*/
   /*ABOUT*/
-  /* line 77, ../sass/mediaQueris_960-1023.scss */
+  /* line 80, ../sass/mediaQueris_960-1023.scss */
   .about-descript {
     width: 90%; }
-    /* line 80, ../sass/mediaQueris_960-1023.scss */
+    /* line 83, ../sass/mediaQueris_960-1023.scss */
     .about-descript__photo {
       width: 230px;
       height: 230px;
-      margin-right: -15%; }
+      margin-right: -16%;
+      margin-top: 75px; }
 
   /*ABOUT*/ }

@@ -113,6 +113,7 @@
 		}
 	}
 
+
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1080px) {
@@ -121,6 +122,10 @@
 		&__item {
 			margin-right: 1%;
 		}
+	}
+	.icon-link {
+		top: 25%;
+		left: 39%;
 	}
 
 }
