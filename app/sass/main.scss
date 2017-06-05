@@ -5,7 +5,7 @@
 /*/////////HEAD///////////*/
 
 .head {
-	height: 600px;
+	height: 100vh;
 	border-top: 1px solid #fff;
 	background: url(../img/head-back.jpg)  no-repeat;
 	background-size: cover;
@@ -416,6 +416,7 @@ a.work__link {
 }
 
 .about-descript {
+	position: relative;
 	float: left;
 	width: 80%;
 	margin-top: 40px;
@@ -534,3 +535,4 @@ a.to-top {
 
 @import "mediaQueris_1024-1280";
 @import "mediaQueris_960-1023";
+@import "mediaQueris_768-959";
