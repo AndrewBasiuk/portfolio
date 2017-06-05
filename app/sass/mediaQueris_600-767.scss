@@ -1,165 +1,149 @@
 @media screen and (min-width: 600px) and (max-width: 767px) {
-	.button {
-		font-size: 1em;
-		height: 50px;
+	/*HEAD*/
+	.autor {
+			width: 30%;
+
+		&__photo {
+			margin-left: 10px;
+		}
+
+		&__name {
+				font-size: 1.3em;
+		}
+
+		&__specialisation {
+				font-size: 0.9em;
+		}
 	}
 
-	.head-section {
-		height: auto;
-		padding-bottom: 20px;
+	.menu {
+		float: right;
+		&__item {
+			float: none;
+			margin-bottom: 5px;
+			font-size: 1em;
+			&:hover {
+				border-bottom: none;
+			}
+		}
 	}
-	.header-section__heading {
-		text-align: center;
-		width: 80%;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 20px;
-		margin-top: 200px;
+
+	.site-heading {
+		margin-top: 150px;
+		font-size: 3.5em;
 	}
-	.form {
-		position: relative;
-		margin: 0 auto;
-		padding-top: 1px;
-		width: 60%;
+	.site-descript {
+		font-size: 1em;
+	}
+	/*HEAD*/
+
+	/*KNOWLEGE*/
+	.skill {
 		
 		&__item {
-			height: 45px;
-			font-size: 0.95em;
+			width: 45%;
+			height: 300px;
+			margin-right: 10%;
+			margin-bottom: 30px;
+
+			&:nth-child(2n) {
+				margin-right: 0;
+			}
 		}
 
-		&__button {
-			width: 353/380*100%;
+		&__heading {
+			font-size: 1.5em;
+		}
+
+		&__descript {
+			font-size: 1.1em;
+		}
+
+		&__icon {
+			font-size: 9em;
 		}
 	}
-
-/*menu*/
-	.humburger{
-		position: relative;
-		right: 20px;
-		display: block;
-		margin-bottom: 5px;
-		height: 30px;
-		cursor: pointer;
+	.tools {
+		width: 90%;
 	}
+	/*KNOWLEGE*/
 
-	.humburger__menu{
-		position: absolute;
-		right: 0;
-  		top: 10px;
-		display: block;
-	}
+	/*MY-WORK*/
+	.work {
+		$width: 370px;
+		$height: 230px;
 
-	.humburger__item {
-		background: #fff;
-		width: 25px;
-		height: 5px;
-		margin-bottom: 2px;
+		&__item {
+			display: inline-block;
+			width: $width;
+			height: $height;
+			margin-left: 22%;
+			
+			&:nth-child(2n) {
+				margin-right: 0;
+			}
 
-		&:last-child{
-			margin-bottom: 0;
-		}
-	}
-
-
-	.header__nav {
-		width: 60%;
-	}
-	.nav__item {
-		float: none;
-		display: none;
-		text-align: right;
+			&:nth-child(3n) {
+				margin-right: 0;
+			}
 		
-	}
-	a.nav__link {
-		border-bottom: 1px solid #5DBBC1;
-	}
-/*menu*/
+		}
 
-/*services*/
-	.services-section {
-		padding-bottom: 35px;
-	}
-	.services-section__heading {
-		margin-top: 25px;
-		margin-bottom: 40px;
-	}
-	.services__item {
-		width: 20%;
-		margin-right: 6%;
-	}
-	.services__icon {
-		width: 100px;
-		height: 100px;
-	}
-	.services__descript {
-	font-size: 1em;
-}
-/*services*/
+		&__img {
+			width: $width;
+			height: $height;
+		}
 
-.about-section {
-	padding-top: 20px;
-	padding-bottom: 20px;
-
-	&__about-us {
-		font-size: 1.1em;
-		width: 70%
-	}
-}
-
-/*price*/
-.option-descript__item {
-	font-size: 1em;
-}
-.option-descript__item_bold {
-	font-size: 2em;
-	margin: 15px 0;
-}
-.option-descript_gradient {
-	background: linear-gradient(bottom right, #fff 87%, #5DBBC1 10%);
-}
-.business__popular {
-	display: none;
-}
-/*price*/
-
-.our-work {
-	padding-top: 70px;
-}
-.testimonial {
-	width: 90%;
-}
-.review__author {
-	margin-top: 10px;
-}
-
-.our-gallery {
-	width: 100%;
-	padding-top: 40px;
-}
-.gallery__item {
-
-	&:nth-child(3n) {
-		margin-right: 35px;
+		&__wrap {
+			width: $width;
+			height: $height;
+		}
 	}
 
-	&:nth-child(2n) {
-		margin-right: 35px;
+	.icon-link {
+		top: 27%;
+		left: 36%;
 	}
-}
-.gallery_margin {
-	margin-top: 40px;
-	margin-bottom: 0px;
-}
+	/*MY-WORK*/
 
+	/*ABOUT*/
+	.about-descript {
+		width: 95%;
 
-.footer__text {
-	padding: 50px 0;
-	font-size: 0.9em;
-}
-.footer__logo {
-		top: 47px;
-		right: -10px;
+		&__photo {
+			width: 150px;
+			height: 150px;
+			margin-right: 0;
+			margin-top: 0;
+		}
+	}
+	/*ABOUT*/
+
+	/*FOOTER*/
+	.contact-icon {
+		width: 200px;
+		font-size: 1.3em;
+	}
+	.rights {
+		float: right;
+		margin-top: 65px;
+		letter-spacing: 2px;
+	}
+	/*FOOTER*/
+	
+
+	.button-top {
+		display: none;
 	}
 
+}
+
+@media screen and (width: 600px) {
+
+	.work {
+		&__item {
+			margin-left: 18%;
+		}
+	}
 
 }
