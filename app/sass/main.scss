@@ -117,11 +117,8 @@
 	opacity: 0.7;
 	cursor: pointer;
 	transition: all 0.5s;
-	animation-name: move;
-	animation-iteration-count: infinite;
-	animation-duration: 1.5s;
-	animation-iteration-count: 5;
-	animation-fill-mode: forwards;
+
+	animation: move 1.5s linear 5 forwards;
 
 	&:hover {
 		-webkit-animation-play-state: paused;
@@ -541,3 +538,4 @@ a.to-top {
 @import "mediaQueris_960-1023";
 @import "mediaQueris_768-959";
 @import "mediaQueris_600-767";
+@import "mediaQueris_320-500";
