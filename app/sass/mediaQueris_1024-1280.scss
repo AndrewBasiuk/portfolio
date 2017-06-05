@@ -1,4 +1,4 @@
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
 	/*HEAD*/
 	.autor {
 			width: 30%;
@@ -47,24 +47,28 @@
 
 	/*MY-WORK*/
 	.work {
+		text-align: center;
+		$width: 300px;
+		$height: 180px;
 
-		$width: 320px;
 		&__item {
+			display: inline-block;
 			width: $width;
-			height: 170px;
-			margin-right: 3%;
+			height: $height;
+			margin-right: 5%;
 		}
 
 		&__img {
 			width: $width;
-			height: 170px;
+			height: $height;
 		}
 
 		&__wrap {
 			width: $width;
-			height: 170px;
+			height: $height;
 		}
 	}
+
 	.icon-link {
 		top: 26%;
 		left: 40%;
@@ -82,5 +86,41 @@
 		}
 	}
 	/*ABOUT*/
+}
+
+@media screen and (width: 1280px) {
+
+	.work {
+		text-align: center;
+		$width: 350px;
+		$height: 200px;
+
+		&__item {
+			display: inline-block;
+			width: $width;
+			height: $height;
+			margin-right: 4%;
+		}
+
+		&__img {
+			width: $width;
+			height: $height;
+		}
+
+		&__wrap {
+			width: $width;
+			height: $height;
+		}
+	}
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1080px) {
+	
+	.work {
+		&__item {
+			margin-right: 1%;
+		}
+	}
 
 }

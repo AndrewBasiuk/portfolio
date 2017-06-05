@@ -823,7 +823,7 @@ a.to-top {
   font-size: 1em;
   font-family: 'toTop-icon' !important; }
 
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
   /*HEAD*/
   /* line 3, ../sass/mediaQueris_1024-1280.scss */
   .autor {
@@ -864,31 +864,129 @@ a.to-top {
 
   /*KNOWLEGE*/
   /*MY-WORK*/
-  /* line 52, ../sass/mediaQueris_1024-1280.scss */
-  .work__item {
-    width: 320px;
-    height: 170px;
-    margin-right: 3%; }
-  /* line 58, ../sass/mediaQueris_1024-1280.scss */
-  .work__img {
-    width: 320px;
-    height: 170px; }
-  /* line 63, ../sass/mediaQueris_1024-1280.scss */
-  .work__wrap {
-    width: 320px;
-    height: 170px; }
+  /* line 49, ../sass/mediaQueris_1024-1280.scss */
+  .work {
+    text-align: center; }
+    /* line 54, ../sass/mediaQueris_1024-1280.scss */
+    .work__item {
+      display: inline-block;
+      width: 300px;
+      height: 180px;
+      margin-right: 5%; }
+    /* line 61, ../sass/mediaQueris_1024-1280.scss */
+    .work__img {
+      width: 300px;
+      height: 180px; }
+    /* line 66, ../sass/mediaQueris_1024-1280.scss */
+    .work__wrap {
+      width: 300px;
+      height: 180px; }
 
-  /* line 68, ../sass/mediaQueris_1024-1280.scss */
+  /* line 72, ../sass/mediaQueris_1024-1280.scss */
   .icon-link {
     top: 26%;
     left: 40%; }
 
   /*MY-WORK*/
   /*ABOUT*/
-  /* line 75, ../sass/mediaQueris_1024-1280.scss */
+  /* line 79, ../sass/mediaQueris_1024-1280.scss */
   .about-descript {
     width: 90%; }
-    /* line 78, ../sass/mediaQueris_1024-1280.scss */
+    /* line 82, ../sass/mediaQueris_1024-1280.scss */
+    .about-descript__photo {
+      width: 230px;
+      height: 230px;
+      margin-right: -15%; }
+
+  /*ABOUT*/ }
+@media screen and (width: 1280px) {
+  /* line 93, ../sass/mediaQueris_1024-1280.scss */
+  .work {
+    text-align: center; }
+    /* line 98, ../sass/mediaQueris_1024-1280.scss */
+    .work__item {
+      display: inline-block;
+      width: 350px;
+      height: 200px;
+      margin-right: 4%; }
+    /* line 105, ../sass/mediaQueris_1024-1280.scss */
+    .work__img {
+      width: 350px;
+      height: 200px; }
+    /* line 110, ../sass/mediaQueris_1024-1280.scss */
+    .work__wrap {
+      width: 350px;
+      height: 200px; } }
+@media screen and (min-width: 1024px) and (max-width: 1080px) {
+  /* line 121, ../sass/mediaQueris_1024-1280.scss */
+  .work__item {
+    margin-right: 1%; } }
+@media screen and (min-width: 960px) and (max-width: 1023px) and (min-width: 1024px) and (max-width: 1279px) {
+  /*HEAD*/
+  /* line 5, ../sass/mediaQueris_960-1023.scss */
+  .autor {
+    width: 30%; }
+    /* line 8, ../sass/mediaQueris_960-1023.scss */
+    .autor__name {
+      font-size: 1.3em; }
+    /* line 12, ../sass/mediaQueris_960-1023.scss */
+    .autor__specialisation {
+      font-size: 0.9em; }
+
+  /* line 17, ../sass/mediaQueris_960-1023.scss */
+  .menu__item {
+    font-size: 0.9em; }
+
+  /* line 21, ../sass/mediaQueris_960-1023.scss */
+  .site-descript {
+    font-size: 1.1em; }
+
+  /*HEAD*/
+  /*KNOWLEGE*/
+  /* line 29, ../sass/mediaQueris_960-1023.scss */
+  .skill__item {
+    height: 300px; }
+  /* line 33, ../sass/mediaQueris_960-1023.scss */
+  .skill__heading {
+    font-size: 1.3em; }
+  /* line 37, ../sass/mediaQueris_960-1023.scss */
+  .skill__descript {
+    font-size: 0.9em; }
+  /* line 41, ../sass/mediaQueris_960-1023.scss */
+  .skill__icon {
+    font-size: 8em; }
+
+  /* line 45, ../sass/mediaQueris_960-1023.scss */
+  .tools {
+    width: 70%; }
+
+  /*KNOWLEGE*/
+  /*MY-WORK*/
+  /* line 54, ../sass/mediaQueris_960-1023.scss */
+  .work__item {
+    width: 320px;
+    height: 170px;
+    margin-right: 3%; }
+  /* line 60, ../sass/mediaQueris_960-1023.scss */
+  .work__img {
+    width: 320px;
+    height: 170px; }
+  /* line 65, ../sass/mediaQueris_960-1023.scss */
+  .work__wrap {
+    width: 320px;
+    height: 170px; }
+
+  /* line 70, ../sass/mediaQueris_960-1023.scss */
+  .icon-link {
+    top: 26%;
+    left: 40%; }
+
+  /*MY-WORK*/
+  /*ABOUT*/
+  /* line 77, ../sass/mediaQueris_960-1023.scss */
+  .about-descript {
+    width: 90%; }
+    /* line 80, ../sass/mediaQueris_960-1023.scss */
     .about-descript__photo {
       width: 230px;
       height: 230px;
