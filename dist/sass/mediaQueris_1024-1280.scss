@@ -1,11 +1,7 @@
-@media screen and (min-width: 768px) and (max-width: 959px) {
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
 	/*HEAD*/
 	.autor {
 			width: 30%;
-
-		&__photo {
-			margin-left: 10px;
-		}
 
 		&__name {
 				font-size: 1.3em;
@@ -17,18 +13,11 @@
 	}
 
 	.menu__item {
-		font-size: 0.8em;
+		font-size: 0.9em;
 	}
-	.site-heading {
-		margin-top: 70px;
-		font-size: 3.5em;
-	}
-	.head__button {
-		left: 46%;
-		margin-top: 40px;
-	}
+
 	.site-descript {
-		font-size: 1em;
+		font-size: 1.1em;
 	}
 	/*HEAD*/
 
@@ -36,52 +25,37 @@
 	.skill {
 		
 		&__item {
-			width: 45%;
 			height: 300px;
-			margin-right: 10%;
-			margin-bottom: 30px;
-
-			&:nth-child(2n) {
-				margin-right: 0;
-			}
 		}
 
 		&__heading {
-			font-size: 1.5em;
+			font-size: 1.3em;
 		}
 
 		&__descript {
-			font-size: 1.1em;
+			font-size: 0.9em;
 		}
 
 		&__icon {
-			font-size: 9em;
+			font-size: 8em;
 		}
 	}
 	.tools {
-		width: 90%;
+		width: 70%;
 	}
 	/*KNOWLEGE*/
 
 	/*MY-WORK*/
 	.work {
-		$width: 370px;
-		$height: 230px;
+		text-align: center;
+		$width: 300px;
+		$height: 180px;
 
 		&__item {
 			display: inline-block;
 			width: $width;
 			height: $height;
-			margin-right: 6%;
-			
-			&:nth-child(2n) {
-				margin-right: 0;
-			}
-
-			&:nth-child(3n) {
-				margin-right: 6%;
-			}
-		
+			margin-right: 5%;
 		}
 
 		&__img {
@@ -96,39 +70,36 @@
 	}
 
 	.icon-link {
-		top: 27%;
-		left: 36%;
+		top: 26%;
+		left: 40%;
 	}
 	/*MY-WORK*/
 
 	/*ABOUT*/
 	.about-descript {
-		width: 93%;
+		width: 90%;
 
 		&__photo {
 			width: 230px;
 			height: 230px;
-			margin-right: 0;
-			margin-top: 0;
+			margin-right: -15%;
 		}
 	}
 	/*ABOUT*/
-	.button-top {
-		display: none;
-	}
 }
 
-@media screen and (min-width: 768px) and (max-width: 875px) {
+@media screen and (width: 1280px) {
 
 	.work {
-		$width: 300px;
-		$height: 180px;
+		text-align: center;
+		$width: 350px;
+		$height: 200px;
 
 		&__item {
 			display: inline-block;
 			width: $width;
 			height: $height;
-			margin-right: 6%;
+			margin-right: 4%;
 		}
 
 		&__img {
@@ -140,6 +111,21 @@
 			width: $width;
 			height: $height;
 		}
+	}
+
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1080px) {
+	
+	.work {
+		&__item {
+			margin-right: 1%;
+		}
+	}
+	.icon-link {
+		top: 25%;
+		left: 39%;
 	}
 
 }

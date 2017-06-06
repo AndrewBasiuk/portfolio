@@ -9,7 +9,7 @@
 	border-top: 1px solid #fff;
 	background: url(../img/head-back.jpg)  no-repeat;
 	background-size: cover;
-	/*background-attachment: fixed;*/
+	background-attachment: fixed;
 }
 
 .autor {
@@ -522,7 +522,6 @@ a.to-top {
 	cursor: pointer;
 	transition: all 0.3s;
 	box-sizing: border-box;
-	z-index: 10;
 
 	&:hover {
 		opacity: 1;
@@ -534,7 +533,7 @@ a.to-top {
 	font-family: 'toTop-icon' !important;
 }
 
-@import "mediaQueris_1366-";
+
 @import "mediaQueris_1024-1280";
 @import "mediaQueris_960-1023";
 @import "mediaQueris_768-959";

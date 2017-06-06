@@ -1,8 +1,5 @@
 @media screen and (min-width: 320px) and (max-width: 599px) {
 	/*HEAD*/
-	.head {
-		height: 550px;
-	}
 	.autor {
 			width: 40%;
 
@@ -23,8 +20,7 @@
 		float: right;
 		&__item {
 			float: none;
-			text-align: left;
-			color: #000;
+			text-align: right;
 			margin-bottom: 5px;
 			font-size: 0.8em;
 			&:hover {
@@ -34,15 +30,15 @@
 	}
 
 	.site-heading {
-		margin-top: 40px;
-		font-size: 2.5em;
+		margin-top: 60px;
+		font-size: 2.8em;
 	}
 	.site-descript {
 		font-size: 0.9em;
 	}
 	.head__button {
 		left: 44%;
-		margin-top: 20px;
+		margin-top: 60px;
 	}
 	
 	/*HEAD*/
@@ -53,7 +49,7 @@
 		&__item {
 			width: 47%;
 			height: 300px;
-			margin-right: 6%;
+			margin-right: 3%;
 			margin-bottom: 30px;
 
 			&:nth-child(2n) {
@@ -126,15 +122,14 @@
 
 	/*ABOUT*/
 	.about-descript {
-		width: 90%;
+		width: 95%;
 		font-size: 0.8em;
 
 		&__photo {
 			width: 150px;
 			height: 150px;
 			margin-right: 18%;
-			margin-top: -20px;
-			margin-bottom: 5px;
+			margin-top: 0;
 		}
 
 		&__heading {
@@ -192,28 +187,20 @@
 	}
 }
 
-@media screen and (width: 480px) {
+// @media screen and (width: 414px) {
 
-	.head {
-		height: 600px;
-	}
-	.work {
+// 	.work {
 
-		&__item {
-			margin-left: 17%;
-		}
-	}
-	.skill {
-		
-		&__item {
-			margin-right: 5%;
-		}
-	}
-	.about-descript {
+// 		&__item {
+// 			margin-left: 12%;
+// 		}
+// 	}
 
-		&__photo {
-			margin-left: 5px;
-			margin-right: 0px;
-		}
-	}
-}
+// 	.about-descript {
+
+// 		&__photo {
+// 			margin-left: 1px;
+// 			margin-right: 0px;
+// 		}
+// 	}
+// }
