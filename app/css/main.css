@@ -1230,8 +1230,7 @@ a.to-top {
   .work__item {
     display: inline-block;
     width: 370px;
-    height: 230px;
-    margin-left: 22%; }
+    height: 230px; }
     /* line 87, ../sass/mediaQueris_600-767.scss */
     .work__item:nth-child(2n) {
       margin-right: 0; }
@@ -1267,18 +1266,25 @@ a.to-top {
   /*ABOUT*/
   /*FOOTER*/
   /* line 128, ../sass/mediaQueris_600-767.scss */
-  .contact-icon {
-    width: 200px;
-    font-size: 1.3em; }
+  .footer {
+    height: 130px; }
 
-  /* line 132, ../sass/mediaQueris_600-767.scss */
+  /* line 131, ../sass/mediaQueris_600-767.scss */
+  .contact-icon {
+    margin-left: 4%;
+    width: 100%;
+    margin-top: 40px;
+    font-size: 1.6em;
+    margin-bottom: 10px; }
+
+  /* line 138, ../sass/mediaQueris_600-767.scss */
   .rights {
-    float: right;
-    margin-top: 65px;
-    letter-spacing: 2px; }
+    float: none;
+    text-align: center;
+    width: 100%; }
 
   /*FOOTER*/
-  /* line 140, ../sass/mediaQueris_600-767.scss */
+  /* line 146, ../sass/mediaQueris_600-767.scss */
   .button-top {
     display: none; } }
 @media screen and (min-width: 320px) and (max-width: 599px) {

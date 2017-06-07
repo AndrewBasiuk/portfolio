@@ -82,7 +82,7 @@
 			display: inline-block;
 			width: $width;
 			height: $height;
-			margin-left: 22%;
+			// margin-left: 22%;
 			
 			&:nth-child(2n) {
 				margin-right: 0;
@@ -125,14 +125,20 @@
 	/*ABOUT*/
 
 	/*FOOTER*/
+	.footer {
+		height: 130px;
+	}
 	.contact-icon {
-		width: 200px;
-		font-size: 1.3em;
+		margin-left: 4%;
+		width: 100%;
+		margin-top: 40px;
+		font-size: 1.6em;
+		margin-bottom: 10px;
 	}
 	.rights {
-		float: right;
-		margin-top: 65px;
-		letter-spacing: 2px;
+		float: none;
+		text-align: center;
+		width: 100%;
 	}
 	/*FOOTER*/
 	
