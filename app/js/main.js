@@ -18,9 +18,18 @@ $(document).ready(function() {
            $(".to-top").css("display", "block"); 
         } else { 
            $(".to-top").css("display", "none"); 
-        };
+    	};
+    });
 
-    })
+    // 
+    var menuItem  = $('.menu__item');
+
+    for (var i = 0; i <= menuItem.length; i++) {
+    	var itemWidth = menuItem.width()-menuItem.width()*0.1*i;
+    	menuItem[i].css('width', itemWidth+'px');
+
+    }
+
 
 
 

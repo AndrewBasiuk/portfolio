@@ -1,46 +1,50 @@
 
 @import 'common';
 @import 'font';
+@import 'var';
 
 /*/////////HEAD///////////*/
 
 .head {
 	height: 100vh;
 	border-top: 1px solid #fff;
-	background: url(../img/head-back.jpg)  no-repeat;
+	background: url(../img/head-bg.jpeg) 0 -150px  no-repeat;
 	background-size: cover;
-	/*background-attachment: fixed;*/
 }
 
 .autor {
 	display: inline-block;
+	float: right;
 	margin-top: 30px;
 	width: 25%;
 	
 
 	&__photo {
-		float: left;
-		width: 120px;
-		height: 120px;
+		$photo-size: 250px;
+		float: right;
+		margin-right: 5%;
+		width: $photo-size;
+		height: $photo-size;
 		max-width: 100%;
 		border-radius: 50%;
 	}
 
 	&__name {
-		float: left;
+		display: inline-block;
+		float: right;
 		margin-top: 10px;
-		margin-left: 5px;
 		margin-bottom: 5px;
-		font: 1.5em Roboto-Black, Arial, sans-serif;
+		color: $darck-gray;
+		font: 2em Roboto-Black, Arial, sans-serif;
 		font-weight: bold;
 	}
 
 	&__specialisation {
 		display: inline-block;
+		float: right;
 		color: #008ec1;
-		margin-left: 5px;
 		text-transform: uppercase;
-		font: 1em Nord, Arial, sans-serif;
+		font: 1.3em Nord, Arial, sans-serif;
 	}
 }
 .bounceInRight {
@@ -54,14 +58,27 @@
 }
 
 .head__nav {
-	float: right;
+	float: left;
 	margin-top: 65px;
+	width: 35%;
 }
 .icon-menu {
 	font-size: 2em;
 	font-family: 'menu-icon' !important;
 }
 .menu {
+	&__link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: $darck-gray;
+		color: #fff;
+		height: 40px;
+		font: 1em Gotham-Bold, Arial, sans-serif;
+		margin-bottom: 5px;
+	}
+}
+/*.menu {
 	&__item {
 		float: left;
 		padding-bottom: 20px;
@@ -81,7 +98,7 @@
 			border-bottom: 3px solid #00ffe9;
 		}
 	}
-}
+}*/
 
 .site-heading {
 	text-align: center;
@@ -108,8 +125,10 @@
 }
 
 .head__button {
-	position: relative;
-	left: 49%;
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+	transform: translateX(-50%);
 	height: 75px;
 	margin-top: 120px;
 	background: none;
@@ -128,7 +147,7 @@
 	}
 }
 .icon-circle-down {
-	font-size: 3.5em;
+	font-size: 5.5em;
 	font-family: 'icomoon' !important;
 }
 @keyframes move{
@@ -137,7 +156,7 @@
 	}
 	to {
 		transform: translateY(50px);
-		color: #00ffe9;
+		color: #008ec1;
 	}
 }
 
