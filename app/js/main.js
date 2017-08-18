@@ -22,15 +22,11 @@ $(document).ready(function() {
     });
 
     // 
-    var menuItem  = $('.menu__item');
 
-    for (var i = 0; i <= menuItem.length; i++) {
-    	var itemWidth = menuItem.width()-menuItem.width()*0.1*i;
-    	menuItem[i].css('width', itemWidth+'px');
-
-    }
-
-
+    $('.popup__btn').on('click', function() {
+    	$('.popup__text').fadeToggle(700);
+    	$(this).removeClass('swing');
+    });
 
 
 // плавная прокрутка

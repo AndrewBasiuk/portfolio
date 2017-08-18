@@ -40,6 +40,30 @@
 	font-style: normal;
 }
 
+// @font-face {
+//   font-family: 'PlayfairRegular';
+//   src: url('../font/PlayfairDisplay-Regular.eot');
+//   src: url('../font/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+//     url('../font/PlayfairDisplay-Regular.woff') format('woff'),
+//     url('../font/PlayfairDisplay-Regular.ttf') format('truetype');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+
+
+@font-face {
+  font-family: 'PlayfairBold';
+  src: url('../font/PlayfairDisplay-Bold.eot');
+  src: url('../font/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../font/PlayfairDisplay-Bold.woff') format('woff'),
+    url('../font/PlayfairDisplay-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+
 
 
 

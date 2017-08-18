@@ -106,6 +106,13 @@ a:visited {
   font-style: normal; }
 
 @font-face {
+  font-family: 'PlayfairBold';
+  src: url("../font/PlayfairDisplay-Bold.eot");
+  src: url("../font/PlayfairDisplay-Bold.eot?#iefix") format("embedded-opentype"), url("../font/PlayfairDisplay-Bold.woff") format("woff"), url("../font/PlayfairDisplay-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
   font-family: 'icomoon';
   src: url("../font/icomoon.eot?slltqm");
   src: url("../font/icomoon.eot?slltqm#iefix") format("embedded-opentype"), url("../font/icomoon.ttf?slltqm") format("truetype"), url("../font/icomoon.woff?slltqm") format("woff"), url("../font/icomoon.svg?slltqm#icomoon") format("svg");
@@ -330,8 +337,8 @@ a:visited {
 .autor {
   display: inline-block;
   float: right;
-  margin-top: 30px;
-  width: 25%; }
+  width: 25%;
+  margin-top: 30px; }
   .autor__photo {
     float: right;
     margin-right: 5%;
@@ -354,73 +361,51 @@ a:visited {
     text-transform: uppercase;
     font: 1.3em Nord, Arial, sans-serif; }
 
-.bounceInRight {
-  animation-delay: 1s; }
-
-.bounceInLeft {
-  animation-delay: 1s; }
-
+/*animation*/
 .fadeInDown {
-  animation-delay: 1.8s; }
+  animation-delay: 1s;
+  animation-duration: 2s; }
 
+.fadeInUp {
+  animation-delay: 1.5s;
+  animation-duration: 2s; }
+
+.swing {
+  animation-iteration-count: infinite;
+  animation-duration: 2.5s; }
+
+/*animation*/
 .head__nav {
   float: left;
-  margin-top: 65px;
-  width: 35%; }
+  margin-top: 50px;
+  width: 15%; }
 
 .icon-menu {
   font-size: 2em;
   font-family: 'menu-icon' !important; }
 
-.menu__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #283130;
-  color: #fff;
-  height: 40px;
-  font: 1em Gotham-Bold, Arial, sans-serif;
-  margin-bottom: 5px; }
-
-/*.menu {
-	&__item {
-		float: left;
-		padding-bottom: 20px;
-		margin-right: 17px;
-		color: #00ffe9;
-		text-transform: uppercase;
-		font: 1em Gotham-Bold, Arial, sans-serif;
-		transition: all 0.3s;
-		cursor: pointer;
-
-		&:last-child {
-			margin-right: 0;
-		}
-
-		&:hover {
-			color: #fff;
-			border-bottom: 3px solid #00ffe9;
-		}
-	}
-}*/
-.site-heading {
-  text-align: center;
-  margin-top: 100px;
-  font-weight: bold;
-  font: 4.5em Nord, Arial, sans-serif;
-  letter-spacing: 2px;
-  color: #00ffe9;
-  text-transform: uppercase; }
-  .site-heading_black {
-    color: #000; }
-
-.site-descript {
-  text-align: center;
-  margin-top: 20px;
-  color: #00ffd4;
-  font: 1.2em Rubik-Bold, Arial, sans-serif; }
-  .site-descript_black {
-    color: #000; }
+.menu {
+  margin-left: 5%; }
+  .menu__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: #283130;
+    height: 40px;
+    font: 1em Gotham-Bold, Arial, sans-serif;
+    margin-bottom: 5px;
+    border: 2px solid #283130;
+    text-transform: uppercase;
+    border-radius: 10px;
+    transition: all 0.3s; }
+    .menu__link:hover {
+      background-color: #283130;
+      padding: 2%; }
+  .menu a {
+    color: #283130; }
+    .menu a:hover {
+      color: #fff; }
 
 .head__button {
   position: absolute;
@@ -439,10 +424,10 @@ a:visited {
     -webkit-animation-play-state: paused;
     -o-animation-play-state: paused;
     animation-play-state: paused;
-    color: #00ffe9; }
+    color: #283130; }
 
 .icon-circle-down {
-  font-size: 5.5em;
+  font-size: 4em;
   font-family: 'icomoon' !important; }
 
 @keyframes move {
@@ -451,6 +436,37 @@ a:visited {
   to {
     transform: translateY(50px);
     color: #008ec1; } }
+
+.popup {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 300px;
+  width: 25%;
+  text-align: center; }
+  .popup__btn {
+    right: 30%;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    padding: 3% 7%;
+    outline: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font: 1.5em Roboto-Black, Arial, sans-serif;
+    cursor: pointer;
+    transition: all 0.2s; }
+    .popup__btn:hover {
+      opacity: 0.7; }
+  .popup__text {
+    display: none;
+    margin-top: 10%;
+    width: 100%;
+    font: 1.3em PlayfairBold, serif;
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 1.5; }
 
 /*/////////HEAD///////////*/
 /*/////////KNOWLEGE////////*/

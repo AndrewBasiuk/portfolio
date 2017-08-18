@@ -12,11 +12,12 @@
 	background-size: cover;
 }
 
+
 .autor {
 	display: inline-block;
 	float: right;
-	margin-top: 30px;
 	width: 25%;
+	margin-top: 30px;
 	
 
 	&__photo {
@@ -47,80 +48,60 @@
 		font: 1.3em Nord, Arial, sans-serif;
 	}
 }
-.bounceInRight {
-	animation-delay: 1s;
-}
-.bounceInLeft {
-	animation-delay: 1s;
-}
+
+/*animation*/
 .fadeInDown {
-	animation-delay: 1.8s;
+	animation-delay: 1s;
+	animation-duration: 2s;
 }
+.fadeInUp {
+	animation-delay: 1.5s;
+	animation-duration: 2s;
+}
+.swing {
+	animation-iteration-count: infinite;
+	animation-duration: 2.5s;
+}
+/*animation*/
+
 
 .head__nav {
 	float: left;
-	margin-top: 65px;
-	width: 35%;
+	margin-top: 50px;
+	width: 15%;
 }
 .icon-menu {
 	font-size: 2em;
 	font-family: 'menu-icon' !important;
 }
 .menu {
+	margin-left: 5%;
 	&__link {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		background-color: $darck-gray;
-		color: #fff;
+		background-color: transparent;
+		color: $darck-gray;
 		height: 40px;
 		font: 1em Gotham-Bold, Arial, sans-serif;
 		margin-bottom: 5px;
-	}
-}
-/*.menu {
-	&__item {
-		float: left;
-		padding-bottom: 20px;
-		margin-right: 17px;
-		color: #00ffe9;
+		border: 2px solid $darck-gray;
 		text-transform: uppercase;
-		font: 1em Gotham-Bold, Arial, sans-serif;
+		border-radius: 10px;
 		transition: all 0.3s;
-		cursor: pointer;
-
-		&:last-child {
-			margin-right: 0;
+	
+		&:hover {
+			background-color: $darck-gray;
+			padding: 2%;
 		}
+	}
 
+	a {
+		color: $darck-gray;
+	
 		&:hover {
 			color: #fff;
-			border-bottom: 3px solid #00ffe9;
 		}
-	}
-}*/
-
-.site-heading {
-	text-align: center;
-	margin-top: 100px;
-	font-weight: bold;
-	font: 4.5em Nord, Arial, sans-serif;
-	letter-spacing: 2px;
-	color: #00ffe9;
-	text-transform: uppercase;
-
-    &_black {
-    	color: #000;
-    }
-}
-.site-descript {
-	text-align: center;
-	margin-top: 20px;
-	color: #00ffd4;
-	font: 1.2em Rubik-Bold, Arial, sans-serif;
-
-	&_black {
-		color: #000;
 	}
 }
 
@@ -143,11 +124,11 @@
 		-webkit-animation-play-state: paused;
 		-o-animation-play-state: paused;
 		animation-play-state: paused;
-		color: #00ffe9;
+		color: $darck-gray;
 	}
 }
 .icon-circle-down {
-	font-size: 5.5em;
+	font-size: 4em;
 	font-family: 'icomoon' !important;
 }
 @keyframes move{
@@ -160,6 +141,43 @@
 	}
 }
 
+.popup {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 300px;
+	width: 25%;
+	text-align: center;
+	
+	&__btn {
+		right: 30%;
+		border: none;
+		background-color: #000;
+		color: #fff;
+		padding: 3% 7%;
+		outline: none;
+		text-transform: uppercase;
+		letter-spacing: 4px;
+		font: 1.5em Roboto-Black, Arial, sans-serif;
+		cursor: pointer;
+		transition: all 0.2s;
+
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+
+	&__text {
+		display: none;
+		margin-top: 10%;		
+		width: 100%;
+		font: 1.3em PlayfairBold, serif;
+		text-align: justify;
+		letter-spacing: 1px;
+		line-height: 1.5;
+	}
+}
 /*/////////HEAD///////////*/
 
 /*/////////KNOWLEGE////////*/
