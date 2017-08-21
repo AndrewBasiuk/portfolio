@@ -219,11 +219,6 @@
 		border-radius: 8px;
 		box-sizing: border-box;
 
-		&:hover .skill-hover {
-			display: block;
-		}
-
-
 		/*&_shadow_red {
 			box-shadow: 0 5px 20px 5px rgba(244, 66, 66,0.7);
 		}
@@ -250,7 +245,7 @@
 			background-color: rgba(255, 0, 0, 0.6);
 		}
 		&_bg_blue {
-			background-color: rgba(21, 114, 82, 0.6);
+			background-color: rgba(34, 154, 193, 0.6);
 		}
 		&_bg_yellow {
 			background-color: rgba(188, 188, 0, 0.6);
@@ -261,7 +256,7 @@
 
 		&__heading {
 			margin-top: 8%;
-			font: 8em Roboto-Black, Arial, sans-serif;
+			font: 6.5em Roboto-Black, Arial, sans-serif;
 			letter-spacing: 2px;
 			color: #fff;
 		}
@@ -378,78 +373,96 @@ a.tools__link {
 /*/////////MY_WORK////////*/
 
 .my-work {
-	background: url(../img/work-bg1.jpg)  no-repeat;
-	background-size: cover;
+	position: relative;
+	background-color: #fff;
 	border-top: 1px solid #3F4C54;
-	padding-bottom: 50px;
+	padding-bottom: 100px;
+
+	&__btn {
+		position: relative;
+		bottom: -50px;
+		left: 50%;
+		transform: translateX(-50%);
+		padding: 40px;
+		background-color: transparent;
+		font: 3.5em Roboto-Black, Arial, sans-serif;
+		color: $darck-gray;
+		text-transform: uppercase;
+		border: 5px solid $darck-gray;
+		border-radius: 20px;
+		cursor: pointer;
+		outline: none;
+		transition: all 0.3s;
+
+		&:hover {
+			color: #fff;
+			background-color: $darck-gray;
+		}
+	}
 }
 
 .section-heading_color_white {
-	color: #fff;
+	color: $darck-gray;
 }
 
 .l-work {
 	margin-top: 30px;
 }
 .work {
-	text-align: center;
+	/*height: 75%;*/
+	display: flex;
+	flex-wrap: wrap;
+
 	&__item {
-		float: left;
-		height: 220px;
-		width: 370px;
-		margin-top: 20px;
-		margin-right: 4%;
+		position: relative;
+		margin-bottom: 20px;
+		height: 700px;
+		width: 33.333%;
 		border-radius: 15px;
 		background-color: #000;
 		box-sizing: border-box;
+		transition: 0.3s all;
+		overflow: hidden;
 
-		&:nth-child(3n) {
-			margin-right: 0;
+		&:hover .work__img {
+			opacity: 0.3;
+			transform: scale(1.2);
 		}
 
-		&:hover {
-			box-shadow: 0 5px 20px 5px rgba(0, 0, 0,1);
+		&:hover .icon-search {
+			display: block;
 		}
+
+		&:nth-child(n+7) {
+			display: none;
+		}
+
 	}
 
 	&__img {
-		width: 370px;
-		height: 220px;
+		min-width: 100%;
+		height: 100%;
 		max-width: 100%;
 		border-radius: 15px;
-		/*origin width 1115*/
-
-		&:hover {
-			opacity: 0.2;
-		}
-	}
-
-	&__wrap {
-		position: relative;
-		background-color: #000;
-		width: 370px;
-		height: 220px;
-		line-height: 280px;
-		border-radius: 15px;
-		text-align: center;
-		&:hover {
-			box-shadow: 0 5px 20px 5px rgba(255, 255, 255,1);
-		}
+		transition: all 0.5s;
 	}
 }
 a.work__link {
 	border-radius: 15px;
 }
-.icon-link {
+
+.icon-search {
 	display: none;
 	position: absolute;
-	top: 30%;
-	left: 42%;
-	text-align: center;
-	font-size: 5em;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-family: 'work-icon' !important;
+	font-size: 8em;
 	color: #fff;
-	font-family: 'link-icon' !important;
+	z-index: 10;
 }
+
 
 /*/////////MY_WORK////////*/
 
@@ -458,50 +471,29 @@ a.work__link {
 
 .about {
 	padding-bottom: 80px;
-	background-color: #00ffd4;
-	border-top: 1px solid #00ffd4; 
+	background: url(../img/work-bg1.jpg);
+	border-top: 1px solid $darck-gray; 
 }
 .section-heading_color_black {
-	color: #000;
+	color: #fff;
 }
 
 .about-descript {
 	position: relative;
-	float: left;
-	width: 80%;
-	margin-top: 40px;
-	margin-right: 5%;
-	padding: 30px 15px 20px 5px;
-	background-color: #fff;
-	border: 3px solid #000;
-	border-radius: 15px;
-	font: 1.2em Georgia, "Times New Roman", sans-serif;
-
-	&__heading {
-		margin-left: 10%;
-		margin-bottom: 10px;
-		font: 1.5em Roboto-Black, Arial, sans-serif;
-		text-transform: uppercase;
-	}
+	width: 70%;
+	margin: 40px auto 0 auto;
+	background-color: transparent;
 
 	&__text {
-		margin-top: 10px;
-		margin-left: 20px;
+		color: #fff;
+		margin-bottom: 20px;
+		text-align: justify;
+		font: 3em PlayfairBold, "Times New Roman", serif;
 		line-height: 1.4;
-	}
-
-	&__photo {
-		float: right;
-		width: 250px;
-		max-width: 100%;
-		height: 250px;
-		border-radius: 50%;
-		margin-top: 60px;
-		margin-right: -15%;
 	}
 }
 .indent {
-	margin-left: 25px;
+	margin-left: 5%
 }
 .italic {
 	font-style: italic;

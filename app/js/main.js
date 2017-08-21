@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+	var screenWidth = $(window).width();
 	
 	$('.work__wrap').hover(
 		function() {
@@ -26,6 +28,14 @@ $(document).ready(function() {
     $('.popup__btn').on('click', function() {
     	$('.popup__text').fadeToggle(700);
     	$(this).removeClass('swing');
+    });
+
+    $('.my-work__btn').on('click', function(){
+    	if(screenWidth<768) {
+			$('.work__item:nth-child(n+7)').fadeToggle(500);
+		} else {
+			$('.work__item:nth-child(n+7)').fadeToggle(500);
+		}
     });
 
 
