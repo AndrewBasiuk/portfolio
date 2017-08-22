@@ -471,8 +471,9 @@ a:visited {
 /*/////////HEAD///////////*/
 /*/////////KNOWLEGE////////*/
 .knowledge {
-  /*background: url(../img/bg.jpg) no-repeat;
-	background-size: cover;*/
+  background: url(../img/knowledge-bg.jpeg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   background-color: #7b7c7b;
   border-top: 1px solid #EDEDED;
   height: 100vh; }
@@ -513,13 +514,13 @@ a:visited {
     text-align: center;
     display: block; }
     .skill-hover_bg_red {
-      background-color: rgba(255, 0, 0, 0.6); }
+      background-color: rgba(255, 0, 0, 0.5); }
     .skill-hover_bg_blue {
-      background-color: rgba(34, 154, 193, 0.6); }
+      background-color: rgba(34, 154, 193, 0.5); }
     .skill-hover_bg_yellow {
-      background-color: rgba(188, 188, 0, 0.6); }
+      background-color: rgba(188, 188, 0, 0.5); }
     .skill-hover_bg_sky {
-      background-color: rgba(1, 160, 12, 0.6); }
+      background-color: rgba(1, 160, 12, 0.5); }
     .skill-hover__heading {
       margin-top: 8%;
       font: 6.5em Roboto-Black, Arial, sans-serif;
@@ -651,7 +652,7 @@ a.tools__link {
   .work__item {
     position: relative;
     margin-bottom: 20px;
-    height: 700px;
+    height: 1000px;
     width: 33.333%;
     border-radius: 15px;
     background-color: #000;
@@ -689,9 +690,12 @@ a.work__link {
 /*/////////MY_WORK////////*/
 /*/////////ABOUT////////*/
 .about {
+  height: 85vh;
   padding-bottom: 80px;
-  background: url(../img/work-bg1.jpg);
-  border-top: 1px solid #283130; }
+  background: url(../img/work-bg1.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  border-top: 1px solid #000; }
 
 .section-heading_color_black {
   color: #fff; }
@@ -699,7 +703,7 @@ a.work__link {
 .about-descript {
   position: relative;
   width: 70%;
-  margin: 40px auto 0 auto;
+  margin: 7% auto 0 auto;
   background-color: transparent; }
   .about-descript__text {
     color: #fff;
@@ -721,17 +725,18 @@ a.work__link {
 /*/////////FOOTER////////*/
 .footer {
   display: flex;
-  background-color: #000;
-  color: #fff;
-  height: 150px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  color: #000;
+  height: 15vh;
   border-top: 1px solid #000; }
 
 .contact-icon {
-  margin-top: 60px;
   position: relative;
-  float: left;
-  width: 400px;
-  font-size: 2em; }
+  width: 30%;
+  font-size: 5em;
+  margin-left: 3%; }
   .contact-icon__item {
     display: inline-block;
     margin-right: 5%; }
@@ -742,14 +747,15 @@ a.work__link {
   font-family: 'footer-icon' !important; }
 
 .mail {
-  font-size: 0.6em;
+  font-size: 0.8em;
   position: absolute;
   top: 50%;
   transform: translateY(-50%); }
 
 .rights {
-  float: right;
-  margin-top: 70px;
+  display: inline-block;
+  margin-right: 3%;
+  font-size: 4em;
   letter-spacing: 2px; }
 
 /*/////////FOOTER////////*/
