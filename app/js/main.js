@@ -1,16 +1,6 @@
 $(document).ready(function() {
 
 	var screenWidth = $(window).width();
-	
-	$('.work__wrap').hover(
-		function() {
-			var iconLink = $(this).find('.icon-link'); 
-			iconLink.css('display', 'block');
-		},
-		function() {
-			$('.icon-link').css('display', 'none');
-		}
-	);
 
 	$(window).scroll(function(){
 
@@ -23,8 +13,15 @@ $(document).ready(function() {
     	};
     });
 
-    // 
+    // плавная прокрутка
+	$('a[href^="#"]').click(function () { 
+     elementClick = $(this).attr("href");
+     destination = $(elementClick).offset().top;
+     $('body').animate( { scrollTop: destination }, 1000 );
+    });
 
+
+    // 
     $('.popup__btn').on('click', function() {
     	$('.popup__text').fadeToggle(700);
     	$(this).removeClass('swing');
@@ -38,12 +35,14 @@ $(document).ready(function() {
 		}
     });
 
+    $('.contact-icon__item').hover(
+		function() {
+			$(this).addClass('jello');
+		},
+		function() {
+			$(this).removeClass('jello');
+		}
+	);
 
-// плавная прокрутка
-	$('a[href^="#"]').click(function () { 
-     elementClick = $(this).attr("href");
-     destination = $(elementClick).offset().top;
-     $('body').animate( { scrollTop: destination }, 1000 );
-    });
 
 });
