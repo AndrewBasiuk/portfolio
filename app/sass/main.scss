@@ -7,7 +7,7 @@
   margin-top: 25px;
   text-align: center;
   color: #fff;
-  font: 10em Gotham-Bold, Arial, sans-serif;
+  font: 3.5em Gotham-Bold, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 4px;
 }
@@ -25,13 +25,13 @@
 .autor {
 	display: inline-block;
 	float: right;
-	width: 20%;
+	width: 30%;
 	margin-top: 30px;
 	margin-right: 2%;
 	
 
 	&__photo {
-		$photo-size: 500px;
+		$photo-size: 250px;
 		float: right;
 		width: $photo-size;
 		height: $photo-size;
@@ -45,7 +45,7 @@
 		margin-top: 10px;
 		margin-bottom: 5px;
 		color: $darck-gray;
-		font: 4.5em Roboto-Black, Arial, sans-serif;
+		font: 2em Roboto-Black, Arial, sans-serif;
 		font-weight: bold;
 	}
 
@@ -54,7 +54,7 @@
 		float: right;
 		color: #008ec1;
 		text-transform: uppercase;
-		font: 3em Nord, Arial, sans-serif;
+		font: 1.3em Nord, Arial, sans-serif;
 	}
 }
 
@@ -91,8 +91,8 @@
 		justify-content: center;
 		background-color: transparent;
 		color: $darck-gray;
-		height: 100px;
-		font: 2.5em Gotham-Bold, Arial, sans-serif;
+		height: 50px;
+		font: 1.4em Gotham-Bold, Arial, sans-serif;
 		margin-bottom: 5px;
 		border: 2px solid $darck-gray;
 		text-transform: uppercase;
@@ -164,11 +164,11 @@
 		border: none;
 		background-color: #000;
 		color: #fff;
-		padding: 5% 9%;
+		padding: 4%;
 		outline: none;
 		text-transform: uppercase;
 		letter-spacing: 4px;
-		font: 3.5em Roboto-Black, Arial, sans-serif;
+		font: 2em Roboto-Black, Arial, sans-serif;
 		cursor: pointer;
 		transition: all 0.2s;
 
@@ -181,7 +181,7 @@
 		display: none;
 		margin-top: 10%;		
 		width: 100%;
-		font: 3.5em PlayfairBold, serif;
+		font: 1.2em PlayfairBold, serif;
 		text-align: justify;
 		letter-spacing: 1px;
 		line-height: 1.5;
@@ -256,7 +256,7 @@
 		}
 		&__heading {
 			margin-top: 8%;
-			font: 8.5em Roboto-Black, Arial, sans-serif;
+			font: 2.3em Roboto-Black, Arial, sans-serif;
 			letter-spacing: 2px;
 			color: #fff;
 		}
@@ -265,7 +265,7 @@
 			margin-top: 5%;
 			width: 40%;
 			margin: 5% auto 0 auto;
-			font: 5em PlayfairBold, serif;
+			font: 1.2em PlayfairBold, serif;
 			letter-spacing: 2px;
 			color: #fff;
 		}
@@ -276,7 +276,7 @@
 }
 
 .skill__icon {
-	font-size: 30em;
+	font-size: 10em;
 }
 .html-five {
 	font-family: 'html-icon' !important;
@@ -312,7 +312,7 @@
 		text-transform: uppercase;
 		color: #fff;
 		letter-spacing: 3px;
-		font: 8.5em Rubik-Bold, Arial, sans-serif;
+		font: 2.3em Rubik-Bold, Arial, sans-serif;
 	}
 
 	&__descript {
@@ -320,7 +320,7 @@
 		text-align: justify;
 		color: #75fff1;
 		line-height: 1.3;
-		font: 4em Georgia, "Times New Roman", sans-serif;
+		font: 1.2em Georgia, "Times New Roman", sans-serif;
 	}
 }
 a.tools__link {
@@ -384,9 +384,9 @@ a.tools__link {
 		bottom: -50px;
 		left: 50%;
 		transform: translateX(-50%);
-		padding: 40px;
+		padding: 1%;
 		background-color: transparent;
-		font: 3.5em Roboto-Black, Arial, sans-serif;
+		font: 2.5em Roboto-Black, Arial, sans-serif;
 		color: $darck-gray;
 		text-transform: uppercase;
 		border: 5px solid $darck-gray;
@@ -417,7 +417,7 @@ a.tools__link {
 	&__item {
 		position: relative;
 		margin-bottom: 20px;
-		height: 1000px;
+		height: 350px;
 		width: 33.333%;
 		border-radius: 15px;
 		background-color: #000;
@@ -485,14 +485,14 @@ a.work__link {
 .about-descript {
 	position: relative;
 	width: 70%;
-	margin: 7% auto 0 auto;
+	margin: 5% auto 0 auto;
 	background-color: transparent;
 
 	&__text {
 		color: #fff;
 		margin-bottom: 20px;
 		text-align: justify;
-		font: 4em PlayfairBold, "Times New Roman", serif;
+		font: 1.5em PlayfairBold, "Times New Roman", serif;
 		line-height: 1.4;
 		letter-spacing: 2px;
 	}
@@ -500,7 +500,7 @@ a.work__link {
 .icon-profile {
 	font-family: 'rezume-icon' !important;
 	font-size: 2em;
-	margin-left: 40px;
+	margin-left: 20%;
 	color: green;
 	&:hover {
 		color: #00ff11;
@@ -537,7 +537,7 @@ a.work__link {
 .contact-icon {
 	position: relative;
 	width: 30%;
-	font-size: 5em;
+	font-size: 3em;
 	margin-left: 3%;
 	&__item {
 		display: inline-block;
@@ -561,7 +561,7 @@ a.work__link {
 .rights {
 	display: inline-block;
 	margin-right: 3%;
-	font-size: 4em;
+	font-size: 2em;
 	letter-spacing: 2px;
 }
 
@@ -570,11 +570,9 @@ a.work__link {
 a.to-top {
 	position: fixed;
 	display: none;
-	right: 5px;
+	right: 1%;
 	top: 400px;
-	padding-top: 10px;
-	width: 45px;
-	height: 45px;
+	padding: 1%;
 	text-align: center;
 	border: 3px solid #fff;
 	border-radius: 10px;
@@ -592,11 +590,11 @@ a.to-top {
 }
 
 .icon-arrow-up {
-	font-size: 1em;
+	font-size: 2em;
 	font-family: 'toTop-icon' !important;
 }
 
-@import "mediaQueris_1366-";
+@import "mediaQueris_1345-1440";
 @import "mediaQueris_1024-1280";
 @import "mediaQueris_960-1023";
 @import "mediaQueris_768-959";
