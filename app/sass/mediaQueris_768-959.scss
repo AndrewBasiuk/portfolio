@@ -1,150 +1,146 @@
-@media screen and (min-width: 768px) and (max-width: 959px) {
-	.container_small {
-		width: 692px;
-		margin: 0 auto;
+@media screen and (min-width: 768px) and (max-width: 965px) {
+
+	.section-heading {
+	 font-size: 3em;
 	}
+	
 	/*HEAD*/
-	.head {
-		height: 600px;
-	}
 	.autor {
-			width: 30%;
+		margin-top: 20px;
+		width: 20%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
 
 		&__photo {
-			margin-left: 10px;
+			$photo-size: 100px;
+			width: $photo-size;
+			height: $photo-size;
 		}
 
 		&__name {
-				font-size: 1.3em;
+			font-size: 1.3em;
 		}
 
 		&__specialisation {
-				font-size: 0.9em;
+			font-size: 0.9em;
+			margin-right: 1%;
 		}
 	}
 
-	.menu__item {
-		font-size: 0.8em;
+	.head__nav {
+		width: 25%;
+		margin-top: 25px;
 	}
-	.site-heading {
-		margin-top: 70px;
-		font-size: 3.5em;
+	.menu {
+		&__link {
+			height: 30px;
+			font-size: 0.8em;
+			border-radius: 10px;
+			border-width: 1px;
+		}
 	}
-	.head__button {
-		left: 46%;
-		margin-top: 40px;
-	}
-	.site-descript {
-		font-size: 1em;
+
+	.popup {
+		width: 40%;
+
+		&__btn {
+			font-size: 1em;
+			padding: 4% 4%;
+		}
+
+		&__text {
+			font-size: 0.9em;
+		}
 	}
 	/*HEAD*/
 
-	/*KNOWLEGE*/
+	/*KNOWLEDGE*/
 	.skill {
-		
-		&__item {
-			width: 45%;
-			height: 300px;
-			margin-right: 10%;
-			margin-bottom: 30px;
+		&-wrap {
+			height: 50%;
+		}
 
-			&:nth-child(2n) {
-				margin-right: 0;
+		&-hover {
+			&__heading {
+				font-size: 1.3em;
+			}
+
+			&__descript {
+				width: 80%;
+				font-size: 0.9em;
+				letter-spacing: 0;
 			}
 		}
+	}
+	.skill__icon {
+		font-size: 7em;
+	}
 
-		&__heading {
-			font-size: 1.5em;
-		}
-
-		&__descript {
-			font-size: 1.1em;
-		}
-
-		&__icon {
-			font-size: 9em;
-		}
+	.l-tools {
+		padding: 1% 0;
 	}
 	.tools {
 		width: 90%;
-	}
-	/*KNOWLEGE*/
+		top: 130%;
+		&__heading {
+			font-size: 1.7em;
+		}
 
-	/*MY-WORK*/
+		&__descript {
+			margin: 0 4%;
+			font-size: 0.9em;
+		}
+	}	
+	/*KNOWLEDGE*/
+
+	/*MY_WORK*/
+	.my-work {
+		padding-bottom: 40px;
+
+		&__btn {
+			bottom: -20px;
+			font-size: 1.3em;
+			padding: 1%;
+			border-width: 2px;
+		}
+	}
 	.work {
-		$width: 320px;
-		$height: 190px;
-
 		&__item {
-			display: inline-block;
-			width: $width;
-			height: $height;
-			margin-right: 6%;
-			
-			&:nth-child(2n) {
-				margin-right: 0;
-			}
-
-			&:nth-child(3n) {
-				margin-right: 6%;
-			}
-		
-		}
-
-		&__img {
-			width: $width;
-			height: $height;
-		}
-
-		&__wrap {
-			width: $width;
-			height: $height;
+			height: 240px;
+			margin-bottom: 10px;
 		}
 	}
-
-	.icon-link {
-		top: 27%;
-		left: 36%;
+	.icon-search {
+		font-size: 4em;
 	}
-	/*MY-WORK*/
+	/*MY_WORK*/
 
 	/*ABOUT*/
 	.about-descript {
-		width: 93%;
-
-		&__photo {
-			width: 230px;
-			height: 230px;
-			margin-right: 0;
-			margin-top: 0;
+		width: 85%;
+		margin-top: 4%;
+		&__text {
+			font-size: 0.9em;
+			letter-spacing: 1px;
 		}
 	}
+	.rezume-block {
+		margin-top: 50px;
+	}
 	/*ABOUT*/
-	.button-top {
-		display: none;
+
+	/*FOOTER*/
+	.contact-icon {
+		font-size: 2em;
+	}
+	.rights {
+		font-size: 1.5em;
+	}
+	/*FOOTER*/
+
+
+	.icon-arrow-up {
+		font-size: 1em;
 	}
 }
-
-// @media screen and (min-width: 768px) and (max-width: 875px) {
-
-// 	.work {
-// 		$width: 300px;
-// 		$height: 180px;
-
-// 		&__item {
-// 			width: $width;
-// 			height: $height;
-// 		}
-
-// 		&__img {
-// 			width: $width;
-// 			height: $height;
-// 		}
-
-// 		&__wrap {
-// 			width: $width;
-// 			height: $height;
-// 		}
-// 	}
-
-// }
