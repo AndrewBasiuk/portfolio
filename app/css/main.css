@@ -1159,226 +1159,136 @@ a.to-top {
   /* line 136, ../sass/mediaQueris_1024-1280.scss */
   .icon-arrow-up {
     font-size: 1em; } }
-@media screen and (min-width: 960px) and (max-width: 1023px) {
-  /*HEAD*/
-  /* line 4, ../sass/mediaQueris_960-1023.scss */
-  .head {
-    height: 600px; }
-
-  /* line 7, ../sass/mediaQueris_960-1023.scss */
-  .autor {
-    width: 35%; }
-    /* line 10, ../sass/mediaQueris_960-1023.scss */
-    .autor__name {
-      font-size: 1.3em; }
-    /* line 14, ../sass/mediaQueris_960-1023.scss */
-    .autor__specialisation {
-      font-size: 0.9em; }
-
-  /* line 19, ../sass/mediaQueris_960-1023.scss */
-  .menu__item {
-    font-size: 0.9em; }
-
-  /* line 23, ../sass/mediaQueris_960-1023.scss */
-  .site-heading {
-    margin-top: 80px; }
-
-  /* line 26, ../sass/mediaQueris_960-1023.scss */
-  .site-descript {
-    font-size: 1.1em; }
-
-  /* line 29, ../sass/mediaQueris_960-1023.scss */
-  .head__button {
-    left: 46%;
-    margin-top: 40px; }
-
-  /*HEAD*/
-  /*KNOWLEGE*/
-  /* line 38, ../sass/mediaQueris_960-1023.scss */
-  .skill__item {
-    height: 300px; }
-  /* line 42, ../sass/mediaQueris_960-1023.scss */
-  .skill__heading {
-    font-size: 1.3em; }
-  /* line 46, ../sass/mediaQueris_960-1023.scss */
-  .skill__descript {
-    font-size: 0.9em; }
-  /* line 50, ../sass/mediaQueris_960-1023.scss */
-  .skill__icon {
-    font-size: 8em; }
-
-  /* line 54, ../sass/mediaQueris_960-1023.scss */
-  .tools {
-    width: 80%; }
-
-  /*KNOWLEGE*/
-  /*MY-WORK*/
-  /* line 60, ../sass/mediaQueris_960-1023.scss */
-  .work {
-    text-align: center; }
-    /* line 65, ../sass/mediaQueris_960-1023.scss */
-    .work__item {
-      display: inline-block;
-      width: 270px;
-      height: 180px;
-      margin-right: 3%; }
-    /* line 72, ../sass/mediaQueris_960-1023.scss */
-    .work__img {
-      width: 270px;
-      height: 180px; }
-    /* line 77, ../sass/mediaQueris_960-1023.scss */
-    .work__wrap {
-      width: 270px;
-      height: 180px; }
-
-  /* line 83, ../sass/mediaQueris_960-1023.scss */
-  .icon-link {
-    top: 26%;
-    left: 38%; }
-
-  /*MY-WORK*/
-  /*ABOUT*/
-  /* line 90, ../sass/mediaQueris_960-1023.scss */
-  .about-descript {
-    width: 90%; }
-    /* line 93, ../sass/mediaQueris_960-1023.scss */
-    .about-descript__photo {
-      width: 230px;
-      height: 230px;
-      margin-right: -16%;
-      margin-top: 75px; }
-
-  /*ABOUT*/ }
-@media screen and (min-width: 768px) and (max-width: 965px) {
-  /* line 3, ../sass/mediaQueris_768-959.scss */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 3, ../sass/mediaQueris_768-1023.scss */
   .section-heading {
     font-size: 3em; }
 
   /*HEAD*/
-  /* line 8, ../sass/mediaQueris_768-959.scss */
+  /* line 8, ../sass/mediaQueris_768-1023.scss */
   .autor {
     margin-top: 20px;
     width: 20%;
     display: flex;
     align-items: center;
     flex-direction: column; }
-    /* line 15, ../sass/mediaQueris_768-959.scss */
+    /* line 15, ../sass/mediaQueris_768-1023.scss */
     .autor__photo {
       width: 100px;
       height: 100px; }
-    /* line 21, ../sass/mediaQueris_768-959.scss */
+    /* line 21, ../sass/mediaQueris_768-1023.scss */
     .autor__name {
       font-size: 1.3em; }
-    /* line 25, ../sass/mediaQueris_768-959.scss */
+    /* line 25, ../sass/mediaQueris_768-1023.scss */
     .autor__specialisation {
       font-size: 0.9em;
       margin-right: 1%; }
 
-  /* line 31, ../sass/mediaQueris_768-959.scss */
+  /* line 31, ../sass/mediaQueris_768-1023.scss */
   .head__nav {
     width: 25%;
     margin-top: 25px; }
 
-  /* line 36, ../sass/mediaQueris_768-959.scss */
+  /* line 36, ../sass/mediaQueris_768-1023.scss */
   .menu__link {
     height: 30px;
     font-size: 0.8em;
     border-radius: 10px;
     border-width: 1px; }
 
-  /* line 44, ../sass/mediaQueris_768-959.scss */
+  /* line 44, ../sass/mediaQueris_768-1023.scss */
   .popup {
     width: 40%; }
-    /* line 47, ../sass/mediaQueris_768-959.scss */
+    /* line 47, ../sass/mediaQueris_768-1023.scss */
     .popup__btn {
       font-size: 1em;
       padding: 4% 4%; }
-    /* line 52, ../sass/mediaQueris_768-959.scss */
+    /* line 52, ../sass/mediaQueris_768-1023.scss */
     .popup__text {
       font-size: 0.9em; }
 
   /*HEAD*/
   /*KNOWLEDGE*/
-  /* line 60, ../sass/mediaQueris_768-959.scss */
+  /* line 60, ../sass/mediaQueris_768-1023.scss */
   .skill-wrap {
     height: 50%; }
-  /* line 65, ../sass/mediaQueris_768-959.scss */
+  /* line 65, ../sass/mediaQueris_768-1023.scss */
   .skill-hover__heading {
     font-size: 1.3em; }
-  /* line 69, ../sass/mediaQueris_768-959.scss */
+  /* line 69, ../sass/mediaQueris_768-1023.scss */
   .skill-hover__descript {
     width: 80%;
     font-size: 0.9em;
     letter-spacing: 0; }
 
-  /* line 76, ../sass/mediaQueris_768-959.scss */
+  /* line 76, ../sass/mediaQueris_768-1023.scss */
   .skill__icon {
     font-size: 7em; }
 
-  /* line 80, ../sass/mediaQueris_768-959.scss */
+  /* line 80, ../sass/mediaQueris_768-1023.scss */
   .l-tools {
     padding: 1% 0; }
 
-  /* line 83, ../sass/mediaQueris_768-959.scss */
+  /* line 83, ../sass/mediaQueris_768-1023.scss */
   .tools {
     width: 90%;
     top: 130%; }
-    /* line 86, ../sass/mediaQueris_768-959.scss */
+    /* line 86, ../sass/mediaQueris_768-1023.scss */
     .tools__heading {
       font-size: 1.7em; }
-    /* line 90, ../sass/mediaQueris_768-959.scss */
+    /* line 90, ../sass/mediaQueris_768-1023.scss */
     .tools__descript {
       margin: 0 4%;
       font-size: 0.9em; }
 
   /*KNOWLEDGE*/
   /*MY_WORK*/
-  /* line 98, ../sass/mediaQueris_768-959.scss */
+  /* line 98, ../sass/mediaQueris_768-1023.scss */
   .my-work {
     padding-bottom: 40px; }
-    /* line 101, ../sass/mediaQueris_768-959.scss */
+    /* line 101, ../sass/mediaQueris_768-1023.scss */
     .my-work__btn {
       bottom: -20px;
       font-size: 1.3em;
       padding: 1%;
       border-width: 2px; }
 
-  /* line 109, ../sass/mediaQueris_768-959.scss */
+  /* line 109, ../sass/mediaQueris_768-1023.scss */
   .work__item {
-    height: 240px;
+    height: 220px;
     margin-bottom: 10px; }
 
-  /* line 114, ../sass/mediaQueris_768-959.scss */
+  /* line 114, ../sass/mediaQueris_768-1023.scss */
   .icon-search {
     font-size: 4em; }
 
   /*MY_WORK*/
   /*ABOUT*/
-  /* line 120, ../sass/mediaQueris_768-959.scss */
+  /* line 120, ../sass/mediaQueris_768-1023.scss */
   .about-descript {
     width: 85%;
     margin-top: 4%; }
-    /* line 123, ../sass/mediaQueris_768-959.scss */
+    /* line 123, ../sass/mediaQueris_768-1023.scss */
     .about-descript__text {
       font-size: 0.9em;
       letter-spacing: 1px; }
 
-  /* line 128, ../sass/mediaQueris_768-959.scss */
+  /* line 128, ../sass/mediaQueris_768-1023.scss */
   .rezume-block {
     margin-top: 50px; }
 
   /*ABOUT*/
   /*FOOTER*/
-  /* line 134, ../sass/mediaQueris_768-959.scss */
+  /* line 134, ../sass/mediaQueris_768-1023.scss */
   .contact-icon {
     font-size: 2em; }
 
-  /* line 137, ../sass/mediaQueris_768-959.scss */
+  /* line 137, ../sass/mediaQueris_768-1023.scss */
   .rights {
     font-size: 1.5em; }
 
   /*FOOTER*/
-  /* line 143, ../sass/mediaQueris_768-959.scss */
+  /* line 143, ../sass/mediaQueris_768-1023.scss */
   .icon-arrow-up {
     font-size: 1em; } }
 @media screen and (min-width: 600px) and (max-width: 767px) {
