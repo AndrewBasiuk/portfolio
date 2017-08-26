@@ -29,7 +29,7 @@ $(document).ready(function() {
 
     $('.my-work__btn').on('click', function(){
     	if(screenWidth<768) {
-			$('.work__item:nth-child(n+7)').fadeToggle(500);
+			$('.work__item:nth-child(n+4)').fadeToggle(500);
 		} else {
 			$('.work__item:nth-child(n+7)').fadeToggle(500);
 		}

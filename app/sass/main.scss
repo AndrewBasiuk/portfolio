@@ -219,19 +219,6 @@
 		text-align: center;
 		border-radius: 8px;
 		box-sizing: border-box;
-
-		/*&_shadow_red {
-			box-shadow: 0 5px 20px 5px rgba(244, 66, 66,0.7);
-		}
-		&_shadow_blue {
-			box-shadow: 0 5px 20px 5px rgba(21, 114, 182,0.7);
-		}
-		&_shadow_yellow {
-			box-shadow: 0 5px 20px 5px rgba(247, 223, 30,0.8);
-		}
-		&_shadow_sky {
-			box-shadow: 0 5px 20px 5px rgba(0, 255, 233,0.7);
-		}*/
 	}
 
 	&-hover {
@@ -497,6 +484,7 @@ a.work__link {
 		letter-spacing: 2px;
 	}
 }
+
 .icon-profile {
 	font-family: 'rezume-icon' !important;
 	font-size: 2em;
