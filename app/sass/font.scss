@@ -377,6 +377,38 @@
   content: "\e923";
 }
 
+@font-face {
+  font-family: 'linkedin-icon';
+  src:  url('../font/linkedin-icon.eot?myeml');
+  src:  url('../font/linkedin-icon.eot?myeml#iefix') format('embedded-opentype'),
+    url('../font/linkedin-icon.ttf?myeml') format('truetype'),
+    url('../font/linkedin-icon.woff?myeml') format('woff'),
+    url('../font/linkedin-icon.svg?myeml#linkedin-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'linkedin-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-linkedin:before {
+  content: "\eac9";
+}
+
+
+
 
 
 

@@ -385,8 +385,13 @@ a.tools__link {
 		&:hover {
 			color: #fff;
 			background-color: $darck-gray;
+			opacity: 0.5;
 		}
 	}
+}
+.my-work__btn_active {
+	color: #fff;
+	background-color: $darck-gray;
 }
 
 .section-heading_color_white {
@@ -538,6 +543,9 @@ a.work__link {
 }
 .icon-git, .icon-facebook2, .icon-instagram {
 	font-family: 'footer-icon' !important;
+}
+.icon-linkedin {
+  font-family: 'linkedin-icon' !important;
 }
 
 .mail {

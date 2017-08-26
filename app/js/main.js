@@ -33,6 +33,8 @@ $(document).ready(function() {
 		} else {
 			$('.work__item:nth-child(n+7)').fadeToggle(500);
 		}
+
+		$(this).toggleClass('my-work__btn_active');
     });
 
     $('.contact-icon__item').hover(

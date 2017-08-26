@@ -55,14 +55,18 @@
 	/*HEAD*/
 
 	/*KNOWLEDGE*/
+	.knowledge {
+		height: 900px;
+		padding-bottom: 30px;
+	}
 	.skill {
 		&-wrap {
-			height: 50%;
+			height: 53%;
 		}
 
 		&-hover {
 			&__heading {
-				font-size: 1.6em;
+				font-size: 1.8em;
 			}
 
 			&__descript {
