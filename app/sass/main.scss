@@ -223,6 +223,7 @@
 
 	&-hover {
 		position: absolute;
+		left: 0;
 		width: 100%;
 		height: 100%;
 		top: 0;
@@ -402,6 +403,7 @@ a.tools__link {
 }
 
 .section-heading_color_white {
+	text-align: center;
 	color: $darck-gray;
 }
 
