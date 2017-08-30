@@ -201,8 +201,6 @@
 
 
 .skill {
-	display: flex;
-	flex-wrap: wrap;
 	height: 100%;
 
 	&-wrap {
@@ -212,6 +210,8 @@
 
 	&__item {
 		position: relative;
+		float: left;
+		height: 50%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -246,6 +246,7 @@
 			font: 2.3em Roboto-Black, Arial, sans-serif;
 			letter-spacing: 2px;
 			color: #fff;
+			z-index: 10;
 		}
 
 		&__descript {
@@ -255,6 +256,7 @@
 			font: 1.2em PlayfairBold, serif;
 			letter-spacing: 2px;
 			color: #fff;
+			z-index: 10;
 		}
 	}
 }
@@ -264,6 +266,11 @@
 
 .skill__icon {
 	font-size: 10em;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
 }
 .html-five {
 	font-family: 'html-icon' !important;

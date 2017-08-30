@@ -10,7 +10,7 @@
 		background-color: #fff;
 	}
 	.autor {
-		margin-top: 12%;
+		margin-top: 7%;
 		width: 95%;
 		display: flex;
 		flex-direction: column;
@@ -38,7 +38,7 @@
 
 	.head__nav {
 		width: 90%;
-		margin: 20% auto 0 auto;
+		margin: 15% auto 0 auto;
 	}
 	.menu {
 		&__link {
@@ -56,7 +56,7 @@
 
 	/*KNOWLEDGE*/
 	.knowledge {
-		height: 1500px;
+		height: 1520px;
 		padding-bottom: 30px;
 	}
 	.skill {
@@ -64,7 +64,8 @@
 			height: 53%;
 		}
 		&__item {
-			width: 90%;
+			float: none;
+			width: 100%;
 			height: 250px;
 			margin: 0 auto 5px auto;
 		}
