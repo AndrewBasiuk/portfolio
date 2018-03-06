@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="SHORTCUT ICON" href="img/site-icon.ico" type="image/x-icon">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <title>Anrew Basiuk Portfolio</title>
+    <title class="title">ANDREW BASIUK</title>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -16,165 +17,180 @@
   </head>
   <body>
 
-  <div class="button-top"><a class="to-top" href="#head"><span class="icon-arrow-up"></span></a></div>
+    <div class="preloader-wrap" id="preloader-wrap">
+      <div class="preloader" id="preloader"></div>
+    </div>    
 
-  <div class="head" id="head">
-      <header class="header">
-        <div class="autor">
-          <img src="img/photo.jpg" alt="my_photo" class="autor__photo ">
-          <h4 class="autor__name ">Андрей Басюк</h4>
-          <div class="autor__specialisation animated fadeInDown">Front-End developer</div>
+  <div class="out">
+    <div class="button-top"><a class="to-top" href="#head"><span class="icon-arrow-up"></span></a></div>
+
+    <div class="head" id="head">
+        <header class="header">
+          <div class="autor">
+            <img src="img/photo.jpg" alt="my_photo" class="autor__photo ">
+            <h4 class="autor__name ">Андрей Басюк</h4>
+            <div class="autor__specialisation animated fadeInDown">Front-End developer</div>
+          </div>
+          <nav class="head__nav">
+            <ul class="menu">
+              <li class="menu__item animated fadeInUp"><a class="menu__link" href="#knowledge-heading">Навыки</a></li>
+              <li class="menu__item animated fadeInUp"><a class="menu__link" href="#my-work">Мои Работы</a></li>
+              <li class="menu__item animated fadeInUp"><a class="menu__link" href="#about">Обо мне</a></li>
+              <li class="menu__item animated fadeInUp"><a class="menu__link" href="#footer">Контакты</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <div class="popup">
+          <button class="popup__btn animated swing">Click me!</button>
+          <p class="popup__text">Здравствуйте, меня зовут Андрей и я рад видеть Вас на своём небольшом сайте-портфолио. Кто же я такой? Я - молодой разработчик, который любит то, что делает и делает то, что любит:) Здесь ви сможете увидеть мои работы и немного узнать обо мне. Спасибо за Ваше внимание!</p>
         </div>
-        <nav class="head__nav">
-          <ul class="menu">
-            <li class="menu__item animated fadeInUp"><a class="menu__link" href="#knowledge-heading">Навыки</a></li>
-            <li class="menu__item animated fadeInUp"><a class="menu__link" href="#my-work">Мои Работы</a></li>
-            <li class="menu__item animated fadeInUp"><a class="menu__link" href="#about">Обо мне</a></li>
-            <li class="menu__item animated fadeInUp"><a class="menu__link" href="#footer">Контакты</a></li>
-          </ul>
-        </nav>
-      </header>
 
-      <div class="popup">
-        <button class="popup__btn animated swing">Click me!</button>
-        <p class="popup__text">Здравствуйте, меня зовут Андрей и я рад видеть Вас на своём небольшом сайте-портфолио. Кто же я такой? Я - молодой разработчик, который любит то, что делает и делает то, что любит:) Здесь ви сможете увидеть мои работы и немного узнать обо мне. Спасибо за Ваше внимание!</p>
-      </div>
-
-      <!-- <button class="head__button"><a href="#knowledge-heading"><span class="icon-circle-down"></span></a></button> -->
-  </div>
-
-  <section class="knowledge">
-      <h2 class="section-heading" id="knowledge-heading">Навыки</h2>
-      <div class = "skill-wrap">
-        <ul class="skill l-skill clearfix">
-          <li class="skill__item skill__item_shadow_red">
-            <span class="html-five skill__icon"></span>
-            <div class="skill-hover skill-hover_bg_red">
-              <h5 class="skill-hover__heading">HTML5</h5>
-              <p class="skill-hover__descript">Кроссбраузерная, cемантическая, аккуратная верстка.</p>
-            </div>
-          </li>
-          <li class="skill__item skill__item_shadow_blue">
-            <span class="icon-css skill__icon"></span>
-            <div class="skill-hover skill-hover_bg_blue">
-              <h5 class="skill-hover__heading">CSS3</h5>
-              <p class="skill-hover__descript">Анимации и трансформации, тени, псевдоэлементы и прочие фишки.</p>
-            </div>
-          </li>
-          <li class="skill__item skill__item_shadow_yellow">
-            <span class="icon-js skill__icon"></span>
-            <div class="skill-hover skill-hover_bg_yellow">
-              <h5 class="skill-hover__heading">JavaScript</h5>
-              <p class="skill-hover__descript">Достаточно, чтобы понимать чужие скрипты и писать свои.</p>
-            </div>
-          </li>
-          <li class="skill__item skill__item_shadow_sky">
-            <span class="icon-mobile skill__icon"></span>
-            <div class="skill-hover skill-hover_bg_sky">
-              <h5 class="skill-hover__heading">Адаптивность</h5>
-              <p class="skill-hover__descript">В современном мире контен сайта должен хорошо выглядеть на устройстве с любым размером экрана</p>
-            </div>
-          </li>
-        </ul>
-        <div class="tools l-tools">
-          <h3 class="tools__heading">Инструменты</h3>
-          <p class="tools__descript">В своей работе я применяю методологию <span class="text-color_orange">BEM</span>, использую такие инструмсенты как CSS препроцессор <span class="text-color_pink">SASS</span> и сборщик проектов <span class="text-color_purpure">Gulp</span>. Я работаю с системой контроля версий <span class="text-color_red">Git</span> и имею свой <a href="https://github.com/AndrewBasiuk" target="_blank" class="tools__link">акаунт</a> на <span class="text-color_gray">GitHub</span>. Также у меня есть опыт работы с <span class="text-color_violet">Bootstrap</span></p>
-        </div>
-      </div>
-  </section>
-
-  <section class="my-work" id="my-work">
-      <h2 id="my-work-heading" class="section-heading section-heading_color_white">Мои работы</h2>
-      <ul class="work l-work clearfix">
-        <li class="work__item">
-          <a target="_blank" href="work/6/index_1.html" class="work__link">
-            <img src="img/liberty.jpg" alt="maket-4" class="work__img">
-            <span class="icon-search"></span>
-          </a>
-          <!-- <span class="icon-search"></span> -->
-        </li>
-        <li class="work__item">
-          <a target="_blank" href="work/6/index_2.html" class="work__link">
-            <img src="img/liberty_2.jpg" alt="maket-4" class="work__img">
-            <span class="icon-search"></span>
-          </a>
-          <!-- <span class="icon-search"></span> -->
-        </li>
-        <li class="work__item">
-          <a target="_blank" href="work/five/index.html" class="work__link">
-            <img src="img/maket6.png" alt="maket-4" class="work__img">
-            <span class="icon-search"></span>
-          </a>
-          <!-- <span class="icon-search"></span> -->
-        </li>
-        <li class="work__item">
-          <a target="_blank" href="#" class="work__lint">
-            <img src="img/maket1.png" alt="maket-1" class="work__img">
-            <span class="icon-search"></span>
-          </a>
-          <!-- <span class="icon-search"></span> -->
-        </li>
-        <li class="work__item">
-          <a target="_blank" href="work/two/Page.html" class="work__link">
-            <img src="img/Maket2.png" alt="maket-2" class="work__img">
-            <span class="icon-search"></span>
-          </a>
-          <!-- <span class="icon-search"></span> -->
-        </li>
-        <li class="work__item">
-          <a target="_blank" href="work/one/item.html" class="work__link">
-            <img src="img/Maket3.png" alt="maket-3" class="work__img">
-            <span class="icon-search"></span>
-          </a>
-          <!-- <span class="icon-search"></span> -->
-        </li>
-        <li class="work__item">
-          <a target="_blank" href="work/three/Responsive_Page.html" class="work__link">
-            <img src="img/Maket4.png" alt="maket-4" class="work__img">
-            <span class="icon-search"></span>
-         </a>
-          <!-- <span class="icon-search"></span> -->
-        </li>
-        <li class="work__item">
-          <a target="_blank" href="work/four/testPage.html" class="work__link">
-            <img src="img/Maket5.png" alt="maket-5" class="work__img">
-            <span class="icon-search"></span>
-          </a>
-          <!-- <span class="icon-search"></span> -->
-        </li>
-      </ul>
-      <button class="my-work__btn">Посмотреть еще</button>
-  </section>
-
-  <section class="about" id="about">
-    <div class="container clearfix">
-      <h2 id="about-heading" class="section-heading section-heading_color_black">Обо мне</h2>
-        <div class="about-descript">
-          <p class="about-descript__text"><span class="indent">Чтобы</span> не утомлять Вас длинной историей своей жизни, буду краток: </p>
-           <p class="about-descript__text"><span class="indent">На</span> сегодняшний день мне 23 года. В 2016 г. я закончил <span class="italic bold">НТУУ "Киевский политехнический институт им. Сикорского"</span> по специальности <span class="italic">"Радиотехника"</span>. В самом конце учёбы я познакомился с WEB-разработкой и после первой добавленой картинки и изменённого цвета текста меня это затянуло и пошло-поехало... Активно вникаю в глубь и познаю все прелести этой области я где-то год. Большую часть свободного времени посвящаю изучению WEB-технологий и приминею этих знаний на практике. Остальную же его часть провожу с друзьями или занимаюсь своим хобби. </p>
-           <p class="about-descript__text"><span class="indent bold">Сейчас я ищу работу</span>, на которой смогу заниматся тем, что мне нравится и тем, что вызывает огромный интерес; на которой буду учиться чему-то новому, постоянно развиваться, прокачивая все свои "скилы", и покорять всё новые и новые вершины удивительной, разнообразной и очень интересной сферы WEB-разработки.</p>
-           <p class="about-descript__text rezume-block">
-            Для более детальной информации можете ознакомится с моим резюме:
-            <a href="Resume_Basiuk_Andrii_eng.pdf" target="_blank" class="about-descript__link"><span class="icon-profile"></span></a>
-          </p>
-        </div>
+        <!-- <button class="head__button"><a href="#knowledge-heading"><span class="icon-circle-down"></span></a></button> -->
     </div>
-  </section>
-  
 
-  <footer class="footer" id="footer">
-        <ul class="contact-icon">
-          <li class="contact-icon__item animated"><a href="https://github.com/AndrewBasiuk" target="_blank" class="contact-icon__link"><span class="icon-git"></span></a></li>
-          <li class="contact-icon__item animated"><a href="https://www.facebook.com/profile.php?id=100017181497162" target="_blank" class="contact-icon__link"><span class="icon-facebook2"></span></a></li>
-          <li class="contact-icon__item animated"><a href="https://www.linkedin.com/in/andrew-basiuk-70739814a/" target="_blank" class="contact-icon__link"><span class="icon-linkedin"></span></a></li>
-          <li class="contact-icon__item"><p class="mail">a.basyuk4779@gmail.com</p></li>
+    <section class="knowledge">
+        <h2 class="section-heading" id="knowledge-heading">Навыки</h2>
+        <div class = "skill-wrap">
+          <ul class="skill l-skill clearfix">
+            <li class="skill__item skill__item_shadow_red">
+              <span class="html-five skill__icon"></span>
+              <div class="skill-hover skill-hover_bg_red">
+                <h5 class="skill-hover__heading">HTML5</h5>
+                <p class="skill-hover__descript">Кроссбраузерная, cемантическая, аккуратная верстка.</p>
+              </div>
+            </li>
+            <li class="skill__item skill__item_shadow_blue">
+              <span class="icon-css skill__icon"></span>
+              <div class="skill-hover skill-hover_bg_blue">
+                <h5 class="skill-hover__heading">CSS3</h5>
+                <p class="skill-hover__descript">Анимации и трансформации, тени, псевдоэлементы и прочие фишки.</p>
+              </div>
+            </li>
+            <li class="skill__item skill__item_shadow_yellow">
+              <span class="icon-js skill__icon"></span>
+              <div class="skill-hover skill-hover_bg_yellow">
+                <h5 class="skill-hover__heading">JavaScript</h5>
+                <p class="skill-hover__descript">На уровне написанния не сложних собственных скриптов, подключения готовых плагинов, библиотек и работой с различными API</p>
+              </div>
+            </li>
+            <li class="skill__item skill__item_shadow_sky">
+              <span class="icon-mobile skill__icon"></span>
+              <div class="skill-hover skill-hover_bg_sky">
+                <h5 class="skill-hover__heading">Адаптивность</h5>
+                <p class="skill-hover__descript">В современном мире контен сайта должен хорошо выглядеть на устройстве с любым размером экрана</p>
+              </div>
+            </li>
+          </ul>
+          <div class="tools l-tools">
+            <h3 class="tools__heading">Инструменты</h3>
+            <p class="tools__descript">В своей работе я применяю методологию <span class="text-color_orange">BEM</span>, использую такие инструмсенты как CSS препроцессор <span class="text-color_pink">SASS</span> и сборщик проектов <span class="text-color_purpure">Gulp</span>. Я работаю с системой контроля версий <span class="text-color_red">Git</span> и имею свой <a href="https://github.com/AndrewBasiuk" target="_blank" class="tools__link">аккаунт</a> на <span class="text-color_gray">GitHub</span>. Также у меня есть опыт работы с <span class="text-color_violet">Bootstrap</span></p>
+          </div>
+        </div>
+    </section>
+
+    <section class="my-work" id="my-work">
+        <h2 id="my-work-heading" class="section-heading section-heading_color_white">Мои работы</h2>
+        <ul class="work l-work clearfix">
+          <li class="work__item">
+            <a target="_blank" href="work/9/index.html" class="work__link">
+              <img src="img/maket-9.png" alt="maket-9" class="work__img">
+              <span class="icon-search"></span>
+            </a>
+          </li>
+          <li class="work__item">
+            <a target="_blank" href="work/6/index_1.html" class="work__link">
+              <img src="img/liberty.jpg" alt="maket-6" class="work__img">
+              <span class="icon-search"></span>
+            </a>
+          </li>
+          <li class="work__item">
+            <a target="_blank" href="work/7/index.html" class="work__link">
+              <img src="img/maket-7.png" alt="maket_7" class="work__img">
+              <span class="icon-search"></span>
+            </a>
+          </li>
+          <li class="work__item">
+            <a target="_blank" href="work/6/index_2.html" class="work__link">
+              <img src="img/liberty_2.jpg" alt="maket-5" class="work__img">
+              <span class="icon-search"></span>
+            </a>
+          </li>
+          <li class="work__item">
+            <a target="_blank" href="work/five/index.html" class="work__link">
+              <img src="img/maket6.png" alt="maket-4" class="work__img">
+              <span class="icon-search"></span>
+            </a>
+          </li>
+          <li class="work__item">
+            <a target="_blank" href="#" class="work__lint">
+              <img src="img/maket1.png" alt="maket-1" class="work__img">
+              <span class="icon-search"></span>
+            </a>
+          </li>
+          <li class="work__item">
+            <a target="_blank" href="work/four/index.html" class="work__link">
+              <img src="img/Maket5.png" alt="maket-5" class="work__img">
+              <span class="icon-search"></span>
+            </a>
+          </li>
+          <li class="work__item">
+            <a target="_blank" href="work/one/item.html" class="work__link">
+              <img src="img/Maket3.png" alt="maket-3" class="work__img">
+              <span class="icon-search"></span>
+            </a>
+          </li>
+          <li class="work__item">
+            <a target="_blank" href="work/three/Responsive_Page.html" class="work__link">
+              <img src="img/Maket4.png" alt="maket-4" class="work__img">
+              <span class="icon-search"></span>
+           </a>
+          </li>
+         <li class="work__item">
+            <a target="_blank" href="work/two/Page.html" class="work__link">
+              <img src="img/Maket2.png" alt="maket-2" class="work__img">
+              <span class="icon-search"></span>
+            </a>
+          </li>
+          <li class="work__item">
+            <a target="_blank" href="work/8/index.html" class="work__link">
+              <img src="img/maket-8.png" alt="maket-2" class="work__img">
+              <span class="icon-search"></span>
+            </a>
+          </li>
         </ul>
-      <div class="rights">&copy; ANDREW BASIUK</div>
-  </footer>
+        <button class="my-work__btn">Посмотреть еще</button>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container clearfix">
+        <h2 id="about-heading" class="section-heading section-heading_color_black">Обо мне</h2>
+          <div class="about-descript">
+            <p class="about-descript__text"><span class="indent">Чтобы</span> не утомлять Вас длинной историей своей жизни, буду краток: </p>
+             <p class="about-descript__text"><span class="indent">На</span> сегодняшний день мне 24 года. В 2016 г. я закончил <span class="italic bold">НТУУ "Киевский политехнический институт им. Сикорского"</span> по специальности <span class="italic">"Радиотехника"</span>. В самом конце учёбы я познакомился с WEB-разработкой и после первой добавленой картинки и изменённого цвета текста меня это затянуло и пошло-поехало... Активно вникаю в глубь и познаю все прелести этой области я где-то год. Большую часть свободного времени посвящаю изучению WEB-технологий и приминею этих знаний на практике. Остальную же его часть провожу с друзьями или занимаюсь своим хобби. </p>
+             <p class="about-descript__text"><span class="indent bold">Сейчас я ищу работу</span>, на которой смогу заниматся тем, что мне нравится и тем, что вызывает огромный интерес; на которой буду учиться чему-то новому, постоянно развиваться, прокачивая все свои "скилы", и покорять всё новые и новые вершины удивительной, разнообразной и очень интересной сферы WEB-разработки.</p>
+             <p class="about-descript__text rezume-block">
+              Для более детальной информации можете ознакомится с моим резюме:
+              <a href="Resume_Basiuk_Andrii_eng.pdf" target="_blank" class="about-descript__link"><span class="icon-profile"></span></a>
+            </p>
+          </div>
+      </div>
+    </section>
+    
+
+    <footer class="footer" id="footer">
+          <ul class="contact-icon">
+            <li class="contact-icon__item animated"><a href="https://github.com/AndrewBasiuk" target="_blank" class="contact-icon__link"><span class="icon-git"></span></a></li>
+            <li class="contact-icon__item animated"><a href="https://www.facebook.com/profile.php?id=100017181497162" target="_blank" class="contact-icon__link"><span class="icon-facebook2"></span></a></li>
+            <li class="contact-icon__item animated"><a href="https://www.linkedin.com/in/andrew-basiuk-70739814a/" target="_blank" class="contact-icon__link"><span class="icon-linkedin"></span></a></li>
+            <li class="contact-icon__item"><p class="mail">a.basyuk4779@gmail.com</p></li>
+          </ul>
+        <div class="rights">&copy; ANDREW BASIUK</div>
+    </footer>
 
 
 
-
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

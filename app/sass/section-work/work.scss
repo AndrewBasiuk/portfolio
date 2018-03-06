@@ -1,0 +1,102 @@
+.my-work {
+	position: relative;
+	background-color: #fff;
+	border-top: 1px solid #3F4C54;
+	padding-bottom: 100px;
+
+	&__btn {
+		position: relative;
+		bottom: -50px;
+		left: 50%;
+		transform: translateX(-50%);
+		padding: 1%;
+		background-color: transparent;
+		font: 2.5em Roboto-Black, Arial, sans-serif;
+		color: $darck-gray;
+		text-transform: uppercase;
+		border: 5px solid $darck-gray;
+		border-radius: 20px;
+		cursor: pointer;
+		outline: none;
+		transition: all 0.3s;
+
+		&:hover {
+			color: #fff;
+			background-color: $darck-gray;
+			opacity: 0.5;
+		}
+	}
+}
+.my-work__btn_active {
+	color: #fff;
+	background-color: $darck-gray;
+}
+
+.section-heading_color_white {
+	color: $darck-gray;
+}
+/*на великих розширеннях заголовок не стає по-середині???*/
+@media screen and (min-width: 1440px) {
+	.section-heading_color_white {
+		position: relative;
+		left: -25%;
+	}
+}
+
+.l-work {
+	margin-top: 30px;
+}
+.work {
+	/*height: 75%;*/
+	display: flex;
+	flex-wrap: wrap;
+
+	&__item {
+		position: relative;
+		margin-bottom: 20px;
+		height: 350px;
+		width: 33.333%;
+		border-radius: 15px;
+		background-color: #000;
+		box-sizing: border-box;
+		transition: 0.3s all;
+		overflow: hidden;
+
+		&:hover .work__img {
+			opacity: 0.3;
+			transform: scale(1.2);
+		}
+
+		&:hover .icon-search {
+			display: block;
+		}
+
+		&:nth-child(n+7) {
+			display: none;
+		}
+
+	}
+
+	&__img {
+		min-width: 100%;
+		height: 100%;
+		max-width: 100%;
+		border-radius: 15px;
+		transition: all 0.5s;
+	}
+}
+a.work__link {
+	border-radius: 15px;
+}
+
+.icon-search {
+	display: none;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-family: 'work-icon' !important;
+	font-size: 8em;
+	color: #fff;
+	z-index: 10;
+}

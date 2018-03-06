@@ -1,0 +1,36 @@
+
+.out {
+  display: none;
+}
+
+.preloader-wrap {
+  margin: 21% auto;
+  box-sizing:border-box;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background:linear-gradient(rgba(64, 150, 238, 1) -50%,rgba(64, 150, 238, 0) 60%);
+  animation:roll-r 6s linear infinite;
+}
+
+.preloader {
+  padding:5px;
+  animation:roll-l 2s linear infinite;
+}
+.preloader:after {
+  content:"";
+  display:block;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  background:#fff;
+}
+
+@keyframes roll-r {
+  0% {transform:rotate(0deg);}
+  100% {transform:rotate(360deg);}
+}
+@keyframes roll-l {
+  0% {transform:rotate(0deg);}
+  100% {transform:rotate(-360deg);}
+}

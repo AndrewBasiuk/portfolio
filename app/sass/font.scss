@@ -2,62 +2,37 @@
 
 @font-face {
 	font-family: 'Rubik-Bold';
-	src: url('../font/Rubik-Bold.eot');
-	src: url('../font/Rubik-Bold.eot?#iefix') format('embedded-opentype'),
-		url('../font/Rubik-Bold.woff') format('woff'),
-		url('../font/Rubik-Bold.ttf') format('truetype');
+	src: url('../font/Rubik-Bold.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Nord';
-	src: url('../font/Nord.eot');
-	src: url('../font/Nord.eot?#iefix') format('embedded-opentype'),
-		url('../font/Nord.woff') format('woff'),
-		url('../font/Nord.ttf') format('truetype');
+	src: url('../font/Nord.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Roboto-Black';
-	src: url('../font/Roboto-Black.eot');
-	src: url('../font/Roboto-Black.eot?#iefix') format('embedded-opentype'),
-		url('../font/Roboto-Black.woff') format('woff'),
-		url('../font/Roboto-Black.ttf') format('truetype');
+	src: url('../font/Roboto-Black.woff') format('woff');
 	font-weight: 900;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Gotham-Bold';
-	src: url('../font/GothamPro-Bold.eot');
-	src: url('../font/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
-		url('../font/GothamPro-Bold.woff') format('woff'),
-		url('../font/GothamPro-Bold.ttf') format('truetype');
+	src: url('../font/GothamPro-Bold.woff') format('woff');
 	font-weight: bold;
 	font-style: normal;
 }
-
-// @font-face {
-//   font-family: 'PlayfairRegular';
-//   src: url('../font/PlayfairDisplay-Regular.eot');
-//   src: url('../font/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
-//     url('../font/PlayfairDisplay-Regular.woff') format('woff'),
-//     url('../font/PlayfairDisplay-Regular.ttf') format('truetype');
-//   font-weight: normal;
-//   font-style: normal;
-// }
 
 
 
 @font-face {
   font-family: 'PlayfairBold';
-  src: url('../font/PlayfairDisplay-Bold.eot');
-  src: url('../font/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
-    url('../font/PlayfairDisplay-Bold.woff') format('woff'),
-    url('../font/PlayfairDisplay-Bold.ttf') format('truetype');
+  src: url('../font/PlayfairDisplay-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }

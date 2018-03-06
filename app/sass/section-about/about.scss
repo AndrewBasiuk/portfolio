@@ -1,0 +1,51 @@
+.about {
+	height: 85vh;
+	padding-bottom: 80px;
+	background: url(../img/lamp.jpeg) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	border-top: 1px solid #000; 
+}
+.section-heading_color_black {
+	color: #fff;
+}
+
+.about-descript {
+	position: relative;
+	width: 70%;
+	margin: 5% auto 0 auto;
+	background-color: transparent;
+
+	&__text {
+		color: #fff;
+		margin-bottom: 20px;
+		text-align: justify;
+		font: 1.5em PlayfairBold, "Times New Roman", serif;
+		line-height: 1.4;
+		letter-spacing: 2px;
+	}
+}
+
+.icon-profile {
+	font-family: 'rezume-icon' !important;
+	font-size: 2em;
+	margin-left: 20%;
+	color: green;
+	&:hover {
+		color: #00ff11;
+	}
+}
+.rezume-block {
+	margin-top: 100px;
+	display: flex;
+	align-items: center;
+}
+.indent {
+	margin-left: 5%
+}
+.italic {
+	font-style: italic;
+}
+.bold {
+	font-weight: 600;
+}

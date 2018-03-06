@@ -20,7 +20,6 @@ $(document).ready(function() {
      $('body').animate( { scrollTop: destination }, 1000 );
     });
 
-
     // 
     $('.popup__btn').on('click', function() {
     	$('.popup__text').fadeToggle(700);
@@ -33,8 +32,6 @@ $(document).ready(function() {
 		} else {
 			$('.work__item:nth-child(n+7)').fadeToggle(500);
 		}
-
-		$(this).toggleClass('my-work__btn_active');
     });
 
     $('.contact-icon__item').hover(
@@ -46,5 +43,23 @@ $(document).ready(function() {
 		}
 	);
 
+    $(window).load(function() {
+        setTimeout(function() {
+          $preloader = $('#preloader-wrap'),
+        $loader = $preloader.find('.preloader');
+        $loader.fadeOut();
+        $preloader.delay(100).fadeOut('slow').remove();
+        $('.out').removeClass('out');
+        }, 1000);
+    });
+
 
 });
+
+//preloader 
+    // $(window).on('load', function () {
+    //     $preloader = $('.preloader-wrap'),
+    //     $loader = $preloader.find('.preloader');
+    //     $loader.fadeOut();
+    //     $preloader.delay(350).fadeOut('slow');
+    // });
