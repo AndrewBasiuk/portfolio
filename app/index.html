@@ -17,9 +17,11 @@
   </head>
   <body>
 
-    <div class="preloader-wrap" id="preloader-wrap">
+    <div style="position: absolute; top: 400" w3-include-html="img/svg/svg.html"></div>
+
+    <!-- <div class="preloader-wrap" id="preloader-wrap">
       <div class="preloader" id="preloader"></div>
-    </div>    
+    </div>     -->
 
   <div class="out">
     <div class="button-top"><a class="to-top" href="#head"><span class="icon-arrow-up"></span></a></div>
@@ -31,23 +33,31 @@
           <div class="autor">
             <img src="img/photo.jpg" alt="my_photo" class="autor__photo ">
             <h4 class="autor__name ">Андрей Басюк</h4>
-            <div class="autor__specialisation animated fadeInDown">Front-End developer</div>
+            <div class="autor__specialisation animated fadeInDown">
+              <span class="autor__specialisation_blue">html coder</span> <br>
+              <span class="autor__specialisation_green">jr. front-end developer</span>
+            </div>
           </div>
-          <nav class="head__nav">
+          <button class="nav-button">
+            <svg class="nav-button__image"><use xlink:href="#menu"></use></svg>
+            <p class="nav-button__text">MENU</p>
+          </button>
+          <!-- <nav class="head__nav">
             <ul class="menu">
               <li class="menu__item animated fadeInUp"><a class="menu__link" href="#knowledge-heading">Навыки</a></li>
               <li class="menu__item animated fadeInUp"><a class="menu__link" href="#my-work">Мои Работы</a></li>
               <li class="menu__item animated fadeInUp"><a class="menu__link" href="#about">Обо мне</a></li>
               <li class="menu__item animated fadeInUp"><a class="menu__link" href="#footer">Контакты</a></li>
             </ul>
-          </nav>
+          </nav> -->
+
         </header>
 
-        <div class="popup">
+        <!-- <div class="popup">
           <button class="popup__btn animated swing">Click me!</button>
           <p class="popup__text">Здравствуйте, меня зовут Андрей и я рад видеть Вас на своём небольшом сайте-портфолио. Кто же я такой? Я - молодой разработчик, который любит то, что делает и делает то, что любит:) Здесь ви сможете увидеть мои работы и немного узнать обо мне. Спасибо за Ваше внимание!</p>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <section class="knowledge">
@@ -194,7 +204,11 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/main.js"></script>
+    <script src="js/html-iclude-html.js"></script>
+    <script>
+      includeHTML();
+    </script>
+    
   </body>
 </html
