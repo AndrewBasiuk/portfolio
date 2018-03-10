@@ -1,5 +1,54 @@
 $(document).ready(function() {
 
+    // menu show and hide
+    var menuContainer = $(".nav-container");
+    $(".nav-container__icon").on("click", function() {
+        menuContainer.removeClass("menu-show");
+    });
+    $(".nav-button").on("click", function() {
+        menuContainer.addClass("menu-show");
+    });
+    //end menu show and hide
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	var screenWidth = $(window).width();
 
 	$(window).scroll(function(){
@@ -55,11 +104,3 @@ $(document).ready(function() {
 
 
 });
-
-//preloader 
-    // $(window).on('load', function () {
-    //     $preloader = $('.preloader-wrap'),
-    //     $loader = $preloader.find('.preloader');
-    //     $loader.fadeOut();
-    //     $preloader.delay(350).fadeOut('slow');
-    // });

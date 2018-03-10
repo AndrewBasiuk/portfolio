@@ -17,7 +17,7 @@
   </head>
   <body>
 
-    <div style="position: absolute; top: 400" w3-include-html="img/svg/svg.html"></div>
+    <div style="position: absolute; top: -200%" w3-include-html="img/svg/svg.html"></div>
 
     <!-- <div class="preloader-wrap" id="preloader-wrap">
       <div class="preloader" id="preloader"></div>
@@ -27,13 +27,23 @@
     <div class="button-top"><a class="to-top" href="#head"><span class="icon-arrow-up"></span></a></div>
 
     <section class="head" id="head">
-      <img src="img/stena_more_new.jpg" alt="bg-image" class="head__image">
+      <div class="nav-container">
+        <svg class="nav-container__icon"><use xlink:href="#menu-close"></use></svg>
+        <nav class="nav head__nav">
+          <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="#about">Обо мне</a><span class="stick"></span></li>
+            <li class="menu__item"><a class="menu__link" href="#knowledge-heading">Навыки<span class="stick"></span></a></li>
+            <li class="menu__item"><a class="menu__link" href="#my-work">Мои Работы</a><span class="stick"></span></li>
+            <li class="menu__item"><a class="menu__link" href="#footer">Контакты</a><span class="stick"></span></li>
+          </ul>
+        </nav>
+      </div>
       <div class="head-content">
         <header class="header">
           <div class="autor">
             <img src="img/photo.jpg" alt="my_photo" class="autor__photo ">
             <h4 class="autor__name ">Андрей Басюк</h4>
-            <div class="autor__specialisation animated fadeInDown">
+            <div class="autor__specialisation">
               <span class="autor__specialisation_blue">html coder</span> <br>
               <span class="autor__specialisation_green">jr. front-end developer</span>
             </div>
@@ -42,22 +52,27 @@
             <svg class="nav-button__image"><use xlink:href="#menu"></use></svg>
             <p class="nav-button__text">MENU</p>
           </button>
-          <!-- <nav class="head__nav">
-            <ul class="menu">
-              <li class="menu__item animated fadeInUp"><a class="menu__link" href="#knowledge-heading">Навыки</a></li>
-              <li class="menu__item animated fadeInUp"><a class="menu__link" href="#my-work">Мои Работы</a></li>
-              <li class="menu__item animated fadeInUp"><a class="menu__link" href="#about">Обо мне</a></li>
-              <li class="menu__item animated fadeInUp"><a class="menu__link" href="#footer">Контакты</a></li>
-            </ul>
-          </nav> -->
-
         </header>
-
-        <!-- <div class="popup">
-          <button class="popup__btn animated swing">Click me!</button>
-          <p class="popup__text">Здравствуйте, меня зовут Андрей и я рад видеть Вас на своём небольшом сайте-портфолио. Кто же я такой? Я - молодой разработчик, который любит то, что делает и делает то, что любит:) Здесь ви сможете увидеть мои работы и немного узнать обо мне. Спасибо за Ваше внимание!</p>
+        <div class="svg-word">
+          <div class="svg-word__image-wrap" w3-include-html="img/svg/create.html"></div>
+          <p class="svg-word__text">beautiful things</p>
         </div>
-      </div> -->
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container clearfix">
+        <h2 id="about-heading" class="section-heading section-heading_color_black">Обо мне</h2>
+          <div class="about-descript">
+            <p class="about-descript__text"><span class="indent">Чтобы</span> не утомлять Вас длинной историей своей жизни, буду краток: </p>
+             <p class="about-descript__text"><span class="indent">На</span> сегодняшний день мне 24 года. В 2016 г. я закончил <span class="italic bold">НТУУ "Киевский политехнический институт им. Сикорского"</span> по специальности <span class="italic">"Радиотехника"</span>. В самом конце учёбы я познакомился с WEB-разработкой и после первой добавленой картинки и изменённого цвета текста меня это затянуло и пошло-поехало... Активно вникаю в глубь и познаю все прелести этой области я где-то год. Большую часть свободного времени посвящаю изучению WEB-технологий и приминею этих знаний на практике. Остальную же его часть провожу с друзьями или занимаюсь своим хобби. </p>
+             <p class="about-descript__text"><span class="indent bold">Сейчас я ищу работу</span>, на которой смогу заниматся тем, что мне нравится и тем, что вызывает огромный интерес; на которой буду учиться чему-то новому, постоянно развиваться, прокачивая все свои "скилы", и покорять всё новые и новые вершины удивительной, разнообразной и очень интересной сферы WEB-разработки.</p>
+             <p class="about-descript__text rezume-block">
+              Для более детальной информации можете ознакомится с моим резюме:
+              <a href="Resume_Basiuk_Andrii_eng.pdf" target="_blank" class="about-descript__link"><span class="icon-profile"></span></a>
+            </p>
+          </div>
+      </div>
     </section>
 
     <section class="knowledge">
@@ -172,22 +187,6 @@
         </ul>
         <button class="my-work__btn">Посмотреть еще</button>
     </section>
-
-    <section class="about" id="about">
-      <div class="container clearfix">
-        <h2 id="about-heading" class="section-heading section-heading_color_black">Обо мне</h2>
-          <div class="about-descript">
-            <p class="about-descript__text"><span class="indent">Чтобы</span> не утомлять Вас длинной историей своей жизни, буду краток: </p>
-             <p class="about-descript__text"><span class="indent">На</span> сегодняшний день мне 24 года. В 2016 г. я закончил <span class="italic bold">НТУУ "Киевский политехнический институт им. Сикорского"</span> по специальности <span class="italic">"Радиотехника"</span>. В самом конце учёбы я познакомился с WEB-разработкой и после первой добавленой картинки и изменённого цвета текста меня это затянуло и пошло-поехало... Активно вникаю в глубь и познаю все прелести этой области я где-то год. Большую часть свободного времени посвящаю изучению WEB-технологий и приминею этих знаний на практике. Остальную же его часть провожу с друзьями или занимаюсь своим хобби. </p>
-             <p class="about-descript__text"><span class="indent bold">Сейчас я ищу работу</span>, на которой смогу заниматся тем, что мне нравится и тем, что вызывает огромный интерес; на которой буду учиться чему-то новому, постоянно развиваться, прокачивая все свои "скилы", и покорять всё новые и новые вершины удивительной, разнообразной и очень интересной сферы WEB-разработки.</p>
-             <p class="about-descript__text rezume-block">
-              Для более детальной информации можете ознакомится с моим резюме:
-              <a href="Resume_Basiuk_Andrii_eng.pdf" target="_blank" class="about-descript__link"><span class="icon-profile"></span></a>
-            </p>
-          </div>
-      </div>
-    </section>
-    
 
     <footer class="footer" id="footer">
           <ul class="contact-icon">
