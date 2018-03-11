@@ -8,6 +8,14 @@
 }
 
 @font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('../fontsMontserrat-Medium.woff2') format('woff2'),
+        url('../fontsMontserrat-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
  font-family: 'Nord';
  src: url('../fonts/Nord.woff') format('woff');
  font-weight: normal;

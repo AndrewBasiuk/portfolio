@@ -1,38 +1,39 @@
 .about {
-	height: 85vh;
-	padding-bottom: 80px;
-	background: url(../img/lamp.jpeg) no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	border-top: 1px solid #000; 
-}
-.section-heading_color_black {
-	color: #fff;
+	position: relative;
+	height: 100vh;
+	display: flex;
+	overflow: hidden;
+	border-top: 5px solid #fff;
+	border-bottom: 5px solid #fff;
+	box-sizing: border-box;
 }
 
 .about-descript {
 	position: relative;
-	width: 70%;
-	margin: 5% auto 0 auto;
-	background-color: transparent;
+	padding: 0 5%;
+	width: 55%;
+	height: 100%;
+	background-color: #fff;
+	box-sizing: border-box;
 
 	&__text {
-		color: #fff;
+		color: $main-text-color;
 		margin-bottom: 20px;
-		text-align: justify;
-		font: 1.5em PlayfairBold, "Times New Roman", serif;
-		line-height: 1.4;
+		font: 1.5em  "Times New Roman", serif;
+		line-height: 1.6;
 		letter-spacing: 2px;
 	}
-}
 
-.icon-profile {
-	font-family: 'rezume-icon' !important;
-	font-size: 2em;
-	margin-left: 20%;
-	color: green;
-	&:hover {
-		color: #00ff11;
+	&__icon {
+		width: 40px;
+		height: 40px;
+		margin-left: 15px;
+		fill: #022c70;
+		transition: all 0.3s;
+
+		&:hover {
+			fill: green;
+		}
 	}
 }
 .rezume-block {
@@ -40,12 +41,18 @@
 	display: flex;
 	align-items: center;
 }
-.indent {
-	margin-left: 5%
+
+.about-decor {
+	width: 45%;
+	height: 100%;
+
+	&__image-wrap {
+		width: 100%;
+		max-height: 100%;
+	}
 }
-.italic {
-	font-style: italic;
-}
-.bold {
-	font-weight: 600;
+
+.man-svg {
+	max-height: 100%;
+	max-width: 100%;
 }

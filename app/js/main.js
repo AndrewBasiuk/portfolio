@@ -11,7 +11,8 @@ $(document).ready(function() {
     //end menu show and hide
 
 
-
+    var currentYear = new Date().getFullYear();
+    document.querySelector('.age').innerHTML = currentYear - 1994;
 
 
 

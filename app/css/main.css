@@ -72,6 +72,12 @@ img {
   font-style: normal; }
 
 @font-face {
+  font-family: 'Montserrat-Medium';
+  src: url("../fontsMontserrat-Medium.woff2") format("woff2"), url("../fontsMontserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
   font-family: 'Nord';
   src: url("../fonts/Nord.woff") format("woff");
   font-weight: normal;
@@ -107,16 +113,43 @@ body {
   position: relative; }
 
 .section-heading {
-  margin-top: 25px;
+  position: relative;
   text-align: center;
   color: #fff;
-  font: 4em Gotham-Bold, Arial, sans-serif;
+  font: 4em Montserrat-Medium, Arial, sans-serif;
   text-transform: uppercase;
-  letter-spacing: 4px; }
+  letter-spacing: 3px;
+  margin: 40px 0 60px 0; }
+  .section-heading:before {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+    content: "";
+    width: 10%;
+    height: 2px;
+    background-color: #000; }
+  .section-heading:after {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    transform: translateY(-50%);
+    content: "";
+    width: 10%;
+    height: 2px;
+    background-color: #000; }
 
-.icon-arrow-up {
-  font-size: 2em;
-  font-family: 'toTop-icon' !important; }
+.section-heading_color_black {
+  color: #000; }
+
+.indent {
+  margin-left: 5%; }
+
+.italic {
+  font-style: italic; }
+
+.bold {
+  font-weight: 600; }
 
 @keyframes dash {
   from {
@@ -291,7 +324,7 @@ body {
       color: #1010ba;
       margin-bottom: 5px; }
     .autor__specialisation_green {
-      color: #005612; }
+      color: green; }
 
 /*MENU-BLOCK*/
 .nav-button {
@@ -391,11 +424,7 @@ body {
 
 /*MENU-BLOCK*/
 .knowledge {
-  background: url(../img/knowledge-bg.jpeg) no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-color: #7b7c7b;
-  border-top: 1px solid #EDEDED;
+  background-color: #fff;
   height: 100vh; }
 
 .skill {
@@ -613,50 +642,51 @@ a.work__link {
   z-index: 10; }
 
 .about {
-  height: 85vh;
-  padding-bottom: 80px;
-  background: url(../img/lamp.jpeg) no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  border-top: 1px solid #000; }
-
-.section-heading_color_black {
-  color: #fff; }
+  position: relative;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  border-top: 5px solid #fff;
+  border-bottom: 5px solid #fff;
+  box-sizing: border-box; }
 
 .about-descript {
   position: relative;
-  width: 70%;
-  margin: 5% auto 0 auto;
-  background-color: transparent; }
+  padding: 0 5%;
+  width: 55%;
+  height: 100%;
+  background-color: #fff;
+  box-sizing: border-box; }
   .about-descript__text {
-    color: #fff;
+    color: #000;
     margin-bottom: 20px;
-    text-align: justify;
-    font: 1.5em PlayfairBold, "Times New Roman", serif;
-    line-height: 1.4;
+    font: 1.5em  "Times New Roman", serif;
+    line-height: 1.6;
     letter-spacing: 2px; }
-
-.icon-profile {
-  font-family: 'rezume-icon' !important;
-  font-size: 2em;
-  margin-left: 20%;
-  color: green; }
-  .icon-profile:hover {
-    color: #00ff11; }
+  .about-descript__icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+    fill: #022c70;
+    transition: all 0.3s; }
+    .about-descript__icon:hover {
+      fill: green; }
 
 .rezume-block {
   margin-top: 100px;
   display: flex;
   align-items: center; }
 
-.indent {
-  margin-left: 5%; }
+.about-decor {
+  width: 45%;
+  height: 100%; }
+  .about-decor__image-wrap {
+    width: 100%;
+    max-height: 100%; }
 
-.italic {
-  font-style: italic; }
-
-.bold {
-  font-weight: 600; }
+.man-svg {
+  max-height: 100%;
+  max-width: 100%; }
 
 .footer {
   display: flex;
@@ -776,11 +806,9 @@ a.to-top {
     font-size: 4em; }
   /*MY_WORK*/
   /*ABOUT*/
-  .about-descript {
-    margin-top: 4%; }
-    .about-descript__text {
-      font-size: 1em;
-      letter-spacing: 1px; }
+  .about-descript__text {
+    font-size: 1em;
+    letter-spacing: 1px; }
   .rezume-block {
     margin-top: 50px; }
   /*ABOUT*/
