@@ -17,16 +17,16 @@ body {
 .section-heading {
   position: relative;
   text-align: center;
-  color: #fff;
-  font: 4em Montserrat-Medium, Arial, sans-serif;
+  color: #000;
+  font: 3.5em Montserrat-Medium, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
-  margin: 40px 0 60px 0;
+  margin: 40px 0 40px 0;
 
   &:before {
     position: absolute;
     top: 50%;
-    left: 15%;
+    left: 12%;
     transform: translateY(-50%);
     content: "";
     width: 10%;
@@ -37,16 +37,13 @@ body {
   &:after {
     position: absolute;
     top: 50%;
-    right: 15%;
+    right: 12%;
     transform: translateY(-50%);
     content: "";
     width: 10%;
     height: 2px;
     background-color: #000;
   }
-}
-.section-heading_color_black {
-  color: #000;
 }
 
 .indent {
