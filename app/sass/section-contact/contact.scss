@@ -2,44 +2,72 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background-color: #fff;
+	background-color: #000;
 	color: #000;
 	height: 15vh;
 	border-top: 1px solid #000;
 }
 
-.contact-icon {
-	position: relative;
-	width: 30%;
-	font-size: 3em;
-	margin-left: 3%;
-	&__item {
-		display: inline-block;
-		margin-right: 5%;
+.contact {
+	min-width: 50%;
+	padding-left: 3%;
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
 
-		&:hover {
-			color: gray;
+	&__text {
+		color: #fff;
+		font: 1.5rem Raleway-Medium, Arial, sans-serif;
+		margin-right: 30px;
+	}
+
+	&-list {
+		display: flex;
+		align-items: center;
+
+		&__item {
+			width: 35px;
+			height: 35px;
+			margin-right: 15px;
+			cursor: pointer;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		&__icon {
+			width: 100%;
+			height: 100%;
+			fill: #fff;
+			transition: all 0.5s;
+
+			&_1:hover {
+				fill: #ff0000;
+			}
+			&_2:hover {
+				fill: #00c7ff;
+			}
+			&_3:hover {
+				fill: #4a4a4c;
+			}
+			&_4:hover {
+				fill: #0060ba;
+			}
+			&_5:hover {
+				fill: #103787;
+			}
 		}
 	}
 }
-.icon-git, .icon-facebook2, .icon-instagram {
-	font-family: 'footer-icon' !important;
-}
-.icon-linkedin {
-  font-family: 'linkedin-icon' !important;
-}
 
-.mail {
-	font-size: 0.8em;
-	position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
+
 .rights {
 	display: inline-block;
 	margin-right: 3%;
 	font-size: 2em;
 	letter-spacing: 2px;
+	color: #fff;
 }
 
 /*/////////FOOTER////////*/

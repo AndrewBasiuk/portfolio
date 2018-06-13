@@ -11,6 +11,20 @@
 	}
 }
 //////////////////////////////////////////
+@keyframes jump {
+	from {
+		top: 0;
+	}
+
+	30% {
+		top: -20px;
+	}
+
+	to {
+		top: 0px;
+	}
+}
+//////////////////////////////////////////
 @keyframes opacity {
 	from {
 		opacity: 0;
@@ -38,5 +52,36 @@
 	to {
 		top: 0;
 		opacity: 1;
+	}
+}
+//////////////////////////////////////////
+@keyframes icon_move {
+    from {
+		transform: rotate(0deg);
+	}
+	20% {
+		transform: rotate(-30deg);
+	}
+	40% {
+		transform: rotate(40deg);
+	}
+	60% {
+		transform: rotate(-45deg);
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 1;
+	}
+	80% {
+		opacity: 0;	
+
+	}
+	95% {
+		top: 700px;
+		opacity: 0;	
+	}
+	100% {
+		top: 700px;
+		opacity: 0;	
 	}
 }

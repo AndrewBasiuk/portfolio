@@ -50,47 +50,65 @@
 
 
 .autor {
-	width: 30%;
+	width: 25%;
 	margin-top: 30px;
 	margin-right: 2%;
 	
-
-	&__photo {
-		$photo-size: 200px;
-		float: left;
-		width: $photo-size;
-		height: $photo-size;
-		max-width: 100%;
-		border-radius: 50%;
-	}
-
 	&__name {
 		display: inline-block;
-		float: left;
+		// float: left;
 		margin-top: 10px;
 		color: $main-text-color;
 		font: 2em Raleway-Medium, Arial, sans-serif;
 		font-weight: bold;
+		width: 100%;
 	}
 
 	&__specialisation {
 		display: inline-block;
-		float: left;
+		// float: left;
 		color: #008ec1;
-		margin-left: 15px;
+		// margin-left: 15px;
 		text-transform: uppercase;
 		word-spacing: 2px;
-		font: 1.3em Nord, Arial, sans-serif;
+		font: 1.1rem Nord, Arial, sans-serif;
 
 		&_blue {
+			opacity: 0;
 			color: #1010ba;
 			margin-bottom: 5px;
+			animation: opacity 1.5s linear 1 forwards;
+  			animation-delay: 5s;
+			width: 100%;
 		}
 
 		&_green {
+			opacity: 0;
 			// color: #005612;
 			color: green;
+			animation: opacity 1.5s linear 1 forwards;
+  			animation-delay: 5.5s;
+			width: 100%;
 		}
+
+		&_gray {
+			position: relative;
+			opacity: 0;
+			color: gray;
+			width: 100%;
+			animation: opacity 1.5s linear 1 forwards;
+  			animation-delay: 6s;
+		}
+	}
+
+	&__icon {
+		position: absolute;
+		top: 0;
+		right: -25px;
+		width: 20px;
+		height: 20px;
+		animation: jump 0.7s linear infinite forwards;
+  		animation-delay: 6.3s;
 	}
 }
 
