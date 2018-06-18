@@ -1,4 +1,89 @@
-//////////////////////////////////////////
+
+@keyframes head_slide_left {
+	from {
+		transform: translateX(-50%); 
+		opscity: 0;
+	}
+
+	to {
+		transform: translateX(0); 
+		opacity: 1;
+	}
+}
+/*//////////////////////////////////////*/
+@keyframes head_slide_right {
+	from {
+		transform: translateX(50%); 
+		opscity: 0;
+	}
+
+	to {
+		transform: translateX(0); 
+		opacity: 1;
+	}
+}
+/*//////////////////////////////////////*/
+@keyframes head_slide_top {
+	from {
+		transform: translateY(-50%); 
+		opscity: 0;
+	}
+
+	to {
+		transform: translateY(0); 
+		opacity: 1;
+	}
+}
+/*//////////////////////////////////////*/
+@keyframes fade {
+	from { 
+		opscity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+/*//////////////////////////////////////*/
+@keyframes head_slide_bottom {
+	from { 
+		opscity: 0;
+		transform: translateY(50%); 
+	}
+
+	to {
+		transform: translateY(0); 
+		opacity: 1;
+	}
+}
+/*//////////////////////////////////////*/
+@keyframes header_slide_top {
+	from { 
+		opscity: 0;
+		transform: translateY(-50%); 
+	}
+
+	to {
+		transform: translateY(0); 
+		opacity: 1;
+	}
+}
+/*//////////////////////////////////////*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*//////////////////////////////////////*/
 @keyframes dash {
 	from {
 		stroke-dashoffset: 40;
@@ -10,7 +95,7 @@
 		stroke-width: 0.2;
 	}
 }
-//////////////////////////////////////////
+/*//////////////////////////////////////////*/
 @keyframes jump {
 	from {
 		top: 0;
@@ -24,7 +109,7 @@
 		top: 0px;
 	}
 }
-//////////////////////////////////////////
+/*//////////////////////////////////////////*/
 @keyframes opacity {
 	from {
 		opacity: 0;
@@ -34,7 +119,7 @@
 		opacity: 1;
 	}
 }
-//////////////////////////////////////////
+/*//////////////////////////////////////////*/
 @keyframes menu-hide{
 	from {
 		left: 0;
@@ -43,7 +128,7 @@
 		left: -100%;
 	}
 }
-//////////////////////////////////////////
+/*//////////////////////////////////////////*/
 @keyframes menu-show{
 	from {
 		top: -100%;
@@ -54,7 +139,7 @@
 		opacity: 1;
 	}
 }
-//////////////////////////////////////////
+/*//////////////////////////////////////////*/
 @keyframes icon_move {
     from {
 		transform: rotate(0deg);

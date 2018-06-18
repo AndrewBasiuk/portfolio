@@ -3,234 +3,171 @@
 .head {
 	position: relative;
 	height: 100vh;
-	background: #000;
+	width: 100%;
+	background: url(../img/head-bg.jpg) center center no-repeat;
+	background-size: cover; 
+	background-attachment: fixed;
 	overflow: hidden;
 
-	&-content {
-		position: absolute;
-		top: 0;
-		left: 50%;
-		right: 0;
-		transform: translateX(-50%);
-		width: 90%;
+	&__content {
+		width: 100%;
 		height: 100%;
-	}
-
-	&__image {
 		position: absolute;
 		top: 0;
 		left: 0;
 		right: 0;
-		width: 100%;
-		height: 100%;
-		opacity: 0.6;
-	}
+		background-color: rgba(0, 0, 0, 0.6);
 
-	&:before {
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		content: "";
-		width: 100%;
-		height: 50%;
-		background: #fff;
-		z-index: 0;
-	}
-}
-
-.header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	opacity: 0;
-	animation: opacity 1.5s linear 1 forwards;
-  	animation-delay: 4s;
-}
-
-
-.autor {
-	width: 25%;
-	margin-top: 30px;
-	margin-right: 2%;
-	
-	&__name {
-		display: inline-block;
-		// float: left;
-		margin-top: 10px;
-		color: $main-text-color;
-		font: 2em Raleway-Medium, Arial, sans-serif;
-		font-weight: bold;
-		width: 100%;
-	}
-
-	&__specialisation {
-		display: inline-block;
-		// float: left;
-		color: #008ec1;
-		// margin-left: 15px;
-		text-transform: uppercase;
-		word-spacing: 2px;
-		font: 1.1rem Nord, Arial, sans-serif;
-
-		&_blue {
-			opacity: 0;
-			color: #1010ba;
-			margin-bottom: 5px;
-			animation: opacity 1.5s linear 1 forwards;
-  			animation-delay: 5s;
-			width: 100%;
-		}
-
-		&_green {
-			opacity: 0;
-			// color: #005612;
-			color: green;
-			animation: opacity 1.5s linear 1 forwards;
-  			animation-delay: 5.5s;
-			width: 100%;
-		}
-
-		&_gray {
-			position: relative;
-			opacity: 0;
-			color: gray;
-			width: 100%;
-			animation: opacity 1.5s linear 1 forwards;
-  			animation-delay: 6s;
+		&_center {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
 		}
 	}
 
-	&__icon {
-		position: absolute;
-		top: 0;
-		right: -25px;
-		width: 20px;
-		height: 20px;
-		animation: jump 0.7s linear infinite forwards;
-  		animation-delay: 6.3s;
-	}
-}
-
-/*MENU-BLOCK*/
-.nav-button {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: transparent;
-	outline: none;
-	border: none;
-	cursor: pointer;
-
-	&__image {
-		position: relative;
-		margin-right: 5px;
-		width: 60px;
-		height: 60px;
-		fill: $main-text-color;
-		transition: all 0.3s;
+	&__heading {
+		color: #fff;
+		font: 10rem Montserrat-Light, Arial, sans-serif;
+		letter-spacing: 15px;
 	}
 
-	&__text {
-		font: 1.5em Montserrat-Light, Arial, sans-serif;
-		color: $main-text-color;
-		transition: all 0.3s;
+	&__subheading {
+		color: #fff;
+		font: 2rem Montserrat-Light, Arial, sans-serif;
+		letter-spacing: 15px;
+		margin-bottom: 10%; 
 	}
 
-	&:hover .nav-button__image {
-		transform: rotate(-180deg);
+	&_color_green {
+		text-shadow: 0px 0px 25px rgb(35, 228, 18);
 	}
 
-	&:hover .nav-button__text {
-		transform: scale(1.1);
-		font-weight: bold;
+	&_color_blue {
+		color: $blue;
+		text-shadow: 0px 0px 25px $blue;
 	}
+
+	&__button {
+      box-shadow: 0px 0px 10px $blue;
+
+      &:hover {
+      	box-shadow: 0px 0px 7px $green;
+		text-shadow: 0px 0px 3px rgb(35, 228, 18);
+      }
+    }
 }
 
 .nav {
-	&-container {
-		position: absolute;
-		top: -100%;
-		left: 0;
-		right: 0;
-		background-color: #fff;
-		width: 100%;
-		height: 100%;
-		padding: 100px 0;
-		box-sizing: border-box;
-		z-index: 10;
-		@include flex-pos(center, center);
+	&-wrap {
+		width: 70%;
+		margin: 0 auto;
+		max-width: 1400px;
+	}
 
+	&-list {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 
-		&__icon {
-			position: absolute;
-			top: 5%;
-			right: 5%;
-			width: 30px;
-			height: 30px;
-			cursor: pointer;
-			opacity: 0.6;
-			transition: all 0.4s;
+		&__link {
+			position: relative;
+			color: #fff;
+			font: 1.3rem Montserrat-Light, Arial, sans-serif;
+			letter-spacing: 1px;
+			transition: all 0.3s;
+
+			&:before {
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+				bottom: -3px;
+				height: 1px;
+				width: 0%;
+				background-color: $green;
+				transition: all 0.3s;
+				content: " ";
+			}
 
 			&:hover {
-				width: 40px;
-				height: 40px;
-				transform: rotate(-180deg);
-				opacity: 1;
+				color: $green;
+				text-shadow: 0px 0px 7px $green;
+			}
+
+			&:hover:before {
+				width: 98%;
 			}
 		}
 	}
 }
 
-.stick {
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	bottom: 0px;
-	content: "";
-	height: 2px;
-	width: 0;
-	background-color: $main-text-color;
-	transition: all 0.7s;
-}
+.header {
+	position: fixed;
+	padding-top: 5px;
+	box-sizing: border-box; 
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: auto;
+	transition: all 0.5s;
+	z-index: 99;
 
-.menu {
-	&__item {
-		position: relative;
-
-		&:hover .stick{
-			width: 40%;
-		}
-		&:hover .menu__link {
-			opacity: 1;
-			transform: scale(1.1);
-		}
-	}
-
-	&__link {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		background-color: transparent;
-		height: 45px;
-		width: auto;
-		font: 1.5em Raleway-Medium, Arial, sans-serif;
-		margin-bottom: 5px;
-		text-transform: uppercase;
-		opacity: 0.7;
+	&__logo {
+		width: 130px;
+		height: 130px;
+		fill: #fff;
+		stroke: #fff;
 		transition: all 0.3s;
+
+		&:hover {
+			stroke: $light-blue;
+			fill: $light-blue;
+		}
 	}
-
-	a {
-		color: $main-text-color;
-	}
 }
-.menu-hide {
-	animation: menu-hide 1.2s linear forwards;
+
+/*header_scroll*/
+.header_scroll {
+	background-color: rgba(0, 0, 0, 0.3);
+	height: 90px;
 }
-.menu-show {
-	animation: menu-show 0.7s linear forwards;
+.header__logo_scroll {
+	height: 90px;
 }
-/*MENU-BLOCK*/
+.logo__circle_scroll {
+	opacity: 0;
+}
+/*end__header_scroll*/
 
 
+.head-slide-left {
+	display: inline-block;
+	animation: head_slide_left 2s 1.3s 1 forwards;
+	opacity: 0;
+	margin-right: -55px;
+}
+.head-slide-right {
+	display: inline-block;
+	animation: head_slide_right 2s 1.3s 1 forwards;
+	opacity: 0;
+	margin-left: -55px;
+}
+.head-slide-top {
+	display: inline-block;
+	animation: head_slide_top 2s 1 forwards;
+	opacity: 0;
+}
+.head-slide-bottom {
+	animation: head_slide_bottom 2s 2.5s 1 forwards;
+	opacity: 0;
+}
+.header-slide-top {
+	animation: header_slide_top 2s 2.5s 1 forwards;
+	opacity: 0;
+}
+.head-fade {
+	animation: fade 3s 1.3s 1 forwards;
+	opacity: 0;
+}

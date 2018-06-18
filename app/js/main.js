@@ -1,144 +1,95 @@
+
+
 $(document).ready(function() {
 
-    // menu show and hide
-    var menuContainer = $(".nav-container");
-    $(".nav-container__icon").on("click", function() {
-        menuContainer.removeClass("menu-show");
+});
+
+//fixed_menu
+window.addEventListener("scroll", function() {
+    if(window.pageYOffset > 0) {
+        document.querySelector(".header").classList.add('header_scroll');
+        document.querySelector(".header__logo").classList.add('header__logo_scroll');
+        document.querySelector(".logo__circle").classList.add('logo__circle_scroll');
+    } else {
+        document.querySelector(".header").classList.remove('header_scroll');
+        document.querySelector(".header__logo").classList.remove('header__logo_scroll');
+        document.querySelector(".logo__circle").classList.remove('logo__circle_scroll');
+    }
+});
+// end__fixed_menu
+
+// paralax
+window.addEventListener("scroll", function() {
+    document.querySelector(".head__content_center").style.top = 50 + window.pageYOffset/12 + '%';
+});
+// end__paralax
+
+
+// animation_on_scroll
+var animationArr = ["fade", "slide-left", "bounce"];
+
+function animationOnScroll(animationList) { 
+    var elements = document.querySelectorAll(".animation-wrapper-js");
+    var arrElement = [];
+    var arrDescendants = [];
+
+    elements.forEach(function(item, i) {
+        arrElement.push(elements[i]);
     });
-    $(".nav-button").on("click", function() {
-        menuContainer.addClass("menu-show");
+
+    arrElement.forEach(function(item, i) {
+        var colDescendants = arrElement[i].getElementsByTagName('*');
+
+        for(var i = 0; i < colDescendants.length; i++) {
+            if(colDescendants[i].classList.contains("animated-block-js")) {
+                arrDescendants.push(colDescendants[i]);
+            }
+        }
     });
-    //end menu show and hide
 
-    var currentYear = new Date().getFullYear();
-    document.querySelector('.age').innerHTML = currentYear - 1994;
+    var arrTop = arrElement.map(function(item) {
+        return item.getBoundingClientRect().top;
+    });
 
+    window.addEventListener("scroll", function() {
+        var windowScroll = window.pageYOffset;
 
+        for(var i = 0; i < arrElement.length; i++ ) {
+            var difference = arrTop[i] - windowScroll;
 
+            if(difference < 600) {
+                for (var j = 0; j < animationList.length; j++) {
+                    arrDescendants.forEach(function(item, i) {
+                        if(item.classList.contains(animationList[j])) {
+                            item.classList.add(animationList[j] + "-in");
+                        }
+                    });
+                }
+            }
+        }
+    });
 
-    // function animationScroll(obj) {
-    //     for(var key in obj) { 
-    //         var elements = document.querySelectorAll("." + key);
-    //         var arr = [];
+    // window.onscroll = function() {
+    //     var windowScroll = window.pageYOffset;
 
-    //         for(var i = 0; i < elements.length; i++) {
-    //             arr.push(elements[i]);
-    //         }
+    //     for(var i = 0; i < arrElement.length; i++ ) {
+    //         var difference = arrTop[i] - windowScroll;
 
-    //         var arrTop = arr.map(function(item) {
-    //            return item.getBoundingClientRect().top;
-    //         });
-
-    //         window.onscroll = function() {
-    //             var windowScroll = window.pageYOffset;
-
-    //             for(var j = 0; j < arr.length; j++ ) {
-    //                 var difference = arrTop[j] - windowScroll;
-
-    //                 if(difference < 500) {
-    //                     arr[j].classList.add(obj[key]);
-    //                 }
+    //         if(difference < 600) {
+    //             for (var j = 0; j < animationList.length; j++) {
+    //                 arrDescendants.forEach(function(item, i) {
+    //                     if(item.classList.contains(animationList[j])) {
+    //                         item.classList.add(animationList[j] + "-in");
+    //                     }
+    //                 });
     //             }
     //         }
     //     }
     // }
+}
 
+animationOnScroll(animationArr); 
+// end__animation_on_scroll
 
-    function animationOnScroll(el) { 
-            var elements = document.querySelectorAll(el);
-            var arrElement = [];
-
-            for(var i = 0; i < elements.length; i++) {
-                arrElement.push(elements[i]);
-            }
-
-            var arrTop = arrElement.map(function(item) {
-               return item.getBoundingClientRect().top;
-            });
-
-            window.onscroll = function() {
-                var windowScroll = window.pageYOffset;
-
-                for(var j = 0; j < arrElement.length; j++ ) {
-                    var difference = arrTop[j] - windowScroll;
-
-                    if(difference < 500) {
-                        if(arrElement[j].classList.contains("fade")) {
-                            arrElement[j].classList.add("fade-in");
-                        } else if(arrElement[j].classList.contains("slide-right-down")) {
-                            arrElement[j].classList.add("slide-right-down-in");
-                        } else if(arrElement[j].classList.contains("slide-right")) {
-                            arrElement[j].classList.add("slide-right-in");
-                        } else if(arrElement[j].classList.contains("slide-left")) {
-                            arrElement[j].classList.add("slide-left-in");
-                        } else if(arrElement[j].classList.contains("slide-top")) {
-                            arrElement[j].classList.add("slide-top-in");
-                        } else if(arrElement[j].classList.contains("slide-bottom")) {
-                            arrElement[j].classList.add("slide-bottom-in");
-                        } 
-                    }
-                }
-            }
-    }
-
-    animationOnScroll(".animation"); 
-
-
-
-
-
-	var screenWidth = $(window).width();
-
-	$(window).scroll(function(){
-
-        var bo = $("body").scrollTop();
-
-        if ( bo > 400 ) { 
-           $(".to-top").css("display", "block"); 
-        } else { 
-           $(".to-top").css("display", "none"); 
-    	};
-    });
-
-    // плавная прокрутка
-	$('a[href^="#"]').click(function () { 
-     elementClick = $(this).attr("href");
-     destination = $(elementClick).offset().top;
-     $('body').animate( { scrollTop: destination }, 1000 );
-    });
-
-    // 
-    $('.popup__btn').on('click', function() {
-    	$('.popup__text').fadeToggle(700);
-    	$(this).removeClass('swing');
-    });
-
-    $('.my-work__btn').on('click', function(){
-    	if(screenWidth<768) {
-			$('.work__item:nth-child(n+4)').fadeToggle(500);
-		} else {
-			$('.work__item:nth-child(n+7)').fadeToggle(500);
-		}
-    });
-
-    $('.contact-icon__item').hover(
-		function() {
-			$(this).addClass('jello');
-		},
-		function() {
-			$(this).removeClass('jello');
-		}
-	);
-
-    $(window).load(function() {
-        setTimeout(function() {
-          $preloader = $('#preloader-wrap'),
-        $loader = $preloader.find('.preloader');
-        $loader.fadeOut();
-        $preloader.delay(100).fadeOut('slow').remove();
-        $('.out').removeClass('out');
-        }, 1000);
-    });
-
-
-});
+var currentYear = new Date().getFullYear();
+    document.querySelector('.age').innerHTML = currentYear - 1994;
