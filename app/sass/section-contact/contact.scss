@@ -1,4 +1,150 @@
-.footer {
+
+.contact {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: url(../img/collaboration.jpg) center -200px no-repeat;
+	background-size: cover;
+	/*background-attachment: fixed;*/
+
+	&__container {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba(0, 0, 0, 0.6);
+	}
+
+	&__heading {
+		width: 30%;
+		position: absolute;
+		top: 50px;
+		left: 5%;
+		text-align: center;
+		color: #fff;
+  		text-shadow: 0px 0px 25px #fff;
+
+		&:before {
+			background-color: #fff;
+		}
+	}
+}
+
+.contact-form {
+	padding: 30px 0;
+	background-color: rgba(0, 0, 0, 0.5);
+
+	&-wrap {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 30%;
+		border: 2px solid #fff;
+		box-sizing: border-box;
+		padding: 15px;
+	}
+
+	&__heading {
+		font-size: 2rem;
+		margin-bottom: 50px;
+	}
+
+	&-input, &-textarea {
+		height: 40px;
+		width: 90%;
+		margin: 0 auto 20px auto;
+		display: flex;
+		align-items: center;
+		background-color: #fff;
+		box-sizing: border-box;
+	}
+
+	&-textarea {
+		height: 100px;
+		padding-top: 7px;
+		padding-left: 15px;
+	}
+
+	&__icon {
+		width: 20px;
+		height: 20px;
+		margin: 0 15px;
+		fill: #000;
+	}
+
+	&__input {
+		flex-grow: 2;
+		height: 90%;
+		border: none;
+		font: 1rem Montserrat-Light, Arial, sans-serif;
+		letter-spacing: 1px;
+		color: #000;
+	}
+
+	&__textarea {
+		outline: none;
+		color: #000;
+	}
+
+	&__button {
+		width: 50%;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		height: 50px;
+		border: 1px solid #fff;
+		outline: none;
+		background-color: transparent;
+		color: #fff;
+		z-index: 1;
+		overflow: hidden;
+		transition: all 0.2s;
+		cursor: pointer;
+
+		&:before {
+			position: absolute;
+			top: -110%;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+			content: " ";
+			background-color: #fff;
+			transition: all 0.3s;
+		}
+
+		&:hover {
+			color: #000;
+		}
+
+		&:hover:before {
+			top: 0;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.footer {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -68,28 +214,6 @@
 	font-size: 2em;
 	letter-spacing: 2px;
 	color: #fff;
-}
+}*/
 
 /*/////////FOOTER////////*/
-
-a.to-top {
-	position: fixed;
-	display: none;
-	right: 1%;
-	top: 400px;
-	padding: 1%;
-	text-align: center;
-	border: 3px solid #fff;
-	border-radius: 10px;
-	background: #000;
-	color: #fff;
-	opacity: 0.7;
-	cursor: pointer;
-	transition: all 0.3s;
-	box-sizing: border-box;
-	z-index: 10;
-
-	&:hover {
-		opacity: 1;
-	}
-}
