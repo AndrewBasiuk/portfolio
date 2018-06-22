@@ -6,12 +6,10 @@
   margin: 0 auto;
 }
 
-.section__heading {
-  position: relative;
-  font-family: Montserrat-Medium, Arial, sans-serif;
-  font-size: 5rem;
+.section__heading-wrap {
+  /*position: relative;*/
 
-  &:before {
+ /* &:before {
     position: absolute;
     left: 0;
     right: 0;
@@ -19,6 +17,23 @@
     width: 100%;
     height: 1px;
     content: " ";
+  }*/
+}
+
+.section__heading {
+  font-family: Montserrat-Medium, Arial, sans-serif;
+  font-size: 5rem;
+}
+
+.section__stick {
+  width: 100%;
+  height: 2px;
+
+  &_green {
+    background-color: $green;
+  }
+  &_blue {
+    background-color: $light-blue;
   }
 }
 

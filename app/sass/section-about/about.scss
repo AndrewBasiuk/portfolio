@@ -4,8 +4,9 @@
 	height: 100vh;
 	background: url(../img/photo.jpg) center -200px no-repeat;
 	background-size: cover;
+	overflow: hidden;
 	
-	&__heading {
+	&__heading-wrap {
 		width: 20%;
 		position: absolute;
 		top: 50px;
@@ -32,7 +33,7 @@
 		left: 1.5%;
 		width: 37%;
 		padding: 15px;
-		border: 2px solid #000;
+		/*border: 2px solid #000;*/
 		box-sizing: border-box;
 	}
 

@@ -20,13 +20,14 @@ window.addEventListener("scroll", function() {
 
 // paralax
 window.addEventListener("scroll", function() {
+    // document.querySelector(".skill-info_additional").style.top = 50 + window.pageYOffset/12 + '%';
     document.querySelector(".head__content_center").style.top = 50 + window.pageYOffset/12 + '%';
 });
 // end__paralax
 
 
 // animation_on_scroll
-var animationArr = ["fade", "slide-left", "bounce"];
+var animationArr = ["height", "fade", "slide-left", "slide-right",  "slide-top", "slide-bottom", "border-draw_black"];
 
 function animationOnScroll(animationList) { 
     var elements = document.querySelectorAll(".animation-wrapper-js");
@@ -46,6 +47,8 @@ function animationOnScroll(animationList) {
             }
         }
     });
+
+    // console.log(arrDescendants);
 
     var arrTop = arrElement.map(function(item) {
         return item.getBoundingClientRect().top;
