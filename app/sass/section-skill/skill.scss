@@ -5,6 +5,7 @@
 	background: url(../img/head-bg.jpg) center center no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
+	overflow: hidden; 
 
 	&__heading-wrap {
 		width: 20%;
@@ -50,6 +51,17 @@
 		font-size: 2.2rem;
 		margin-bottom: 50px;
 	}
+
+	&__text {
+		color: #fff;
+		margin-bottom: 50px;
+		font: 1.8rem Montserrat-Light, Arial, sans-serif;
+
+		&_big {
+			font: 2.2rem Montserrat-Medium, Arial, sans-serif;
+			color: orange;
+		}
+	}
 }
 
 .skill-info-list {
@@ -57,6 +69,10 @@
 	align-items: center;
 	justify-content: space-between;
 	flex-wrap: wrap;
+
+	&_main {
+		margin-bottom: 15%;
+	}
 
 	&__item {
 		width: 27%;

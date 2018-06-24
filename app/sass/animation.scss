@@ -117,9 +117,11 @@
 /*////////////////////////////////////////////////*/
 .height {
 	height: 0;
+	opacity: 0;
 }
 .height-in {
-	height: 75px;
+	opacity: 1;
+	height: 100%;
 }
 /*////////////////////////////////////////////////*/
 .border-draw_black {
@@ -159,6 +161,44 @@
 		height: 100%;
 	}
 }
+
+.border-draw_white {
+  &:before, &:after {
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    content: " ";
+    z-index: 1;
+    box-sizing: border-box;
+  }
+
+  &:after {
+  	right: 0;
+	top: 0;
+	transition: height 0.5s linear 0.5s, width 0.5s linear 1s;
+  }
+
+   &:before {
+	bottom: 0;
+	left: 0;
+	transition: height 0.5s linear 1.5s, width 0.5s linear 2s;
+   }
+}
+.border-draw_white-in {
+	&:before {
+		border-left: 3px solid #fff;
+		border-top: 3px solid #fff;
+		height: 100%;
+		width: 100%;
+	}
+
+	&:after {
+		border-right: 3px solid #fff;
+		border-bottom: 3px solid #fff;
+		width: 100%;
+		height: 100%;
+	}
+}
 /*////////////////////////////////////////////////*/
 
 /*END__ANIMATION_ON_SCROLL*/
@@ -169,7 +209,7 @@
 	transition: all 1.3s;
 }
 .about__heading {
-	transition: all 1s 1.3s;
+	transition: all 1s 1s;
 }
 .about-descript {
 	transition: all 3s 2s;
@@ -198,10 +238,55 @@
 	transition: all 1.3s;
 }
 .skill__heading {
-	transition: all 1s 1.3s;
+	transition: all 1s 1s;
 }
 .skill-info_main {
 	transition: all 1.3s;
 }
+.skill-info_additional {
+	transition: all 1.3s;
+}
+
+.skill-info-list__item {
+	&_1 {
+		transition: all 1.3s 1.5s;
+	}
+	&_2 {
+		transition: all 1.3s 1.7s;
+	}
+	&_3 {
+		transition: all 1.3s 1.9s;
+	}
+	&_4 {
+		transition: all 1.3s 2.1s;
+	}
+	&_5 {
+		transition: all 1.3s 2.3s;
+	}
+	&_6 {
+		transition: all 1.3s 2.5s;
+	}
+	&_7 {
+		transition: all 1.3s 2.7s;
+	}
+	&_8 {
+		transition: all 1.3s 2.9s;
+	}
+}
+.skill-info__text {
+	transition: all 1.3s 3s;
+}
 /*end__skill*/
+
+/*work*/
+.work__heading-wrap {
+	transition: all 1.3s;
+}
+.work__heading {
+	transition: all 1s 1s;
+}
+.work__btn {
+	transition: height 0.8s 2.5s, opacity 0.3s 2.5s;
+}
+/*end__work*/
 /*END__TRANSITION*/

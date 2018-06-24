@@ -27,7 +27,7 @@ window.addEventListener("scroll", function() {
 
 
 // animation_on_scroll
-var animationArr = ["height", "fade", "slide-left", "slide-right",  "slide-top", "slide-bottom", "border-draw_black"];
+var animationArr = ["height", "fade", "slide-left", "slide-right",  "slide-top", "slide-bottom", "border-draw_black", "border-draw_white"];
 
 function animationOnScroll(animationList) { 
     var elements = document.querySelectorAll(".animation-wrapper-js");
@@ -38,29 +38,20 @@ function animationOnScroll(animationList) {
         arrElement.push(elements[i]);
     });
 
-    arrElement.forEach(function(item, i) {
-        var colDescendants = arrElement[i].getElementsByTagName('*');
-
-        for(var i = 0; i < colDescendants.length; i++) {
-            if(colDescendants[i].classList.contains("animated-block-js")) {
-                arrDescendants.push(colDescendants[i]);
-            }
-        }
-    });
-
-    // console.log(arrDescendants);
-
-    var arrTop = arrElement.map(function(item) {
-        return item.getBoundingClientRect().top;
-    });
 
     window.addEventListener("scroll", function() {
-        var windowScroll = window.pageYOffset;
+        arrElement.forEach(function(item, i) {
+            if(item.getBoundingClientRect().top < 500) {
 
-        for(var i = 0; i < arrElement.length; i++ ) {
-            var difference = arrTop[i] - windowScroll;
+                var colDescendants = item.getElementsByTagName('*');
 
-            if(difference < 600) {
+                for(var k = 0; k < colDescendants.length; k++) {
+                    if(colDescendants[k].classList.contains("animated-block-js")) {
+                        arrDescendants.push(colDescendants[k]);
+                    }
+                }
+
+                //add class for animation
                 for (var j = 0; j < animationList.length; j++) {
                     arrDescendants.forEach(function(item, i) {
                         if(item.classList.contains(animationList[j])) {
@@ -69,26 +60,8 @@ function animationOnScroll(animationList) {
                     });
                 }
             }
-        }
+        });
     });
-
-    // window.onscroll = function() {
-    //     var windowScroll = window.pageYOffset;
-
-    //     for(var i = 0; i < arrElement.length; i++ ) {
-    //         var difference = arrTop[i] - windowScroll;
-
-    //         if(difference < 600) {
-    //             for (var j = 0; j < animationList.length; j++) {
-    //                 arrDescendants.forEach(function(item, i) {
-    //                     if(item.classList.contains(animationList[j])) {
-    //                         item.classList.add(animationList[j] + "-in");
-    //                     }
-    //                 });
-    //             }
-    //         }
-    //     }
-    // }
 }
 
 animationOnScroll(animationArr); 
