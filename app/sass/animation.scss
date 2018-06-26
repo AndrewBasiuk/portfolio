@@ -132,6 +132,7 @@
     content: " ";
     z-index: 1;
     box-sizing: border-box;
+
   }
 
   &:after {
@@ -175,13 +176,15 @@
   &:after {
   	right: 0;
 	top: 0;
-	transition: height 0.5s linear 0.5s, width 0.5s linear 1s;
+	opacity: 0;
+	transition: height 0.5s linear 0.5s, width 0.5s linear 1s, opacity 0s linear;
   }
 
    &:before {
 	bottom: 0;
 	left: 0;
-	transition: height 0.5s linear 1.5s, width 0.5s linear 2s;
+	opacity: 0;
+	transition: height 0.5s linear 1.5s, width 0.5s linear 2s, opacity 0s linear;
    }
 }
 .border-draw_white-in {
@@ -190,6 +193,7 @@
 		border-top: 3px solid #fff;
 		height: 100%;
 		width: 100%;
+		opacity: 1;
 	}
 
 	&:after {
@@ -197,6 +201,7 @@
 		border-bottom: 3px solid #fff;
 		width: 100%;
 		height: 100%;
+		opacity: 1;
 	}
 }
 /*////////////////////////////////////////////////*/
@@ -289,4 +294,44 @@
 	transition: height 0.8s 2.5s, opacity 0.3s 2.5s;
 }
 /*end__work*/
+
+/*contact*/
+.contact__heading-wrap {
+	transition: all 1.3s;
+}
+.contact__heading {
+	transition: all 1s 1s;
+}
+.contact-form {
+	transition: all 3s 2s;
+}
+.contact-form-input {
+	&_1 {
+		transition: all 2.5s 2.5s;
+	}
+	&_2 {
+		transition: all 2.5s 2.8s;
+	}
+}
+.contact-form-textarea {
+	transition: all 2.5s 3.1s;
+}
+.contact-form__button {
+	transition: height 0.8s 2.5s, opacity 0.3s 2.5s;
+}
+.contact-list__item {
+	&_1 {
+		transition: opacity 2.5s 2.5s;
+	}
+	&_2 {
+		transition: opacity 2.5s 2.8s;
+	}
+	&_3 {
+		transition: opacity 2.5s 3.1s;
+	}
+	&_4 {
+		transition: opacity 2.5s 3.4s;
+	}
+}
+/*end__contact*/
 /*END__TRANSITION*/

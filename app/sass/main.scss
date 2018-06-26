@@ -3,7 +3,6 @@
 @import 'font.scss';
 @import 'mixin.scss';
 @import 'common.scss';
-@import 'animation.scss';
 @import 'preloader.scss';
 
 
@@ -16,6 +15,8 @@
 @import 'works-page/works-page.scss';
 @import 'footer/footer.scss';
 /*CONTENT*/
+
+@import 'animation.scss';
 
 
 @import "mediaQueris/mediaQueris_1345-1440";

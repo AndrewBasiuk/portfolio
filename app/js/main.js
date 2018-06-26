@@ -1,8 +1,8 @@
 
 
-$(document).ready(function() {
+// $(document).ready(function() {
 
-});
+// });
 
 //fixed_menu
 window.addEventListener("scroll", function() {
@@ -17,6 +17,31 @@ window.addEventListener("scroll", function() {
     }
 });
 // end__fixed_menu
+
+//slow anchor
+var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 1500,
+    easing: 'easeInOutCubic'
+});
+//end__slow anchor
+
+// active nav item
+// function activeNavItem(section) {
+//     window.addEventListener("scroll", function() {
+//         var element = document.querySelector(section),
+//             elementTop = element.getBoundingClientRect().top;
+//         var navItem = document.querySelectorAll(".nav-list__item");
+
+//         if(elementTop < 100) {
+//             // console.log(navItem);
+//             if(element == )
+//         }
+
+//     });
+// };
+
+// activeNavItem("#about");
+// end__active nav item
 
 // paralax
 window.addEventListener("scroll", function() {
