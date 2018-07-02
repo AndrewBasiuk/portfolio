@@ -103,6 +103,15 @@
 			&:hover:before {
 				width: 98%;
 			}
+
+			&_active {
+				color: #23e512;
+				text-shadow: 0px 0px 7px $green;
+
+				&:before {
+					width: 98%;
+				}
+			}
 		}
 	}
 }

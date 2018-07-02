@@ -26,21 +26,31 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 //end__slow anchor
 
 // active nav item
-// function activeNavItem(section) {
-//     window.addEventListener("scroll", function() {
-//         var element = document.querySelector(section),
-//             elementTop = element.getBoundingClientRect().top;
-//         var navItem = document.querySelectorAll(".nav-list__item");
+function activeNavItem() {
+    var navLink = document.querySelectorAll(".nav-list__link");
 
-//         if(elementTop < 100) {
-//             // console.log(navItem);
-//             if(element == )
-//         }
+    window.addEventListener("scroll", function() {
+        // var navLink = document.querySelectorAll(".nav-list__link");
+        var allSection = document.querySelectorAll("section");
 
-//     });
-// };
+        for(var i = 1; i < allSection.length; i++) {
+            var elementTop = allSection[i].getBoundingClientRect().top;
+            var elementHeight = allSection[i].clientHeight;
+             if(elementTop < 100 && elementTop > -elementHeight+elementHeight/4) {
+                navLink[i-1].classList.add("nav-list__link_active");
+             } else {
+                navLink[i-1].classList.remove("nav-list__link_active");
+             }
+        }
+    });
 
-// activeNavItem("#about");
+    // for(var i = 0; i < navLink.length; i++) {
+    //     navLink[i].addEventListener("click", function(e) {
+    //         e.target.classList.add("nav-list__link_active");
+    //     });
+    // }
+};
+activeNavItem();
 // end__active nav item
 
 // paralax
