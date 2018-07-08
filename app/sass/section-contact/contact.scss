@@ -1,8 +1,5 @@
 
 .contact {
-	position: relative;
-	width: 100%;
-	height: calc(100vh - 100px);
 	background: url(../img/collaboration.jpg) center center no-repeat;
 	background-size: cover;
 	/*background-attachment: fixed;*/
@@ -18,9 +15,8 @@
 	}
 
 	&__heading-wrap {
-		width: 30%;
+		width: 25%;
 		position: absolute;
-		top: 50px;
 		left: 5%;
 		text-align: center;
 		color: #fff;

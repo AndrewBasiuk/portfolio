@@ -14,13 +14,9 @@
 @import 'section-contact/contact.scss';
 @import 'works-page/works-page.scss';
 @import 'footer/footer.scss';
+@import 'popup/popup.scss';
 /*CONTENT*/
 
 @import 'animation.scss';
+@import 'media.scss';
 
-
-@import "mediaQueris/mediaQueris_1345-1440";
-@import "mediaQueris/mediaQueris_1024-1280";
-@import "mediaQueris/mediaQueris_768-1023";
-@import "mediaQueris/mediaQueris_600-767";
-@import "mediaQueris/mediaQueris_320-500";

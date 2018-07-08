@@ -1,36 +1,19 @@
 
-
-// $(document).ready(function() {
-
-// });
-
 //fixed_menu
 window.addEventListener("scroll", function() {
     if(window.pageYOffset > 0) {
         document.querySelector(".header").classList.add('header_scroll');
-        document.querySelector(".header__logo").classList.add('header__logo_scroll');
-        document.querySelector(".logo__circle").classList.add('logo__circle_scroll');
     } else {
         document.querySelector(".header").classList.remove('header_scroll');
-        document.querySelector(".header__logo").classList.remove('header__logo_scroll');
-        document.querySelector(".logo__circle").classList.remove('logo__circle_scroll');
     }
 });
 // end__fixed_menu
-
-//slow anchor
-var scroll = new SmoothScroll('a[href*="#"]', {
-    speed: 1500,
-    easing: 'easeInOutCubic'
-});
-//end__slow anchor
 
 // active nav item
 function activeNavItem() {
     var navLink = document.querySelectorAll(".nav-list__link");
 
     window.addEventListener("scroll", function() {
-        // var navLink = document.querySelectorAll(".nav-list__link");
         var allSection = document.querySelectorAll("section");
 
         for(var i = 1; i < allSection.length; i++) {
@@ -43,12 +26,6 @@ function activeNavItem() {
              }
         }
     });
-
-    // for(var i = 0; i < navLink.length; i++) {
-    //     navLink[i].addEventListener("click", function(e) {
-    //         e.target.classList.add("nav-list__link_active");
-    //     });
-    // }
 };
 activeNavItem();
 // end__active nav item
@@ -62,7 +39,9 @@ window.addEventListener("scroll", function() {
 
 
 // animation_on_scroll
-var animationArr = ["height", "fade", "slide-left", "slide-right",  "slide-top", "slide-bottom", "border-draw_black", "border-draw_white"];
+var animationArr = ["height", "fade", "slide-left", 
+                    "slide-right",  "slide-top", "slide-bottom",
+                    "border-draw_black", "border-draw_white"];
 
 function animationOnScroll(animationList) { 
     var elements = document.querySelectorAll(".animation-wrapper-js");
@@ -104,3 +83,71 @@ animationOnScroll(animationArr);
 
 var currentYear = new Date().getFullYear();
     document.querySelector('.age').innerHTML = currentYear - 1994;
+
+
+
+
+// ////////////////////// JQuery ////////////////////
+
+// slow scroll
+$(document).ready(function() {
+    $(".nav-list__link").on("click", function(e) {
+        e.preventDefault();
+        var elementIndex = $(".nav-list__link").index(this);
+
+        var section = $("section");
+
+        for(var i = 1; i < section.length; i++) {
+            var scrollValue = $(section[i]).offset().top;
+            if(elementIndex == i-1) {
+                $('body,html').animate({scrollTop: scrollValue}, 800);
+            }
+        }
+    });
+
+    $(".logo__link").on("click", function(e) {
+        e.preventDefault();
+        var wrap = $("section")[0];
+        var scrollValue = $(wrap).offset().top - 150;
+        $('body,html').animate({scrollTop: scrollValue}, 800);
+    });
+});
+
+// end__slow scroll
+
+// // ajax
+// $(function() {
+//     var form = $('#contact');
+//     var formMessages = $('.message');
+
+//     $(form).submit(function(event) {
+//         event.preventDefault();
+//         var formData = $(form).serialize();
+//         $.ajax({
+//             type: 'POST',
+//             url: $(form).attr('action'),
+//             data: formData,
+//             success: function(){
+//                 alert("sdvs");
+//               }
+
+//         }),
+//         .done(function(response) {
+//             $(formMessages).removeClass('message__error');
+//             $(formMessages).addClass('message__success');
+
+//             // Clear the form.
+//             $('#name').val('');
+//             $('#email').val('');
+//             $('#message').val('');
+//         }),
+//         .fail(function(data) {
+//             $(formMessages).removeClass('message__success');
+//             $(formMessages).addClass('message__error');
+//         });
+//     });
+// });
+// end__ajax
+
+// ////////////////////// END__JQuery ////////////////////
+

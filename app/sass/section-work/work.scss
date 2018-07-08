@@ -1,7 +1,4 @@
 .work {
-	position: relative;
-	width: 100%;
-	min-height: 100vh;
 	background-color: #fff;
 	overflow: hidden; 
 	background: url(../../img/works-bg.jpg) center center no-repeat;
@@ -17,7 +14,7 @@
 	}
 
 	&__heading-wrap {
-		width: 25%;
+		width: 30%;
 		position: absolute;
 		top: 30px;
 		right: 5%;
