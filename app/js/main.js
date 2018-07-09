@@ -111,6 +111,13 @@ $(document).ready(function() {
         var scrollValue = $(wrap).offset().top - 150;
         $('body,html').animate({scrollTop: scrollValue}, 800);
     });
+
+    $(".head__button").on("click", function(e) {
+        e.preventDefault();
+        var wrap = $("section")[1];
+        var scrollValue = $(wrap).offset().top;
+        $('body,html').animate({scrollTop: scrollValue}, 800);
+    });
 });
 
 // end__slow scroll

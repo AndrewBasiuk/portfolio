@@ -1436,6 +1436,65 @@ a.work-list__link_black {
   .contact-form__heading {
     font-size: 1.3rem; } }
 
+@media screen and (max-width: 900px) {
+  .head__content_center {
+    width: 100%; }
+  .page-section {
+    height: auto;
+    overflow: hidden; }
+  .rezume__link {
+    width: auto; }
+  .skill__container {
+    position: relative; }
+  .skill__heading-wrap {
+    left: 0; }
+  .skill-info__heading {
+    font-size: 1.5rem; }
+  .skill-info {
+    width: 100%; }
+    .skill-info-wrap {
+      width: 100%; }
+    .skill-info_main {
+      position: relative;
+      right: 0;
+      top: 100px; }
+    .skill-info_additional {
+      position: relative;
+      left: 0;
+      top: 100px; }
+  .skill-info-list__item {
+    margin-right: 2%; }
+    .skill-info-list__item:nth-child(4n) {
+      margin-right: 0; }
+  .skill-info__text {
+    padding: 0 5px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.2rem; }
+  .skill-info-list {
+    margin-bottom: 15px; }
+  .work-list__item {
+    width: 48%; }
+  .work__container {
+    height: auto;
+    padding-bottom: 20px; }
+  .work__btn-wrap {
+    width: 60%; }
+  .contact__container {
+    position: relative;
+    height: auto;
+    padding-bottom: 20px; }
+  .contact__heading-wrap {
+    left: 0; }
+  .contact-form-wrap {
+    position: relative;
+    width: 40%;
+    top: 220px;
+    margin-bottom: 50px; }
+  .contact-social {
+    position: relative;
+    width: 95%; } }
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .logo-wrap {
     display: none; }
@@ -1484,9 +1543,6 @@ a.work-list__link_black {
     width: 60%;
     left: 50%;
     transform: translate(-50%); }
-  /*.skill {
-		height: 100vh;
-	}*/
   .skill__container {
     position: relative; }
   .skill__heading-wrap {
@@ -1500,7 +1556,7 @@ a.work-list__link_black {
     .skill-info_main {
       position: relative;
       right: 0;
-      top: 20px; }
+      top: 40px; }
     .skill-info_additional {
       position: relative;
       left: 0;
@@ -1527,9 +1583,6 @@ a.work-list__link_black {
     padding-bottom: 20px; }
   .work__btn-wrap {
     width: 80%; }
-  /*.contact {
-		height: 100vh;
-	}*/
   .contact__container {
     position: relative;
     height: auto;
@@ -1544,3 +1597,25 @@ a.work-list__link_black {
   .contact-social {
     position: relative;
     width: 95%; } }
+
+@media screen and (min-width: 320px) and (max-width: 767px) and (min-width: 550px) {
+  .contact-form-wrap {
+    width: 60%; }
+  .head__heading {
+    font-size: 7em; }
+  .head__subheading {
+    font-size: 1.5em; }
+  .nav-list__link {
+    font-size: 1.3rem; }
+  .rezume__link {
+    width: auto; } }
+
+@media screen and (min-height: 300px) and (max-height: 480px) {
+  .head__content_center {
+    top: 70% !important; }
+  .head__button {
+    display: none; }
+  .about {
+    height: 850px; }
+  .skill {
+    height: 600px; } }
