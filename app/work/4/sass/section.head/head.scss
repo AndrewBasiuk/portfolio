@@ -1,0 +1,387 @@
+.head {
+	position: relative;
+
+	&__main {
+		position: relative;
+	}
+}
+
+.logo {
+	height: 50px;
+	width: 50px;
+}
+
+.head-slider-container .slick-dotted.slick-slider{
+	margin-bottom: 0px;
+}
+
+.head-slider {
+	$head-slider-height: 450px;  /*calc(100vh - 125px)*/
+	position: relative;
+	height: $head-slider-height;
+
+	&__item {
+		height: $head-slider-height; /*400px*/
+		position: relative;
+		box-shadow: inset 0px 100px 200px rgba(0, 0, 0, 1);
+		box-shadow: inset 0px -20px 150px rgba(0, 0, 0, 1);
+	}
+
+	&__image {
+		width: 100%;
+		max-width: 100%;
+		height: $head-slider-height;
+		position: relative;
+		z-index: -2;
+	}
+
+	&__info {
+		position: absolute;
+		bottom: 20px;
+		left: 100/1400*100%;
+	}
+
+	&__heading {
+		font: 36/16*1em MyriadSemibold, Arial, sans-serif;
+		color: #fff;
+		margin-bottom: 12px;
+	}
+
+	&__date {
+		font: 14/16*1em MyriaRegular, Arial, sans-serif;
+		color: #AEAEAA;
+	}
+
+	.slick-dots {
+		position: absolute;
+		width: 50px;
+		left: 10px;
+		top: 50%;
+		bottom: 0;
+		transform: translateY(-50%);
+	}
+
+	.slick-dots li {
+		display: flex;
+		flex-direction: column;
+		width: 4px;
+	    height: 30px;
+	    margin-right: 0px;
+	    margin-bottom: 10px;
+
+	    &:last-child {
+			margin-bottom: 0;
+	    }
+
+	    button {
+	    	max-width: 4px;
+		    height: 30px;
+		    background-color: #B4AFA0;
+		    border-radius: 0%;
+		    padding: 0;
+		    opacity: 1;
+
+		    &:hover, &:focus {
+	    		background-color: #CC0000;
+	    		opacity: 0.6;
+	        }
+
+	        &::before {
+	        	width: 4px;
+			    height: 30px;
+			    border-radius: 0%;
+			    content: " ";
+	        }
+	    }
+
+	    &.slick-active button::before {
+	    	background-color: #CC0000;
+	    	opacity: 1;
+
+	    }
+	}
+}
+
+.head-header {
+	position: absolute;
+	top: 0;
+	height: 50px;
+	width: 100%;
+	max-width: 1400px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: linear-gradient(#000, transparent);
+	transition: all 0.3s;
+
+	&__left {
+		width: 550/1400*100%;
+		display: flex;
+		align-items: center;
+	}
+
+	&__right {
+		position: relative;
+		width: 417/1400*100%;
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		justify-content: flex-start;
+	}
+
+	&-date {
+		width: 150/550*100%;
+		height: 25px;
+		color: #fff;
+		font: 12/16*1em MyriadRegular, Arial, sans-serif;
+		border-right: 1px solid #808080;
+		display: flex;
+		justify-content: center; 
+		align-items: center;
+	}
+
+	&-weather {
+		width: 185/550*100%;
+		color: #fff;
+		font: 12/16*1em MyriadRegular, Arial, sans-serif;
+		height: 25px;
+		display: flex;
+		justify-content: center; 
+		align-items: center;
+		border-right: 1px solid #808080;
+
+		&__icon {
+			margin-right: 25/185*100%;
+		}
+	}
+
+	&-money {
+		width: 185/550*100%;
+		height: 25px;
+		border-right: 1px solid #808080;
+
+		&__info {
+			display: flex;
+			height: 100%;
+			align-items: center;
+			justify-content: center;
+			color: #fff;
+			font: 12/16*1em MyriadRegular, Arial, sans-serif;
+
+		}
+
+		&__dolar {
+			margin-right: 20px;
+		}
+	}
+
+	&-search {
+		width: 47/417*100%;
+		height: 25px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-right: 1px solid #808080;
+		cursor: pointer;
+
+		&__icon_black {
+			display: none;
+			float: left;
+		}
+
+		&:hover .head-form {
+			animation: move 0.3s linear forwards;
+			padding: 7px;
+		}
+
+		&:hover .head-form__input {
+			animation: input 0.3s linear forwards;
+		}
+
+		&:hover .head-header-search__icon {
+			display: none;
+		}
+
+		&:hover .head-header-search__icon_black {
+			display: block;
+		}
+
+	}
+
+	&-share {
+		position: relative;
+		width: 47/417*100%;
+		height: 25px;
+		display: flex;
+		justify-content: center;
+		cursor: pointer;
+	}
+}
+.arrow_green {
+	color: #339900;
+	font-size: 1.3em;
+}
+.arrow_red {
+	color: #CC0000;
+	font-size: 1.3em;
+}
+.currency {
+	margin: 0 7px 0 5px;
+}
+
+.head-form {
+	position: absolute;
+	right: 15%;
+	width: 0;
+	background-color: #fff;
+	height: 35px;
+	border-radius: 10px;
+	box-sizing: border-box;
+
+
+	&__input {
+		width: 0;
+		float: right;
+		height: 100%;
+		padding: 0;
+		outline: none;
+		border: none;
+	}
+}
+
+@keyframes move{
+	from {
+		width: 0px;
+	}
+	to {
+		width: 350px;
+	}
+}
+
+@keyframes input{
+	from {
+		width: 0px;
+	}
+	to {
+		width: 85%;
+	}
+}
+
+
+/*HEAD__NAV*/
+.head__nav {
+	width: 100%;
+	max-width: 1400px;
+	padding-left: 3%;
+	background-color: $light-gray;
+	box-sizing: border-box;
+
+	&-logo {
+		display: none;
+		float: left;
+		height: 50px;
+	}
+}
+
+.nav {
+	max-width: 100%;
+
+	&__link {
+		color: #000;
+		font: 1em MyriadRegular, Arial, sans-serif;
+	}
+
+	&__item {
+		position: relative;
+		float: left;
+		padding: 15px 0.77%;
+		transition: all 0.3s;
+		box-sizing: border-box;
+
+		a.nav__menu {
+			color: #BFBFB4;
+		}
+
+		&:hover {
+			border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+			box-sizing: border-box;
+		}
+
+		&:hover .nav__link {
+			color: #fff;
+		}
+
+		&:nth-child(1):hover {
+			background-color: #FFD400;
+		}
+		&:nth-child(2):hover {
+			background-color: #30B3BF;
+		}
+		&:nth-child(3):hover {
+			background-color: #3640B3;
+		}
+		&:nth-child(4):hover {
+			background-color: #D91616;
+		}
+		&:nth-child(5):hover {
+			background-color: #CCA266;
+		}
+		&:nth-child(6):hover {
+			background-color: #73CC33;
+		}
+		&:nth-child(7):hover {
+			background-color: #BA39E6;
+		}
+		&:nth-child(8):hover {
+			background-color: #F2B6F2;
+		}
+		&:nth-child(9):hover {
+			background-color: #F26522;
+		}
+		&:nth-child(10):hover {
+			background-color: #F2B600;
+		}
+		&:last-child:hover {
+			border-bottom: none;
+			background-color: #BFBFB4;
+		}
+
+		&:last-child:hover .nav-full {
+			top: 100%;
+		}
+	}
+}
+
+.nav-full {
+	padding: 15px 22px 10px 10px;
+	position: absolute;
+	top: -99999px;
+	left: 0;
+	z-index: 2;
+	background-color: #fff;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+	transition: all 0.1s;
+	box-sizing: border-box;
+
+
+	&__item {
+		margin-bottom: 10px;
+
+		a.nav-full__link {
+			color: #BFBFB4;
+			font: 1em MyriadRegular, Arial, sans-serif;
+		}
+
+		&:hover a.nav-full__link{
+			color: #000;
+		}
+	}
+
+	&__link {
+		color: red;
+	}
+}
+/*HEAD__NAV*/
+
+
+@import "../section.head/head-1200-1345px.scss";

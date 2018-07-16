@@ -1,0 +1,202 @@
+
+
+.popup {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100vh;
+	max-width: 1920px;
+	margin: 0 auto;
+	border-top: 1px solid #040C11;
+	background: rgba(4,10,15,0.9);
+	z-index: 10;
+
+	&-circle_big {
+		position: absolute;
+		right: -110px;
+		top: 50px;
+		width: 400px;
+		height: 400px;
+		background-color: transparent;
+		border-radius: 50%;
+		padding: 0.5%;
+		border: 5px solid $yellow;
+	}
+
+	&-circle_small {
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		background-color: $yellow;
+		opacity: 0.2;
+	}
+
+	&-header {
+		margin-top: 80px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		&-email {
+			display: flex;
+			align-items: center;
+			&__text {
+				margin-left: 10px;
+				display: inline-block;
+				color: $yellow;
+				vertical-align: middle;
+				font: 22/16*1em LatoBold, Arial, sans-serif;
+			}
+		}
+
+		&-phone {
+			display: flex;
+			align-items: center;
+			&__text {
+				@extend .popup-header-email__text;
+			}
+		}
+	}
+
+	&-logo__image {
+		width: 140%;
+	}
+
+	&-main {
+		position: relative;
+		&__heading {
+			margin-bottom: 15px;
+			color: #fff;
+			text-transform: uppercase;
+			font: 48/16*100% HeliosBlackC, Arial, sans-serif;
+
+			&_inline {
+				display: inline-block;
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&-about {
+		margin-top: 70px;
+		margin-bottom: 55px;
+	}
+	&-portfolio {
+		margin-bottom: 30px;
+	}
+	&-freedome {
+		margin-bottom: 55px;
+	}
+
+	&-list {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		&__item {
+			min-width: 24%;
+			max-width: 25%;
+			color: #fff;
+			font: 18px LatoRegular, Arial, sans-serif;
+
+			&_margin {
+				margin-left: 30px;
+			}
+
+			&:hover {
+				color: $yellow;
+			}
+			&:hover .decor-box {
+				background-color: $yellow;
+			}
+		}
+	}
+
+	&-contact {
+		display: flex;
+		align-items: center;
+	}
+
+	&-contact-list {
+		display: inline-block;
+		margin-left: 90px;
+		&__item {
+			float: left;
+			margin-right: 20px;
+			width: 48px;
+			height: 48px;
+			background: url(../img/popup-contact-sprite.png) no-repeat;
+
+			&:last-child {
+				width: 128px;
+				margin-right: 0;
+				margin-left: 40px;
+			}
+		}
+
+		&__link {
+			display: inline-block;
+			min-width: 100%;
+			min-height: 100%;
+		}
+
+		&__facebook {
+			background-position: -11px -10px;
+		}
+		&__linked {
+			background-position: -70px -10px;
+		}
+		&__be {
+			background-position: -130px -10px;
+		}
+		&__youtube {
+			background-position: -200px -10px;
+		}
+		&__pdf {
+			background-position: -267px -10px;
+		}
+		&__mail {
+			background-position: -373px -10px;
+		}
+	}
+}
+.popup-portfolio-list__item {
+	margin-bottom: 25px;
+}
+
+.decor-box {
+	display: inline-block;
+	margin-right: 5px;
+	width: 20px;
+	height: 10px;
+	background-color: #fff;
+}
+
+a.popup-language__link {
+	margin-right: 0;
+	padding: 10px;
+	font: 24/16*1em LatoBold, Arial, sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+
+	&:hover {
+		color: #02080D;
+		background-color: $yellow;
+	}
+
+	&_active {
+		color: #02080D;
+		background-color: $yellow;
+	}
+}
+
+.popup-banner__hamburger {
+	right: -5% !important;
+	top: 44% !important;
+}
+.main-popup-banner__hamburger {
+	right: -25% !important;
+	top: -15% !important;
+}

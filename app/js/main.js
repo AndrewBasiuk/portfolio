@@ -81,8 +81,8 @@ function animationOnScroll(animationList) {
 animationOnScroll(animationArr); 
 // end__animation_on_scroll
 
-var currentYear = new Date().getFullYear();
-    document.querySelector('.age').innerHTML = currentYear - 1994;
+// var currentYear = new Date().getFullYear();
+//     document.querySelector('.age').innerHTML = currentYear - 1994;
 
 
 
@@ -129,16 +129,12 @@ $(document).ready(function() {
 
 //     $(form).submit(function(event) {
 //         event.preventDefault();
-//         var formData = $(form).serialize();
-//         $.ajax({
-//             type: 'POST',
-//             url: $(form).attr('action'),
-//             data: formData,
-//             success: function(){
-//                 alert("sdvs");
-//               }
-
-//         }),
+//         // var formData = $(form).serialize();
+//         // $.ajax({
+//         //     type: 'POST',
+//         //     url: $(form).attr('action'),
+//         //     data: formData
+//         // }),
 //         .done(function(response) {
 //             $(formMessages).removeClass('message__error');
 //             $(formMessages).addClass('message__success');
@@ -156,5 +152,27 @@ $(document).ready(function() {
 // });
 // end__ajax
 
+$("#main-form").submit(function(e){
+    e.preventDefault(); //prevent default action 
+    var post_url = $(this).attr("action"); //get form action url
+    var request_method = $(this).attr("method"); //get form GET/POST method
+    var form_data = $(this).serialize(); //Encode form elements for submission
+    
+    $.ajax({
+        url : post_url,
+        type: request_method,
+        data : form_data
+    }).done(function(response){ //
+       $(".success").addClass("success-in");
+        setTimeout(function() {
+            $(".success").removeClass("success-in");
+        }, 6000);
+    }).fail(function(data) {
+        $(".error").addClass("error-in");
+        setTimeout(function() {
+            $(".error").removeClass("error-in");
+        }, 6000);
+    });
+});
 // ////////////////////// END__JQuery ////////////////////
 

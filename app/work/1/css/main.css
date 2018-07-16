@@ -1,0 +1,1068 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, C:/Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, C:/Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, C:/Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, C:/Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, C:/Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, C:/Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, C:/Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, C:/Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, C:/Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url("../font/Montserrat-Regular.eot");
+  src: url("../font/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../font/Montserrat-Regular.woff") format("woff"), url("../font/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url("../font/Montserrat-Bold.eot");
+  src: url("../font/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../font/Montserrat-Bold.woff") format("woff"), url("../font/Montserrat-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Couture';
+  src: url("../Couture-Bold.eot");
+  src: url("../Couture-Bold.eot?#iefix") format("embedded-opentype"), url("../Couture-Bold.woff") format("woff"), url("../Couture-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'PTSerif-Regular';
+  src: url("../font/PTSerif-Regular.eot");
+  src: url("../font/PTSerif-Regular.eot?#iefix") format("embedded-opentype"), url("../font/PTSerif-Regular.woff") format("woff"), url("../font/PTSerif-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+/* line 10, ../sass/main.scss */
+a {
+  text-decoration: none; }
+
+/* line 13, ../sass/main.scss */
+a:link {
+  color: inherit;
+  text-decoration: none; }
+
+/* line 17, ../sass/main.scss */
+a:visited {
+  color: inherit; }
+
+/* line 20, ../sass/main.scss */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* line 26, ../sass/main.scss */
+.container {
+  position: relative;
+  width: 90%;
+  margin: 0 auto; }
+
+/* line 33, ../sass/main.scss */
+.blue-word {
+  color: #5DBBC1; }
+
+/* line 41, ../sass/main.scss */
+.head-section {
+  height: 690px;
+  background-color: #130E27;
+  background: url("../img/background_head.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  border-top: 1px solid #0E0922;
+  box-sizing: border-box;
+  color: #fff; }
+
+/* line 52, ../sass/main.scss */
+.header {
+  position: relative;
+  margin-top: 60px; }
+  /* line 56, ../sass/main.scss */
+  .header__logo {
+    position: absolute;
+    left: -17px; }
+  /* line 61, ../sass/main.scss */
+  .header__nav {
+    float: right; }
+
+/* line 68, ../sass/main.scss */
+.nav__item {
+  float: left;
+  padding: 12px 18px;
+  box-sizing: border-box;
+  border-radius: 4px; }
+  /* line 74, ../sass/main.scss */
+  .nav__item:hover {
+    background: #5DBBC1; }
+/* line 79, ../sass/main.scss */
+.nav__link {
+  color: #fff;
+  text-transform: uppercase;
+  font: 1.125em Montserrat-Regular, Arial, sans-serif; }
+
+/* line 85, ../sass/main.scss */
+.humburger {
+  display: none; }
+
+/* line 89, ../sass/main.scss */
+.header-section__heading {
+  width: 43.09009%;
+  /*445/1110*100%;*/
+  margin-top: 255px;
+  margin-left: 2.16216%; }
+
+/* line 94, ../sass/main.scss */
+.heading {
+  font: 5.625em Montserrat-Bold, Arial, sans-serif;
+  line-height: 1; }
+
+/* line 98, ../sass/main.scss */
+.descript {
+  margin-top: 35px;
+  font: 1.25em "Times New Roman", serif; }
+
+/* line 103, ../sass/main.scss */
+.form {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 34.23423%;
+  background: #5DBBC1;
+  text-align: center;
+  border-radius: 5px; }
+  /* line 112, ../sass/main.scss */
+  .form__heading {
+    margin: 30px 0 35px 0;
+    text-transform: uppercase;
+    font: 1.375em Montserrat-Regular, Arial, sans-serif; }
+  /* line 118, ../sass/main.scss */
+  .form__item {
+    height: 57px;
+    width: 92.89474%;
+    padding-left: 20px;
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font: 1.25em PTSerif-Regular, "Times New Roman", serif; }
+
+/* line 130, ../sass/main.scss */
+:focus::-webkit-input-placeholder {
+  color: transparent; }
+
+/* line 131, ../sass/main.scss */
+:focus::-moz-placeholder {
+  color: transparent; }
+
+/* line 132, ../sass/main.scss */
+:focus:-moz-placeholder {
+  color: transparent; }
+
+/* line 133, ../sass/main.scss */
+:focus:-ms-input-placeholder {
+  color: transparent; }
+
+/* line 135, ../sass/main.scss */
+.checkbox {
+  text-align: left;
+  margin-left: 11px; }
+  /* line 139, ../sass/main.scss */
+  .checkbox__field {
+    width: 15px;
+    height: 15px;
+    margin-right: 15px; }
+  /* line 145, ../sass/main.scss */
+  .checkbox__lable {
+    font: 1.25em PTSerif-Regular, "Times New Roman", serif; }
+
+/* line 150, ../sass/main.scss */
+.form__button {
+  margin-top: 20px;
+  margin-bottom: 28px;
+  width: 92.89474%;
+  color: #fff; }
+
+/* line 162, ../sass/main.scss */
+.services-section {
+  padding-bottom: 65px; }
+
+/* line 166, ../sass/main.scss */
+.services-section__heading {
+  margin-top: 35px;
+  margin-bottom: 85px;
+  margin-left: 1.35135%; }
+
+/* line 171, ../sass/main.scss */
+.section-heading {
+  font: 3.125em Couture, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+/* line 176, ../sass/main.scss */
+.services__item {
+  float: left;
+  width: 15.41441%;
+  /*160/1110*100%;*/
+  text-align: center;
+  margin-right: 12.7%
+  /*120/1110*100%;*/ }
+  /* line 182, ../sass/main.scss */
+  .services__item:last-child {
+    margin-right: 0; }
+
+/* line 186, ../sass/main.scss */
+.services-section__list {
+  margin-left: 1.35135%; }
+
+/* line 189, ../sass/main.scss */
+.services__icon {
+  width: 156px;
+  height: 156px;
+  max-width: 100%; }
+  /* line 194, ../sass/main.scss */
+  .services__icon_rectangular {
+    width: 115px; }
+
+/* line 198, ../sass/main.scss */
+.services__descript {
+  margin-top: 50px;
+  font: 1.25em PTSerif-Regular, "Times New Roman", serif; }
+
+/* line 207, ../sass/main.scss */
+.about-section {
+  position: relative;
+  background-size: cover;
+  background: #5DBBC1;
+  padding: 30px 0 25px 1.35135%;
+  color: #fff; }
+  /* line 214, ../sass/main.scss */
+  .about-section__about-us {
+    display: inline-block;
+    width: 54.5045%;
+    font: 1.25em PTSerif-Regular, "Times New Roman", serif; }
+  /* line 220, ../sass/main.scss */
+  .about-section__our-story {
+    width: 24.32432%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    right: 0;
+    color: #fff; }
+
+/* line 229, ../sass/main.scss */
+.button {
+  height: 65px;
+  background: #000;
+  text-transform: uppercase;
+  font: 1.375em Montserrat-Regular, Arial, sans-serif;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; }
+  /* line 238, ../sass/main.scss */
+  .button:hover {
+    background: #44266C; }
+
+/* line 248, ../sass/main.scss */
+.price-section__heading {
+  margin-top: 55px;
+  margin-bottom: 50px;
+  text-align: center; }
+
+/* line 253, ../sass/main.scss */
+.price-section {
+  background: #EFEFEF;
+  border-top: 1px solid #EFEFEF;
+  box-sizing: border-box; }
+  /* line 258, ../sass/main.scss */
+  .price-section__option {
+    margin-left: 1.35135%; }
+
+/* line 262, ../sass/main.scss */
+.option-descript {
+  width: 31.3%;
+  /*318/995*100%;*/
+  float: left;
+  margin-right: 3.01005%;
+  /*20/995*100%;*/
+  text-align: center;
+  border-radius: 5px;
+  background: #fff
+  /*&:last-child {
+  	margin-right: 0;
+  }*/ }
+  /* line 274, ../sass/main.scss */
+  .option-descript__item {
+    font: 1.375em PTSerif-Regular, "Times New Roman", serif; }
+    /* line 277, ../sass/main.scss */
+    .option-descript__item:first-child {
+      margin-top: 30px; }
+  /* line 282, ../sass/main.scss */
+  .option-descript__item_bold {
+    margin: 30px 0;
+    font: 3.75em Montserrat-Bold, Arial, sans-serif; }
+  /* line 287, ../sass/main.scss */
+  .option-descript__button {
+    margin-top: 30px;
+    color: #fff;
+    width: 64.46541%; }
+
+/* line 294, ../sass/main.scss */
+.professional .option-descript {
+  margin-right: 0; }
+
+/* line 297, ../sass/main.scss */
+.button_blue {
+  background: #5DBBC1;
+  color: #000; }
+
+/* line 302, ../sass/main.scss */
+.business {
+  position: relative; }
+
+/* line 305, ../sass/main.scss */
+.business__popular {
+  position: absolute;
+  top: 21px;
+  left: 419px; }
+  /* line 310, ../sass/main.scss */
+  .business__popular_angle {
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    color: #000;
+    font: 1em PTSerif-Regular, "Times New Roman", serif; }
+
+/* line 316, ../sass/main.scss */
+.option-descript_gradient {
+  background: -webkit-linear-gradient(bottom right, #fff 85%, #5DBBC1 10%);
+  background: linear-gradient(bottom right, #fff 85%, #5DBBC1 10%); }
+
+/* line 326, ../sass/main.scss */
+.our-work {
+  background: #fff;
+  padding-top: 140px;
+  padding-bottom: 120px; }
+
+/* line 331, ../sass/main.scss */
+.section-heading_align_center {
+  text-align: center; }
+
+/* line 334, ../sass/main.scss */
+.testimonial {
+  float: left;
+  width: 42.79279%; }
+
+/* line 340, ../sass/main.scss */
+.review__item {
+  color: #000;
+  position: relative;
+  width: 98.8764%;
+  /*height: 142px;*/
+  padding: 25px 0 28px 25px;
+  border-radius: 5px;
+  box-sizing: border-box; }
+  /* line 349, ../sass/main.scss */
+  .review__item:hover {
+    background: #93CED3;
+    color: #fff; }
+  /* line 354, ../sass/main.scss */
+  .review__item:first-child {
+    margin-top: 47px; }
+/* line 360, ../sass/main.scss */
+.review__text {
+  width: 76.13636%;
+  font: 1.25em PTSerif-Regular, "Times New Roman", serif; }
+/* line 365, ../sass/main.scss */
+.review__author {
+  margin-top: 28px;
+  color: #000;
+  font: bold 1.25em Montserrat-Regular, Arial, sans-serif; }
+/* line 371, ../sass/main.scss */
+.review__photo {
+  position: absolute;
+  top: 20px;
+  right: -50px; }
+
+/* line 378, ../sass/main.scss */
+.photo {
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.3); }
+  /* line 384, ../sass/main.scss */
+  .photo:hover {
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.5); }
+
+/* line 390, ../sass/main.scss */
+.review__photo_1 {
+  background: url("../img/review_1.jpg") -70px -3px no-repeat; }
+
+/* line 393, ../sass/main.scss */
+.review__photo_2 {
+  background: url("../img/review_2.jpg") -10px 0 no-repeat; }
+
+/* line 399, ../sass/main.scss */
+.our-gallery {
+  float: right;
+  width: 33.33333%;
+  text-align: center; }
+
+/* line 407, ../sass/main.scss */
+.gallery__item {
+  display: inline-block;
+  margin-right: 35px;
+  margin-bottom: 30px;
+  cursor: pointer; }
+  /* line 413, ../sass/main.scss */
+  .gallery__item:nth-child(3n) {
+    margin-right: 0; }
+
+/* line 418, ../sass/main.scss */
+.gallery_margin {
+  margin-top: 55px;
+  margin-bottom: 30px; }
+
+/* line 423, ../sass/main.scss */
+.galleru__photo_1 {
+  background: url("../img/gallery_1.jpg") -140px -10px no-repeat; }
+
+/* line 426, ../sass/main.scss */
+.galleru__photo_2 {
+  background: url("../img/gallery_2.jpg") -80px -50px no-repeat; }
+
+/* line 429, ../sass/main.scss */
+.galleru__photo_3 {
+  background: url("../img/gallery_3.jpg") -15px -10px no-repeat; }
+
+/* line 432, ../sass/main.scss */
+.galleru__photo_4 {
+  background: url("../img/gallery_4.jpg") -45px -2px no-repeat; }
+
+/* line 435, ../sass/main.scss */
+.galleru__photo_5 {
+  background: url("../img/gallery_5.jpg") -10px 0px no-repeat; }
+
+/* line 438, ../sass/main.scss */
+.galleru__photo_6 {
+  background: url("../img/gallery_6.jpg") -205px -145px no-repeat; }
+
+/* line 442, ../sass/main.scss */
+a.our-gallery__link {
+  text-decoration: underline;
+  text-transform: uppercase;
+  font: 1.25em Montserrat-Regular, Arial, sans-serif; }
+  /* line 447, ../sass/main.scss */
+  a.our-gallery__link:hover {
+    color: #5DBBC1; }
+
+/* line 458, ../sass/main.scss */
+.footer {
+  background: #130E27;
+  background-size: cover; }
+  /* line 462, ../sass/main.scss */
+  .footer__text {
+    padding: 85px 0;
+    color: #fff;
+    font: 1.25em PTSerif-Regular, "Times New Roman", serif; }
+  /* line 468, ../sass/main.scss */
+  .footer__logo {
+    position: absolute;
+    top: 75px;
+    right: 0px; }
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  /* line 2, ../sass/mediaQueris_1024-1280.scss */
+  .business__popular {
+    display: none; }
+
+  /* line 5, ../sass/mediaQueris_1024-1280.scss */
+  .our-gallery {
+    width: 43.33333%; } }
+@media screen and (min-width: 960px) and (max-width: 1023px) {
+  /* line 3, ../sass/mediaQueris_960-1023.scss */
+  .header-section__heading {
+    margin-top: 205px; }
+
+  /* line 7, ../sass/mediaQueris_960-1023.scss */
+  .testimonial {
+    width: 50%; }
+
+  /* line 12, ../sass/mediaQueris_960-1023.scss */
+  .gallery__item:nth-child(3n) {
+    margin-right: 35px; }
+  /* line 16, ../sass/mediaQueris_960-1023.scss */
+  .gallery__item:nth-child(2n) {
+    margin-right: 0px; } }
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 2, ../sass/mediaQueris_768-959.scss */
+  .button {
+    font-size: 1em; }
+
+  /* line 6, ../sass/mediaQueris_768-959.scss */
+  .head-section {
+    height: auto;
+    padding-bottom: 20px; }
+
+  /* line 10, ../sass/mediaQueris_768-959.scss */
+  .header-section__heading {
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 200px; }
+
+  /* line 18, ../sass/mediaQueris_768-959.scss */
+  .form {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 1px;
+    width: 60%; }
+    /* line 24, ../sass/mediaQueris_768-959.scss */
+    .form__item {
+      height: 45px;
+      font-size: 0.95em; }
+    /* line 29, ../sass/mediaQueris_768-959.scss */
+    .form__button {
+      width: 92.89474%; }
+
+  /*menu*/
+  /* line 35, ../sass/mediaQueris_768-959.scss */
+  .humburger {
+    position: relative;
+    right: 20px;
+    display: block;
+    margin-bottom: 5px;
+    height: 30px;
+    cursor: pointer; }
+
+  /* line 44, ../sass/mediaQueris_768-959.scss */
+  .humburger__menu {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    display: block; }
+
+  /* line 51, ../sass/mediaQueris_768-959.scss */
+  .humburger__item {
+    background: #fff;
+    width: 25px;
+    height: 5px;
+    margin-bottom: 2px; }
+    /* line 57, ../sass/mediaQueris_768-959.scss */
+    .humburger__item:last-child {
+      margin-bottom: 0; }
+
+  /* line 63, ../sass/mediaQueris_768-959.scss */
+  .header__nav {
+    width: 60%; }
+
+  /* line 66, ../sass/mediaQueris_768-959.scss */
+  .nav__item {
+    float: none;
+    display: none;
+    text-align: right; }
+
+  /* line 72, ../sass/mediaQueris_768-959.scss */
+  a.nav__link {
+    border-bottom: 1px solid #5DBBC1; }
+
+  /*menu*/
+  /*services*/
+  /* line 78, ../sass/mediaQueris_768-959.scss */
+  .services__item {
+    width: 20%;
+    margin-right: 6%; }
+
+  /* line 82, ../sass/mediaQueris_768-959.scss */
+  .services__icon {
+    width: 100px;
+    height: 100px; }
+
+  /* line 86, ../sass/mediaQueris_768-959.scss */
+  .services__descript {
+    font-size: 1em; }
+
+  /*services*/
+  /* line 91, ../sass/mediaQueris_768-959.scss */
+  .about-section {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    /* line 95, ../sass/mediaQueris_768-959.scss */
+    .about-section__about-us {
+      font-size: 1.1em; }
+
+  /*price*/
+  /* line 101, ../sass/mediaQueris_768-959.scss */
+  .option-descript__item {
+    font-size: 1.2em; }
+
+  /* line 104, ../sass/mediaQueris_768-959.scss */
+  .option-descript__item_bold {
+    font-size: 2em;
+    margin: 15px 0; }
+
+  /* line 108, ../sass/mediaQueris_768-959.scss */
+  .business__popular {
+    display: none; }
+
+  /*price*/
+  /* line 113, ../sass/mediaQueris_768-959.scss */
+  .our-work {
+    padding-top: 70px; }
+
+  /* line 116, ../sass/mediaQueris_768-959.scss */
+  .testimonial {
+    width: 90%; }
+
+  /* line 119, ../sass/mediaQueris_768-959.scss */
+  .review__author {
+    margin-top: 10px; }
+
+  /* line 123, ../sass/mediaQueris_768-959.scss */
+  .our-gallery {
+    width: 100%;
+    padding-top: 40px; }
+
+  /* line 129, ../sass/mediaQueris_768-959.scss */
+  .gallery__item:nth-child(3n) {
+    margin-right: 35px; }
+  /* line 133, ../sass/mediaQueris_768-959.scss */
+  .gallery__item:nth-child(2n) {
+    margin-right: 35px; }
+
+  /* line 137, ../sass/mediaQueris_768-959.scss */
+  .gallery_margin {
+    margin-top: 40px;
+    margin-bottom: 0px; }
+
+  /* line 143, ../sass/mediaQueris_768-959.scss */
+  .footer__text {
+    padding: 50px;
+    font-size: 1em; }
+
+  /* line 147, ../sass/mediaQueris_768-959.scss */
+  .footer__logo {
+    top: 47px; } }
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  /* line 2, ../sass/mediaQueris_600-767.scss */
+  .button {
+    font-size: 1em;
+    height: 50px; }
+
+  /* line 7, ../sass/mediaQueris_600-767.scss */
+  .head-section {
+    height: auto;
+    padding-bottom: 20px; }
+
+  /* line 11, ../sass/mediaQueris_600-767.scss */
+  .header-section__heading {
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 200px; }
+
+  /* line 19, ../sass/mediaQueris_600-767.scss */
+  .form {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 1px;
+    width: 60%; }
+    /* line 25, ../sass/mediaQueris_600-767.scss */
+    .form__item {
+      height: 45px;
+      font-size: 0.95em; }
+    /* line 30, ../sass/mediaQueris_600-767.scss */
+    .form__button {
+      width: 92.89474%; }
+
+  /*menu*/
+  /* line 36, ../sass/mediaQueris_600-767.scss */
+  .humburger {
+    position: relative;
+    right: 20px;
+    display: block;
+    margin-bottom: 5px;
+    height: 30px;
+    cursor: pointer; }
+
+  /* line 45, ../sass/mediaQueris_600-767.scss */
+  .humburger__menu {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    display: block; }
+
+  /* line 52, ../sass/mediaQueris_600-767.scss */
+  .humburger__item {
+    background: #fff;
+    width: 25px;
+    height: 5px;
+    margin-bottom: 2px; }
+    /* line 58, ../sass/mediaQueris_600-767.scss */
+    .humburger__item:last-child {
+      margin-bottom: 0; }
+
+  /* line 64, ../sass/mediaQueris_600-767.scss */
+  .header__nav {
+    width: 60%; }
+
+  /* line 67, ../sass/mediaQueris_600-767.scss */
+  .nav__item {
+    float: none;
+    display: none;
+    text-align: right; }
+
+  /* line 73, ../sass/mediaQueris_600-767.scss */
+  a.nav__link {
+    border-bottom: 1px solid #5DBBC1; }
+
+  /*menu*/
+  /*services*/
+  /* line 79, ../sass/mediaQueris_600-767.scss */
+  .services-section {
+    padding-bottom: 35px; }
+
+  /* line 82, ../sass/mediaQueris_600-767.scss */
+  .services-section__heading {
+    margin-top: 25px;
+    margin-bottom: 40px; }
+
+  /* line 86, ../sass/mediaQueris_600-767.scss */
+  .services__item {
+    width: 20%;
+    margin-right: 6%; }
+
+  /* line 90, ../sass/mediaQueris_600-767.scss */
+  .services__icon {
+    width: 100px;
+    height: 100px; }
+
+  /* line 94, ../sass/mediaQueris_600-767.scss */
+  .services__descript {
+    font-size: 1em; }
+
+  /*services*/
+  /* line 99, ../sass/mediaQueris_600-767.scss */
+  .about-section {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    /* line 103, ../sass/mediaQueris_600-767.scss */
+    .about-section__about-us {
+      font-size: 1.1em;
+      width: 70%; }
+
+  /*price*/
+  /* line 110, ../sass/mediaQueris_600-767.scss */
+  .option-descript__item {
+    font-size: 1em; }
+
+  /* line 113, ../sass/mediaQueris_600-767.scss */
+  .option-descript__item_bold {
+    font-size: 2em;
+    margin: 15px 0; }
+
+  /* line 117, ../sass/mediaQueris_600-767.scss */
+  .option-descript_gradient {
+    background: -webkit-linear-gradient(bottom right, #fff 87%, #5DBBC1 10%);
+    background: linear-gradient(bottom right, #fff 87%, #5DBBC1 10%); }
+
+  /* line 120, ../sass/mediaQueris_600-767.scss */
+  .business__popular {
+    display: none; }
+
+  /*price*/
+  /* line 125, ../sass/mediaQueris_600-767.scss */
+  .our-work {
+    padding-top: 70px; }
+
+  /* line 128, ../sass/mediaQueris_600-767.scss */
+  .testimonial {
+    width: 90%; }
+
+  /* line 131, ../sass/mediaQueris_600-767.scss */
+  .review__author {
+    margin-top: 10px; }
+
+  /* line 135, ../sass/mediaQueris_600-767.scss */
+  .our-gallery {
+    width: 100%;
+    padding-top: 40px; }
+
+  /* line 141, ../sass/mediaQueris_600-767.scss */
+  .gallery__item:nth-child(3n) {
+    margin-right: 35px; }
+  /* line 145, ../sass/mediaQueris_600-767.scss */
+  .gallery__item:nth-child(2n) {
+    margin-right: 35px; }
+
+  /* line 149, ../sass/mediaQueris_600-767.scss */
+  .gallery_margin {
+    margin-top: 40px;
+    margin-bottom: 0px; }
+
+  /* line 155, ../sass/mediaQueris_600-767.scss */
+  .footer__text {
+    padding: 50px 0;
+    font-size: 0.9em; }
+
+  /* line 159, ../sass/mediaQueris_600-767.scss */
+  .footer__logo {
+    top: 47px;
+    right: -10px; } }
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  /* line 2, ../sass/mediaQueris_320-500.scss */
+  .button {
+    font-size: 1em;
+    height: 50px; }
+
+  /* line 6, ../sass/mediaQueris_320-500.scss */
+  .section-heading {
+    font-size: 2.5em; }
+
+  /* line 10, ../sass/mediaQueris_320-500.scss */
+  .head-section {
+    height: auto;
+    padding-bottom: 20px; }
+
+  /* line 14, ../sass/mediaQueris_320-500.scss */
+  .header-section__heading {
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 200px; }
+
+  /* line 22, ../sass/mediaQueris_320-500.scss */
+  .heading {
+    font-size: 3.4em; }
+
+  /* line 25, ../sass/mediaQueris_320-500.scss */
+  .form {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 1px;
+    width: 90%; }
+    /* line 31, ../sass/mediaQueris_320-500.scss */
+    .form__item {
+      height: 45px;
+      font-size: 0.95em; }
+    /* line 36, ../sass/mediaQueris_320-500.scss */
+    .form__button {
+      width: 92.89474%; }
+
+  /*menu*/
+  /* line 42, ../sass/mediaQueris_320-500.scss */
+  .humburger {
+    position: relative;
+    right: 20px;
+    display: block;
+    margin-bottom: 5px;
+    height: 30px;
+    cursor: pointer; }
+
+  /* line 51, ../sass/mediaQueris_320-500.scss */
+  .humburger__menu {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    display: block; }
+
+  /* line 58, ../sass/mediaQueris_320-500.scss */
+  .humburger__item {
+    background: #fff;
+    width: 25px;
+    height: 5px;
+    margin-bottom: 2px; }
+    /* line 64, ../sass/mediaQueris_320-500.scss */
+    .humburger__item:last-child {
+      margin-bottom: 0; }
+
+  /* line 70, ../sass/mediaQueris_320-500.scss */
+  .header__nav {
+    width: 37%; }
+
+  /* line 73, ../sass/mediaQueris_320-500.scss */
+  .nav__item {
+    float: none;
+    display: none;
+    text-align: right; }
+
+  /* line 79, ../sass/mediaQueris_320-500.scss */
+  a.nav__link {
+    border-bottom: 1px solid #5DBBC1; }
+
+  /*menu*/
+  /*services*/
+  /* line 85, ../sass/mediaQueris_320-500.scss */
+  .services-section {
+    padding-bottom: 15px; }
+
+  /* line 88, ../sass/mediaQueris_320-500.scss */
+  .services-section__heading {
+    margin-top: 20px;
+    margin-bottom: 25px; }
+
+  /* line 92, ../sass/mediaQueris_320-500.scss */
+  .services__item {
+    width: 90%;
+    margin-right: 0%;
+    margin-top: 25px; }
+
+  /* line 97, ../sass/mediaQueris_320-500.scss */
+  .services__descript {
+    font-size: 1.3em;
+    margin-top: 10px; }
+
+  /*services*/
+  /* line 103, ../sass/mediaQueris_320-500.scss */
+  .about-section {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    /* line 107, ../sass/mediaQueris_320-500.scss */
+    .about-section__about-us {
+      font-size: 1.1em;
+      width: 60%; }
+    /* line 112, ../sass/mediaQueris_320-500.scss */
+    .about-section__our-story {
+      width: 39%; }
+
+  /*price*/
+  /* line 118, ../sass/mediaQueris_320-500.scss */
+  .price-section__heading {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center; }
+
+  /* line 123, ../sass/mediaQueris_320-500.scss */
+  .option-descript {
+    margin-left: 9%;
+    width: 80%;
+    margin-bottom: 20px;
+    padding-bottom: 20px; }
+
+  /* line 129, ../sass/mediaQueris_320-500.scss */
+  .option-descript__item {
+    font-size: 1.2em; }
+
+  /* line 132, ../sass/mediaQueris_320-500.scss */
+  .option-descript__item_bold {
+    font-size: 2em;
+    margin: 15px 0; }
+
+  /* line 136, ../sass/mediaQueris_320-500.scss */
+  .option-descript_gradient {
+    background: -webkit-linear-gradient(bottom right, #fff 87%, #5DBBC1 10%);
+    background: linear-gradient(bottom right, #fff 87%, #5DBBC1 10%); }
+
+  /* line 139, ../sass/mediaQueris_320-500.scss */
+  .business__popular {
+    display: none; }
+
+  /*price*/
+  /*our-work*/
+  /* line 146, ../sass/mediaQueris_320-500.scss */
+  .our-work {
+    padding-top: 70px; }
+
+  /* line 149, ../sass/mediaQueris_320-500.scss */
+  .testimonial {
+    width: 100%; }
+
+  /* line 152, ../sass/mediaQueris_320-500.scss */
+  .review__item {
+    padding-left: 0; }
+
+  /* line 155, ../sass/mediaQueris_320-500.scss */
+  .review__author {
+    margin-top: 10px; }
+
+  /* line 158, ../sass/mediaQueris_320-500.scss */
+  .review__text {
+    width: 100%;
+    line-height: 1.2; }
+
+  /* line 162, ../sass/mediaQueris_320-500.scss */
+  .review__photo {
+    display: none; }
+
+  /* line 166, ../sass/mediaQueris_320-500.scss */
+  .our-gallery {
+    width: 100%;
+    padding-top: 40px; }
+
+  /* line 172, ../sass/mediaQueris_320-500.scss */
+  .gallery__item:nth-child(3n) {
+    margin-right: 35px; }
+  /* line 176, ../sass/mediaQueris_320-500.scss */
+  .gallery__item:nth-child(2n) {
+    margin-right: 0px; }
+
+  /* line 180, ../sass/mediaQueris_320-500.scss */
+  .gallery_margin {
+    margin-top: 40px;
+    margin-bottom: 0px; }
+
+  /* line 186, ../sass/mediaQueris_320-500.scss */
+  .footer__text {
+    padding: 50px 0;
+    font-size: 0.9em; }
+
+  /* line 190, ../sass/mediaQueris_320-500.scss */
+  .footer__logo {
+    top: 80px;
+    right: 0px; } }

@@ -1,19 +1,14 @@
-.works-page-container {
-	width: 90%;	
-	margin: 0 auto;
-	max-width: 1400px;		
-	min-height: calc(100vh - 180px);
+.work-page {
+	overflow: auto;
+}
+.work-page__container {
+	width: 100%;
+	min-height: 100vh;
+	padding-bottom: 50px;
+	background-color: rgba(0, 0 ,0 , 0.6);
+	border-top: 1px solid #333333;
 }
 
-
-.works-page-list {
-	margin-bottom: 20px;
-	width: 100%;	
-	justify-content: space-between;
-
-	&__item {
-		width: 32%;	
-		margin-bottom: 20px;
-		height: 210px;		
-	}
+.works-page__button {
+	height: 100%;
 }

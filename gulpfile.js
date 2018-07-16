@@ -48,7 +48,7 @@ gulp.task('css', function() {
 
 // JS
 gulp.task('js', function () {
-  return gulp.src(['app/js/_smooth-scroll.min.js',
+  return gulp.src(['app/js/jquery.min.js',
                     'app/js/html-iclude-html.js',
                     'app/js/main.js'])
     .pipe(concat('script.min.js'))

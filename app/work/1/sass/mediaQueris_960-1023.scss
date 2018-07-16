@@ -1,0 +1,21 @@
+@media screen and (min-width: 960px) and (max-width: 1023px) {
+	
+	.header-section__heading {
+		margin-top: 205px;
+	}
+
+	.testimonial {
+		width: 50%;
+	}
+	.gallery__item {
+
+		&:nth-child(3n) {
+			margin-right: 35px;
+		}
+
+		&:nth-child(2n) {
+			margin-right: 0px;
+		}
+	}
+
+}
