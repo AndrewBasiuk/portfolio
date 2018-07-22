@@ -104,7 +104,7 @@
 	&__image {
 		width: 100%;
 		transform: scale(1.05);
-		transition: opacity 3s 2.5s, transform 7s;
+		transition: opacity 3s 1.4s, transform 7s;
 	}
 
 	&-content {
@@ -114,7 +114,7 @@
 		width: 100%;
 		height: 100%;
 		background-color: rgba(255, 255, 255, 0.8);
-		transition: left 0.7s, opacity 3s 2.5s;
+		transition: left 0.4s;
 		
 		&_black:after {
 			position: absolute;

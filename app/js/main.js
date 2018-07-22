@@ -3,8 +3,10 @@
 window.addEventListener("scroll", function() {
     if(window.pageYOffset > 0) {
         document.querySelector(".header").classList.add('header_scroll');
+        document.querySelector(".header__logo").classList.add('header__logo_scroll');
     } else {
         document.querySelector(".header").classList.remove('header_scroll');
+        document.querySelector(".header__logo").classList.remove('header__logo_scroll');
     }
 });
 // end__fixed_menu
@@ -41,7 +43,7 @@ window.addEventListener("scroll", function() {
 // animation_on_scroll
 var animationArr = ["height", "fade", "slide-left", 
                     "slide-right",  "slide-top", "slide-bottom",
-                    "border-draw_black", "border-draw_white"];
+                    "border-draw_black", "border-draw_white", "zoom"];
 
 function animationOnScroll(animationList) { 
     var elements = document.querySelectorAll(".animation-wrapper-js");
@@ -55,7 +57,7 @@ function animationOnScroll(animationList) {
 
     window.addEventListener("scroll", function() {
         arrElement.forEach(function(item, i) {
-            if(item.getBoundingClientRect().top < 500) {
+            if(item.getBoundingClientRect().top < 500 && item.getBoundingClientRect().top > 150) {
 
                 var colDescendants = item.getElementsByTagName('*');
 
@@ -81,16 +83,16 @@ function animationOnScroll(animationList) {
 animationOnScroll(animationArr); 
 // end__animation_on_scroll
 
-// var currentYear = new Date().getFullYear();
-//     document.querySelector('.age').innerHTML = currentYear - 1994;
+var currentYear = new Date().getFullYear();
+    document.querySelector('.age').innerHTML = currentYear - 1994;
 
 
 
 
 // ////////////////////// JQuery ////////////////////
 
-// slow scroll
 $(document).ready(function() {
+    // slow scroll
     $(".nav-list__link").on("click", function(e) {
         e.preventDefault();
         var elementIndex = $(".nav-list__link").index(this);
@@ -118,6 +120,33 @@ $(document).ready(function() {
         var scrollValue = $(wrap).offset().top;
         $('body,html').animate({scrollTop: scrollValue}, 800);
     });
+    // end__slow scroll
+
+
+    // ajax
+    $("#main-form").submit(function(e){
+        e.preventDefault(); //prevent default action 
+        var post_url = $(this).attr("action"); //get form action url
+        var request_method = $(this).attr("method"); //get form GET/POST method
+        var form_data = $(this).serialize(); //Encode form elements for submission
+        
+        $.ajax({
+            url : post_url,
+            type: request_method,
+            data : form_data
+        }).done(function(response){ //
+           $(".success").addClass("success-in");
+            setTimeout(function() {
+                $(".success").removeClass("success-in");
+            }, 6000);
+        }).fail(function(data) {
+            $(".error").addClass("error-in");
+            setTimeout(function() {
+                $(".error").removeClass("error-in");
+            }, 6000);
+        });
+    });
+    // end__ajax
 });
 
 // end__slow scroll
@@ -152,27 +181,12 @@ $(document).ready(function() {
 // });
 // end__ajax
 
-$("#main-form").submit(function(e){
-    e.preventDefault(); //prevent default action 
-    var post_url = $(this).attr("action"); //get form action url
-    var request_method = $(this).attr("method"); //get form GET/POST method
-    var form_data = $(this).serialize(); //Encode form elements for submission
-    
-    $.ajax({
-        url : post_url,
-        type: request_method,
-        data : form_data
-    }).done(function(response){ //
-       $(".success").addClass("success-in");
-        setTimeout(function() {
-            $(".success").removeClass("success-in");
-        }, 6000);
-    }).fail(function(data) {
-        $(".error").addClass("error-in");
-        setTimeout(function() {
-            $(".error").removeClass("error-in");
-        }, 6000);
-    });
+// preloader
+window.addEventListener("load", function() {
+   setTimeout(function() {
+      document.querySelector(".preloader").classList.add("out");
+    }, 1000);
 });
+// end__preloader
 // ////////////////////// END__JQuery ////////////////////
 

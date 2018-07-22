@@ -462,6 +462,15 @@
 			}
 		}
 	}
+	.work-page {
+		.work-list {
+			&__item {
+				&:nth-child(4n),&:nth-child(5n),&:nth-child(6n) {
+					display: block;
+				}
+			}
+		}
+	}
 	.work__container {
 		height: auto;
 		padding-bottom: 20px;
