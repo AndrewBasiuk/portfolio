@@ -138,48 +138,16 @@ $(document).ready(function() {
            $(".success").addClass("success-in");
             setTimeout(function() {
                 $(".success").removeClass("success-in");
-            }, 6000);
+            }, 3000);
         }).fail(function(data) {
             $(".error").addClass("error-in");
             setTimeout(function() {
                 $(".error").removeClass("error-in");
-            }, 6000);
+            }, 3000);
         });
     });
     // end__ajax
 });
-
-// end__slow scroll
-
-// // ajax
-// $(function() {
-//     var form = $('#contact');
-//     var formMessages = $('.message');
-
-//     $(form).submit(function(event) {
-//         event.preventDefault();
-//         // var formData = $(form).serialize();
-//         // $.ajax({
-//         //     type: 'POST',
-//         //     url: $(form).attr('action'),
-//         //     data: formData
-//         // }),
-//         .done(function(response) {
-//             $(formMessages).removeClass('message__error');
-//             $(formMessages).addClass('message__success');
-
-//             // Clear the form.
-//             $('#name').val('');
-//             $('#email').val('');
-//             $('#message').val('');
-//         }),
-//         .fail(function(data) {
-//             $(formMessages).removeClass('message__success');
-//             $(formMessages).addClass('message__error');
-//         });
-//     });
-// });
-// end__ajax
 
 // preloader
 window.addEventListener("load", function() {
