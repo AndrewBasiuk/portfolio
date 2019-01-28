@@ -1,0 +1,88 @@
+.skill {
+	background: url(../img/head-bg.jpg) center center no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	overflow: hidden; 
+
+	&__heading-wrap {
+		width: 40%;
+		position: absolute;
+		left: 5%;
+		text-align: center;
+		color: $green;
+  		text-shadow: 0px 0px 25px $green;
+
+		&:before {
+			background-color: $green;
+		}
+	}
+
+	&__container {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba(0, 0, 0, 0.6);
+	}
+}
+
+.skill-info {
+	&_main {
+		position: absolute;
+		top: 100px;
+		right: 2%;
+		width: 40%;
+	}
+
+	&_additional {
+		position: absolute;
+		bottom: 150px;
+		left: 2%;
+		width: 40%;
+	}
+
+	&__heading {
+		font-size: 2.2rem;
+		margin-bottom: 50px;
+	}
+
+	&__text {
+		color: #fff;
+		margin-bottom: 50px;
+		font: 1.8rem Montserrat-Light, Arial, sans-serif;
+
+		&_big {
+			font: 2.2rem Montserrat-Medium, Arial, sans-serif;
+			color: orange;
+		}
+	}
+}
+
+.skill-info-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	&_main {
+		margin-bottom: 15%;
+	}
+
+	&__item {
+		width: 27%;
+
+		&:nth-child(4) {
+			margin-left: 15%;
+		}
+		&:nth-child(5) {
+			margin-right: 15%;
+		}
+	}
+
+	&__icon {
+		max-width: 100%;
+		height: 120px;
+	}
+}

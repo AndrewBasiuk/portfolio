@@ -1,0 +1,182 @@
+@media screen and (min-width: 1500px) and (max-width: 1680px) {
+
+	.work {
+		padding: 0;
+		width: 99%;
+		margin: 0 auto;
+		$work__item_width: 25%;
+		$work__item_height: 310px;
+		margin: 0 auto;
+
+		&__item {
+
+			width: $work__item_width;
+			height: $work__item_height;
+		}
+
+		&__image {
+			min-width: 100%;
+			// width: $work__item_width;
+			height: $work__item_height;
+		}
+
+		&__button {
+			width: 40%;
+		}
+	}
+
+	.project1-slider, .project2-slider, .project3-slider {
+		&__button {
+			top: 415px;
+		}
+	}
+
+	.services-list {
+		width: 1015px;
+
+		&__item {
+			width: 24.5%;
+		}
+	}
+	.added-block__button-wrap {
+		left: 19%;
+	}
+	.clip {
+		&_right {
+			right: 21%;
+		}
+	}
+	.statistic {
+		width: 575px;
+		&__item {
+			margin-right: 4%;
+		}
+	}
+
+	.size_big {
+		font-size: 3em;
+	}
+
+	.client-slider__button-prev {
+		left: -13.5%
+	}
+	.client-slider__button-next {
+		right: -13.5%
+	}
+}
+	
+
+/*MAINE PAGE*/
+@media screen and (min-width: 1500px) and (max-width: 1680px) {
+	.main-banner {
+		&__heading {
+			margin-top: 12%;
+		}
+	}
+
+	.main-page-heading {
+		font-size: 5em;
+	}
+	.main-page-subheading {
+		font-size: 2em;
+		margin-top: 30px;
+	}
+}
+/*MAINE PAGE*/
+
+// /*POPUP*/
+// @media screen and (min-width: 1500px) and (max-width: 1680px) {
+// 	.popup {
+// 		&-header {
+// 			margin-top: 40px;
+// 		}
+
+// 		&-about {
+// 			margin-top: 30px;
+// 			margin-bottom: 40px
+// 		}
+// 		&-portfolio {
+// 			margin-bottom: 20px;
+// 		}
+// 		&-freedome {
+// 			margin-bottom: 40px;
+// 		}
+// 		&-contact {
+// 			flex-direction: column;
+// 			align-items: flex-start;
+
+// 			&-list {
+// 				margin-left: 0;
+// 				margin-top: 15px;
+// 			}
+// 		}
+// 	}
+// }
+
+// /*POPUP*/
+/*POPUP*/
+@media screen and (min-width: 1500px) and (max-width: 1680px) {
+	.popup {
+		&-logo__image {
+			width: 100%;
+		}
+
+		&-header {
+			margin-top: 20px;
+
+			&-email {
+				&__text {
+					font-size: 1em;
+				}
+			}
+
+			&__icon {
+				width: 15%;
+			}
+		}
+
+		&-about {
+			margin-top: 15px;
+			margin-bottom: 25px
+		}
+		&-portfolio {
+			margin-bottom: 0px;
+		}
+		&-freedome {
+			margin-bottom: 20px;
+		}
+		&-contact {
+			flex-direction: column;
+			align-items: flex-start;
+
+			&-list {
+				margin-left: 0;
+				margin-top: 15px;
+			}
+		}
+
+		&-main {
+			&__heading {
+				font-size: 200%;
+			}
+		}
+
+		&-list {
+			&__item {
+				font-size: 0.9em;
+			}
+		}
+	}
+
+	.popup-banner__hamburger {
+		right: 0% !important;
+		top: -38% !important;
+	}
+
+	a.popup-language__link {
+		padding: 7px;
+		font-size: 1em;
+	}
+}
+/*POPUP*/
+

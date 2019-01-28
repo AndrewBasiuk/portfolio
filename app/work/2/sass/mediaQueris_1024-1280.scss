@@ -1,0 +1,25 @@
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+	.container-wrap {
+		width: 80%;
+	}
+
+	.nav {
+		&__item {
+			font-size: 0.9em;
+			margin-right: 5.71835%;
+		}
+	}
+
+	.sidebar {
+		&__heading {
+			width: 50%;
+		}
+	}
+
+	.gallery {
+		&__image {
+			width: 59px;
+			height: 59px;
+		}
+	}
+}

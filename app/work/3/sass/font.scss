@@ -1,0 +1,181 @@
+
+
+@font-face {
+	font-family: 'HeliosBlackC';
+	src: url('../font/HeliosBlackC.eot');
+	src: url('../font/HeliosBlackC.eot?#iefix') format('embedded-opentype'),
+		url('../font/HeliosBlackC.woff') format('woff'),
+		url('../font/HeliosBlackC.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../font/Lato-Semibold.eot');
+  src: url('../font/Lato-Semibold.eot?#iefix') format('embedded-opentype'),
+    url('../font/Lato-Semibold.woff') format('woff'),
+    url('../font/Lato-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'LatoBold';
+  src: url('../font/Lato-Bold.eot');
+  src: url('../font/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../font/Lato-Bold.woff') format('woff'),
+    url('../font/Lato-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'LatoMedium';
+  src: url('../font/Lato-Medium.eot');
+  src: url('../font/Lato-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../font/Lato-Medium.woff') format('woff'),
+    url('../font/Lato-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'LatoHeavy';
+  src: url('../font/Lato-Heavy.eot');
+  src: url('../font/Lato-Heavy.eot?#iefix') format('embedded-opentype'),
+    url('../font/Lato-Heavy.woff') format('woff'),
+    url('../font/Lato-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'LatoRegular';
+  src: url('../font/Lato-Regular.eot');
+  src: url('../font/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../font/Lato-Regular.woff') format('woff'),
+    url('../font/Lato-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LatoItalicBold';
+  src: url('../font/Lato-BoldItalic.eot');
+  src: url('../font/Lato-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../font/Lato-BoldItalic.woff') format('woff'),
+    url('../font/Lato-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+
+@font-face {
+  font-family: 'LatoHeavyItalic';
+  src: url('../font/Lato-HeavyItalic.eot');
+  src: url('../font/Lato-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+    url('../font/Lato-HeavyItalic.woff') format('woff'),
+    url('../font/Lato-HeavyItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'LatoItalic';
+  src: url('../font/Lato-Italic.eot');
+  src: url('../font/Lato-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../font/Lato-Italic.woff') format('woff'),
+    url('../font/Lato-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'MontserratBlack';
+  src: url('../font/Montserrat-Black.eot');
+  src: url('../font/Montserrat-Black.eot?#iefix') format('embedded-opentype'),
+    url('../font/Montserrat-Black.woff') format('woff'),
+    url('../font/Montserrat-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MontserratRegular';
+  src: url('../font/Montserrat-Regular.eot');
+  src: url('../font/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../font/Montserrat-Regular.woff') format('woff'),
+    url('../font/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+@font-face {
+  font-family: 'next-slide';
+  src:  url('../font/next-slide.eot?vrzu0b');
+  src:  url('../font/next-slide.eot?vrzu0b#iefix') format('embedded-opentype'),
+    url('../font/next-slide.ttf?vrzu0b') format('truetype'),
+    url('../font/next-slide.woff?vrzu0b') format('woff'),
+    url('../font/next-slide.svg?vrzu0b#next-slide') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  // font-family: 'next-slide' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-next-slide:before {
+  content: "\e901";
+}
+
+
+@font-face {
+  font-family: 'prev-slide';
+  src:  url('../font/prev-slide.eot?te0ts2');
+  src:  url('../font/prev-slide.eot?te0ts2#iefix') format('embedded-opentype'),
+    url('../font/prev-slide.ttf?te0ts2') format('truetype'),
+    url('../font/prev-slide.woff?te0ts2') format('woff'),
+    url('../font/prev-slide.svg?te0ts2#prev-slide') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  // font-family: 'prev-slide' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-prev-slide:before {
+  content: "\e900";
+}

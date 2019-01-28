@@ -6,6 +6,7 @@ var gulp = require('gulp'),
     cleanCSS = require('gulp-clean-css'),
     imagemin = require('gulp-imagemin'),
     autoprefixer = require('gulp-autoprefixer'),
+    concat = require('gulp-concat'),
     uglify = require('gulp-uglify');
 
 
@@ -47,9 +48,12 @@ gulp.task('css', function() {
 
 // JS
 gulp.task('js', function () {
-  return gulp.src('app/js/main.js')
+  return gulp.src(['app/js/jquery.min.js',
+                    'app/js/html-iclude-html.js',
+                    'app/js/main.js'])
+    .pipe(concat('script.min.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('dist/js'))
+    .pipe(gulp.dest('app/js/'))
 });
 // JS
 
@@ -64,7 +68,7 @@ gulp.task('image', function(){
 
 
 gulp.task('watch',['browserSync', 'sass', 'css', 'js'], function(){
-  gulp.watch('app/sass/main.scss', ['sass']);
+  gulp.watch('app/sass/**/*.scss', ['sass']);
   gulp.watch('app/css/main.css', ['css']);
   gulp.watch('app/js/main.js', ['js']);
   gulp.watch('app/*.html', browserSync.reload);

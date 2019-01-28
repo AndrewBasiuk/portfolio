@@ -1,0 +1,41 @@
+@media screen and (min-width: 1800px) and (max-width: 1910px) {
+
+	.work {
+		padding: 0;
+		width: 99%;
+		margin: 0 auto;
+		$work__item_width: 25%;
+		$work__item_height: 319px;
+		margin: 0 auto;
+
+		&__item {
+			width: $work__item_width;
+			height: $work__item_height;
+		}
+
+		&__image {
+			width: $work__item_width;
+			height: $work__item_height;
+		}
+
+		&__button {
+			width: 40%;
+		}
+	}
+
+
+	.services-list {
+		width: 1218px;
+
+		&__item {
+			width: 24.58%;
+		}
+	}
+
+	.size_big {
+		font-size: 3.5em;
+	}
+
+	
+}
+	
