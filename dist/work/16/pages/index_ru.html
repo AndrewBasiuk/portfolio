@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="SHORTCUT ICON" href="img/site-icon.ico" type="image/x-icon">
+    <link href="../css/main.css" rel="stylesheet">
+    <title class="title">VEIT</title>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div style="position: absolute; top: -200%" w3-include-html="../include/svg.html"></div>
+
+    <div class="full-container">
+      <section class="head" id="head">
+        <div class="head__content">
+          <header class="header header-slide-bottom">
+            <ul class="lang">
+              <li class="lang__item">
+                <a href="#" class="lang__link lang__link_active">ru</a>
+              </li>
+              <li class="lang__item">
+                <a href="../index.html" class="lang__link">ua</a>
+              </li>
+             <!--  <li class="lang__item">
+                <a href="#" class="lang__link">eng</a>
+              </li> -->
+            </ul>
+            <nav class="nav-wrap">
+              <ul class="nav-list">
+                <li class="nav-list__item">
+                  <a href="#about" class="nav-list__link">о нас</a>
+                </li>
+                <li class="drop-down-wrap">
+                  <a href="#" class="nav-list__link drop-down-wrap__link">продукция</a>
+                  <ul class="drop-down">
+                    <li class="drop-down__item">
+                      <a href="kursor_ru.html" class="nav-list__link drop-down__link">
+                       СУО &quot;КУРСОР&quot;
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-list__item">
+                  <a href="#contact" class="nav-list__link">контакты</a>
+                </li>
+              </ul>
+            </nav> 
+          </header>
+          <div class="head__content_center">
+            <h1 class="head__heading">
+              VEIT
+            </h1>
+            <h2 class="head__subheading head-fade">
+                <span class="head-fade b">в</span>
+                <span class="head-fade e">е</span>
+                <span class="head-fade a">й</span>
+                <span class="head-fade u_1">т</span>
+            </h2>
+          </div>
+          <a href="#about" class="head__button head-slide-bottom head__button-js">
+            <svg class="head__button-icon"><use xlink:href="#circle-down"></use></svg>
+          </a>
+        </div>
+      </section>
+
+      <section data-scroll id="about" class="page-section about animation-wrapper-js">
+        <img src="../img/kursor/VEIT1.png" alt="veit" class="about__image_bg">
+        <div class="section__heading-wrap">
+          <h2 class="section__heading animated-block-js fade">О нас</h2>
+          <div class="section__stick section__stick_right animated-block-js slide-left"></div>
+          <div class="section__stick section__stick_left animated-block-js slide-right"></div>
+        </div>
+        <div class="about-descript">
+          <p class="about-descript__text about-descript__text_1 animated-block-js slide-bottom">ООО «ВЕЙТ» свою историю начал с разработки систем управления ЧПУ станков. Но уже с 2016 года осуществляло разработку и производство современных цифровых систем наблюдения, прицеливания и управления огнём с интегрированным двух плоскостным цифровым стабилизатором и оптическим цифровым модулем. Которые в свою очередь, благодаря конструкции и ориентированности на заказчика, могут быть установлены как на сухопутную технику, так и на морскую.</p>
+          <p class="about-descript__text about-descript__text_2 animated-block-js slide-bottom">Во время разработки и производства специалисты компании используют только передовые технологии, материалы и комплектующие лучших производителей мира, консультируясь у лидеров Украины по производству военной техники. Что позволяет в свою очередь удовлетворить все пожелания и технические задания заказчика.</p>
+          <p class="about-descript__text about-descript__text_3 animated-block-js slide-bottom">Продукцию представляли на украинских и международных выставках, где изделия  неоднократно получали высокую оценку опытных специалистов по вооружению. Это возможно только благодаря постоянной плодотворной работе над уже существующими образцами изделий и новыми разработками.</p>
+        </div>
+      </section>
+
+      <section id="contact" class="page-section contact animation-wrapper-js">
+        <div class="contact__container">
+          <div class="section__heading-wrap">
+            <h2 class="section__heading section__heading_white animated-block-js fade">Контакты</h2>
+            <div class="section__stick section__stick_white section__stick_right animated-block-js slide-left"></div>
+            <div class="section__stick section__stick_white section__stick_left animated-block-js slide-right"></div>
+          </div>
+          <div class="contact-form-wrap animated-block-js border-draw_white">
+            <form id="main-form" method="post" action="../contact_me.php" class="contact-form animated-block-js fade" action="">
+              <h6 class="section-block__heading contact-form__heading">Пишите</h6>
+              <div class="contact-form-input contact-form-input_1 animated-block-js slide-bottom">
+                <svg class="contact-form__icon"><use xlink:href="#profile"></use></svg>
+                <input type="text" class="contact-form__input" placeholder="имя" id="name" required="required" data-validation-required-message="Please enter your name." name="name">
+              </div>
+              <div class="contact-form-input contact-form-input_2 animated-block-js slide-bottom">
+                <svg class="contact-form__icon"><use xlink:href="#mail"></use></svg>
+                <input id="email" type="email" name="email" class="contact-form__input" placeholder="email" required="required" data-validation-required-message="Please enter your email address.">
+              </div>
+              <div class="contact-form-textarea animated-block-js slide-bottom">
+                <textarea id="message" name="message" type="text" class="contact-form__input contact-form__textarea" placeholder="Ваше сообщение..." required="required" data-validation-required-message="Please enter a message."></textarea>
+              </div>
+              <div class="contact-form__button-wrap">
+                <div id="success"></div>
+                <button id="sendMessageButton" type="submit" class="contact-form__button animated-block-js height">
+                  Отравить
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="manager animated-block-js fade">
+            <!-- <ul class="manager-contact">
+              <li class="manager-contact__item">
+                <span class="manager-contact__text">директор:</span>
+                <span class="manager-contact__text">Немченко Александр</span>
+              </li>
+              <li class="manager-contact__item">
+                <span class="manager-contact__text">e-mail:</span>
+                <a href="mailto:aleksandr.nem.ua@gmail.com" class="manager-contact__text">aleksandr.nem.ua@gmail.com</a>
+              </li>
+              <li class="manager-contact__item">
+                <span class="manager-contact__text">телефон:</span>
+                <a href="tel: +380501499959" class="manager-contact__text">+38 050 149 99 59</a>
+              </li>
+            </ul> -->
+            <ul class="manager-contact">
+              <li class="manager-contact__item">
+                <span class="manager-contact__text">инженер по управлению производством:</span>
+                <span class="manager-contact__text">Марченко Артём</span>
+              </li>
+              <li class="manager-contact__item">
+                <span class="manager-contact__text">e-mail:</span>
+                <a href="mailto:marchenko.veit@gmail.com" class="manager-contact__text manager-contact__text_right">marchenko.veit@gmail.com</a>
+              </li>
+              <li class="manager-contact__item">
+                <span class="manager-contact__text">телефон:</span>
+                <a href="tel: +380636429963" class="manager-contact__text manager-contact__text_right">+38 063 642 99 63</a>
+              </li>
+              <li class="manager-contact__item">
+                <span class="manager-contact__text">производственные мощности:</span>
+                <span class="manager-contact__text manager-contact__text_right">ул. Мельникова 2/10, г. Киев, Украина</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- <div class="contact-social">
+            <ul class="contact-list">
+              <li class="contact-list__item contact-list__item_1 animated-block-js fade">
+                <a target="_blank" href="https://www.linkedin.com/in/andrew-basiuk-70739814a/" class="contact-list__link">
+                  <svg class="contact-list__icon contact-list__icon_2"><use xlink:href="#linkedin"></use></svg>
+                </a>
+              </li>
+              <li class="contact-list__item contact-list__item_2 animated-block-js fade">
+                <a target="_blank" href="https://github.com/AndrewBasiuk" class="contact-list__link">
+                  <svg class="contact-list__icon contact-list__icon_3"><use xlink:href="#github"></use></svg>
+                </a>
+              </li>
+              <li class="contact-list__item contact-list__item_3 animated-block-js fade">
+                <a target="_blank" href="https://t.me/AndrewBasiuk" class="contact-list__link">
+                  <svg class="contact-list__icon contact-list__icon_4"><use xlink:href="#telegram"></use></svg>
+                </a>
+              </li>
+              <li class="contact-list__item contact-list__item_4 animated-block-js fade">
+                <a target="_blank" href="https://www.facebook.com/" class="contact-list__link">
+                  <svg class="contact-list__icon contact-list__icon_5"><use xlink:href="#facebook"></use></svg>
+                </a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-container">
+          <span class="footer__text">ТОВ «ВЕЙТ» 08600, Киевская область, г. Васильков, ул. Декабристов, 45</span>
+          <a href="mailto:ua.veit@gmail.com" class="footer__text">ua.veit@gmail.com</a>
+        </div>
+      </footer>
+    </div>  
+
+    <div class="success">Сообщение доставлено. Спасибо!</div>
+    <div class="error">Ошибочка! Попробуйте ёще раз</div>
+    
+    <script src="../js/common.js"></script>
+    <script src="../js/script.min.js"></script>
+    <script>
+      includeHTML();
+    </script>
+    
+  </body>
+</html

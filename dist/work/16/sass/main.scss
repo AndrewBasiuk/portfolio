@@ -1,0 +1,24 @@
+@import 'reset.scss';
+@import 'var.scss';
+@import 'font.scss';
+@import 'mixin.scss';
+@import 'common.scss';
+
+
+/*CONTENT*/
+@import 'main-page/main-page.scss';
+@import 'main-page/main-page_media.scss';
+
+@import 'product-page/product-page.scss';
+@import 'product-page/product-page_media.scss';
+
+@import 'popup/popup.scss';
+@import 'footer/footer.scss';
+/*CONTENT*/
+
+@import 'slick/slick.scss';
+@import 'slick/slick-theme.scss';
+
+@import 'animation.scss';
+// @import 'media.scss';
+
