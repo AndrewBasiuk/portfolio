@@ -8,6 +8,38 @@
 		font-size: 1rem;
 		margin-bottom: 10px;
 	}
+
+	.skill-info_additional {
+		bottom: 100px;
+	}
+	.skill-info__heading {
+		font-size: 1.8rem;
+	}
+	.skill-info-list {
+		margin-bottom: 40px;
+		justify-content: space-around;
+	}
+	.skill-info-list__item {
+		width: 25%;
+		margin-bottom: 20px;
+
+		&:nth-child(4) {
+			margin-left: 0;
+		}
+		&:nth-child(5) {
+			margin-right: 0;
+		}
+	}
+	.skill-info-list__icon {
+		height: 100px;
+	}
+
+	.skill-info__text {
+		font-size: 1.4rem;
+		&_big {
+			font-size: 1.5rem;
+		}
+	}
 }
 
 @media screen and (max-width: 1490px) {
