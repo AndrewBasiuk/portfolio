@@ -178,6 +178,9 @@
 }
 
 @media screen and (max-width: 1260px) {
+	.head__video {
+		width: auto;
+	}
 	.head__heading {
 		font-size: 7rem;
 	}
@@ -201,6 +204,7 @@
 	}
 }
 
+
 @media screen and (max-width: 1037px) {
 	.head {
 		background: url(../img/head-bg.jpg) center center no-repeat;
@@ -209,24 +213,8 @@
 
 	.head__video {
 		display: none;
-		width: auto;
-		height: 100%;
 	}
 
-	.about-descript-wrap {
-		left: 50%;
-		transform: translate(-50%, -50%); 
-		width: 60%;
-	}
-	.about__heading-wrap {
-		right: 3%;
-	}
-	.rezume__link {
-		left: 1%;
-	}
-}
-
-@media screen and (max-width: 1037px) {
 	.about-descript-wrap {
 		left: 50%;
 		transform: translate(-50%, -50%); 
@@ -242,10 +230,18 @@
 		font-size: 2.7rem;
 	}
 	.section-block__heading {
-		font-size: 2rem;
+		font-size: 1.8rem;
 	}
 	.about-descript__text {
 		font-size: 0.9rem;
+	}
+	.about-descript-wrap {
+		left: 50%;
+		transform: translate(-50%, -50%); 
+		width: 60%;
+	}
+	.about__heading-wrap {
+		right: 3%;
 	}
 
 	.skill-info__heading {
@@ -377,7 +373,7 @@
 }
 
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
 	.logo-wrap {
 		display: none;
 	}
@@ -387,7 +383,7 @@
 		box-sizing: border-box;
 	}
 	.nav-list__link {
-		font-size: 0.85rem;
+		font-size: 0.83rem;
 	}
 	.head__heading {
 		font-size: 5em;
@@ -400,7 +396,7 @@
 		width: 100%;
 	}
 	.head__button {
-		width: 70%;
+		width: 300px;
 		font-size: 0.9rem;
 	}
 	.head__subheading {
@@ -444,6 +440,7 @@
 	}
 
 	.skill__container {
+		padding: 15px 0;
 		position: relative;
 	}
 	.skill__heading-wrap {
@@ -516,7 +513,7 @@
 	}
 	.work__container {
 		height: auto;
-		padding-bottom: 20px;
+		padding: 20px 0;
 	}
 	.work__btn-wrap {
 		width: 80%;
@@ -525,27 +522,22 @@
 	.contact__container {
 		position: relative;
 		height: auto;
-		padding-bottom: 20px;
+		padding: 20px 0;
 	}
 	.contact__heading-wrap {
 		left: 0;
 	}
 	.contact-form-wrap {
 		position: relative;
-		width: 95%;
+		width: 300px;
 		top: 220px;
 		margin-bottom: 50px;
 	}
 	.contact-social {
-		position: relative;
-		width: 95%;
+		width: 280px;
 	}
 
 	@media screen and (min-width: 550px) {
-		.contact-form-wrap {
-			width: 60%;
-		}
-
 		.head__heading {
 			font-size: 7em;
 		}
@@ -553,7 +545,9 @@
 		.head__subheading {
 			font-size: 1.5em;
 		}
-
+		.nav-list {
+			justify-content: space-around;
+		}
 		.nav-list__link {
 			font-size: 1.3rem;
 		}
