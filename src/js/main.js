@@ -27,39 +27,21 @@ window.addEventListener("scroll", function() {
 // active nav item
 
 function activeNavItem() {
-
     var navLink = document.querySelectorAll(".nav-list__link");
 
-
-
     window.addEventListener("scroll", function() {
-
         var allSection = document.querySelectorAll("section");
-
-
-
         for(var i = 1; i < allSection.length; i++) {
-
             var elementTop = allSection[i].getBoundingClientRect().top;
-
             var elementHeight = allSection[i].clientHeight;
-
              if(elementTop < 100 && elementTop > -elementHeight+elementHeight/4) {
-
                 navLink[i-1].classList.add("nav-list__link_active");
-
              } else {
-
                 navLink[i-1].classList.remove("nav-list__link_active");
-
              }
-
         }
-
     });
-
 };
-
 activeNavItem();
 
 // end__active nav item
