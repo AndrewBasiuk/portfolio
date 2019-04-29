@@ -65,11 +65,8 @@ window.addEventListener("scroll", function() {
 
 
 // animation_on_scroll
-
 var animationArr = ["height", "fade", "slide-left", 
-
                     "slide-right",  "slide-top", "slide-bottom",
-
                     "border-draw_black", "border-draw_white", "zoom"];
 
 function animationOnScroll(animationsList) {
@@ -141,88 +138,9 @@ if (document.documentElement.clientWidth > 768) {
     animationOnScroll(animationArr).removeAnimations();
 }
 
-// function animationOnScroll(animationList) { 
-
-//     var elements = document.querySelectorAll(".animation-wrapper-js");
-
-//     var arrElement = [];
-
-//     var arrDescendants = [];
-
-
-
-//     elements.forEach(function(item, i) {
-
-//         arrElement.push(elements[i]);
-
-//     });
-
-
-
-
-
-//     window.addEventListener("scroll", function() {
-
-//         arrElement.forEach(function(item, i) {
-
-//             if(item.getBoundingClientRect().top < 500 && item.getBoundingClientRect().top > 150) {
-
-
-
-//                 var colDescendants = item.getElementsByTagName('*');
-
-
-
-//                 for(var k = 0; k < colDescendants.length; k++) {
-
-//                     if(colDescendants[k].classList.contains("animated-block-js")) {
-
-//                         arrDescendants.push(colDescendants[k]);
-
-//                     }
-
-//                 }
-
-
-
-//                 //add class for animation
-
-//                 for (var j = 0; j < animationList.length; j++) {
-
-//                     arrDescendants.forEach(function(item, i) {
-
-//                         if(item.classList.contains(animationList[j])) {
-
-//                             item.classList.add(animationList[j] + "-in");
-
-//                         }
-
-//                     });
-
-//                 }
-
-//             }
-
-//         });
-
-//     });
-
-// }
-
-
-
-// animationOnScroll(animationArr); 
-
-// end__animation_on_scroll
-
-
 
 var currentYear = new Date().getFullYear();
-
     document.querySelector('.age').innerHTML = currentYear - 1994;
-
-
-
 
 
 
