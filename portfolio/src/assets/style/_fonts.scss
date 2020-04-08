@@ -1,0 +1,17 @@
+
+$font_path: './assets/fonts/';
+
+@mixin fontFace($familyName,$family,$weight: normal,$style: normal) {
+  @font-face {
+    font-family: $familyName;
+    src: url('#{$font_path}#{$family}.woff2') format('woff2'),
+    url('#{$font_path}#{$family}.woff') format('woff');
+    font-style: $style;
+    font-weight: $weight;
+    font-stretch: normal;
+  }
+}
+
+@include fontFace('Lato', 'Lato-Light', 300, normal);
+@include fontFace('Lato', 'Lato-Regular', 400, normal);
+@include fontFace('Lato', 'Lato-Bold', 600, normal);
