@@ -5,6 +5,7 @@
   height: 100vh;
 
   &-container {
+    position: relative;
     max-width: 1920px;
     height: 100%;
     margin: 0 auto;
@@ -29,6 +30,7 @@
       transition: all 0.2s;
       border: 1px solid $black;
       box-sizing: border-box;
+      opacity: 0;
 
       &_white {
         top: -300px;
@@ -78,5 +80,11 @@
       }
     }
   }
-}
 
+  &-social {
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
+  }
+}

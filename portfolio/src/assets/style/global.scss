@@ -2,6 +2,7 @@
 @import "_fonts";
 @import "_variables";
 @import "mixin/_breakpoints";
+@import "colors";
 
 body {
   font-family: Lato, Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -12,3 +13,16 @@ body {
 //    background-color: greenyellow;
 //  }
 //}
+
+//social-icons
+.social-list.vertical {
+  .logo {
+    fill: $black;
+  }
+
+  .social-list__link:hover {
+    .logo {
+      fill: $white;
+    }
+  }
+}

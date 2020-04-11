@@ -1,0 +1,36 @@
+@import '../../../../assets/style/colors';
+
+.social-list {
+  &.vertical {
+    display: flex;
+    flex-direction: column;
+
+    .social-list__item {
+      margin-bottom: 5px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .social-list__link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+
+      &:hover {
+        background-color: $black;
+      }
+    }
+  }
+
+  .mat-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+}
