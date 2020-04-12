@@ -8,6 +8,7 @@ import {PortfolioService} from './portfolio.service';
 import { MainComponent } from './pages/main/main.component';
 import { SocialComponent } from './components/social/social.component';
 import {MatIconModule} from '@angular/material/icon';
+import { NavigationComponent } from './components/navigation/navigation.component';
 
 const COMPONENTS = [
   PortfolioComponent,
@@ -17,7 +18,8 @@ const COMPONENTS = [
 @NgModule({
   declarations: [
     ...COMPONENTS,
-    SocialComponent
+    SocialComponent,
+    NavigationComponent
   ],
     imports: [
         CommonModule,

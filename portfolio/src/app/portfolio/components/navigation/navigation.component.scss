@@ -1,41 +1,34 @@
 @import '../../../../assets/style/colors';
 
-.social-list {
+.nav-list {
   &.vertical {
     display: flex;
     flex-direction: column;
 
-    .social-list__item {
-      margin-bottom: 5px;
+    .nav-list__item {
+      margin-bottom: 12px;
 
       &:last-child {
         margin-bottom: 0;
       }
     }
 
-    .social-list__link {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      line-height: 1;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      transition: background-color 0.2s;
+    .nav-list__link {
+      display: block;
+      color: $black;
+      font-size: 22px;
+      font-weight: 300;
+      transition: all 0.2s;
 
       &:hover {
-        background-color: $black;
+        transform: translateX(7px);
       }
     }
 
-    .mat-icon {
-      width: 24px;
-      height: 24px;
-    }
   }
 
   &.animation {
-    .social-list__item {
+    .nav-list__item {
       animation: bounce 0.5s 1.3s ease forwards;
       transform: scale(0);
 
@@ -48,6 +41,7 @@
       &_4 {
         animation-delay: 1.6s;
       }
+
 
       @keyframes bounce {
         0% {

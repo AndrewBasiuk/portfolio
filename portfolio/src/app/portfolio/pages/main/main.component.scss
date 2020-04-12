@@ -87,4 +87,11 @@
     right: 40px;
     transform: translateY(-50%);
   }
+
+  &-nav {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+  }
 }
