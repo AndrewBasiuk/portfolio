@@ -9,6 +9,8 @@ import { MainComponent } from './pages/main/main.component';
 import { SocialComponent } from './components/social/social.component';
 import {MatIconModule} from '@angular/material/icon';
 import { NavigationComponent } from './components/navigation/navigation.component';
+import { HeaderComponent } from './components/header/header.component';
+import { LangComponent } from './components/lang/lang.component';
 
 const COMPONENTS = [
   PortfolioComponent,
@@ -19,7 +21,9 @@ const COMPONENTS = [
   declarations: [
     ...COMPONENTS,
     SocialComponent,
-    NavigationComponent
+    NavigationComponent,
+    HeaderComponent,
+    LangComponent
   ],
     imports: [
         CommonModule,

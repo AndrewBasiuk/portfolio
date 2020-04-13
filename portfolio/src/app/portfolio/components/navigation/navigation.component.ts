@@ -7,7 +7,7 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class NavigationComponent implements OnInit {
 
-  @Input() vertical = true;
+  @Input() animation = true;
 
   constructor() { }
 

@@ -1,0 +1,32 @@
+.lang-list {
+  &.animation {
+    .lang-list__item {
+      animation: bounce 0.5s 1.3s ease forwards;
+      transform: scale(0);
+
+      &_2 {
+        animation-delay: 1.4s;
+      }
+      &_3 {
+        animation-delay: 1.5s;
+      }
+      &_4 {
+        animation-delay: 1.6s;
+      }
+
+      @keyframes bounce {
+        0% {
+          transform: scale(0);
+        }
+
+        40% {
+          transform: scale(1.8);
+        }
+
+        100% {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+}

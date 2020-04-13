@@ -1,61 +1,26 @@
 @import '../../../../assets/style/colors';
 
 .nav-list {
-  &.vertical {
-    display: flex;
-    flex-direction: column;
+  display: flex;
 
-    .nav-list__item {
-      margin-bottom: 12px;
+  .nav-list__item {
+    margin-right: 15px;
 
-      &:last-child {
-        margin-bottom: 0;
-      }
+    &:last-child {
+      margin-right: 0;
     }
-
-    .nav-list__link {
-      display: block;
-      color: $black;
-      font-size: 22px;
-      font-weight: 300;
-      transition: all 0.2s;
-
-      &:hover {
-        transform: translateX(7px);
-      }
-    }
-
   }
 
-  &.animation {
-    .nav-list__item {
-      animation: bounce 0.5s 1.3s ease forwards;
-      transform: scale(0);
+  .nav-list__link {
+    display: block;
+    color: $black;
+    font-size: 22px;
+    font-weight: 300;
+    transition: all 0.2s;
 
-      &_2 {
-        animation-delay: 1.4s;
-      }
-      &_3 {
-        animation-delay: 1.5s;
-      }
-      &_4 {
-        animation-delay: 1.6s;
-      }
-
-
-      @keyframes bounce {
-        0% {
-          transform: scale(0);
-        }
-
-        40% {
-          transform: scale(1.8);
-        }
-
-        100% {
-          transform: scale(1);
-        }
-      }
+    &:hover {
+      transform: translatey(-2px);
+      font-weight: 600;
     }
   }
 
