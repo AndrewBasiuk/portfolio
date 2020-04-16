@@ -1,7 +1,10 @@
-<header class="header">
+<header class="header" [ngClass]="{fixed: fixedHeader}" >
   <div class="container header__container">
     <div class="header-nav">
       <app-navigation></app-navigation>
+    </div>
+    <div *ngIf="fixedHeader" class="header-lang">
+      <app-lang [vertical]="false"></app-lang>
     </div>
   </div>
 </header>

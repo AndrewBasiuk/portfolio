@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PortfolioModule } from './portfolio/portfolio.module';
 import {windowProvider, WINDOW} from './window';
+import {DOCUMENT, documentProvider} from './document';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {windowProvider, WINDOW} from './window';
     HttpClientModule
   ],
   providers: [
-    { provide: WINDOW, useFactory: windowProvider }
+    { provide: WINDOW, useFactory: windowProvider },
+    { provide: DOCUMENT, useFactory: documentProvider }
   ],
   bootstrap: [AppComponent]
 })

@@ -1,4 +1,61 @@
+@import '../../../../assets/style/colors';
+
 .lang-list {
+  display: flex;
+  flex-direction: row;
+
+  &__item {
+    margin-right: 5px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: all 0.2s;
+    color: $black;
+
+    &:hover {
+      background-color: $black;
+      color: $white;
+    }
+
+    &.active {
+      background-color: $black;
+      color: $white;
+    }
+  }
+
+  &__text {
+    display: block;
+    height: 5px;
+  }
+
+
+
+
+  &.vertical {
+    flex-direction: column;
+
+    .lang-list__item {
+      margin-bottom: 5px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
   &.animation {
     .lang-list__item {
       animation: bounce 0.5s 1.3s ease forwards;

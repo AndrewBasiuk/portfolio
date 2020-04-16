@@ -4,7 +4,7 @@
   display: flex;
 
   .nav-list__item {
-    margin-right: 15px;
+    margin-right: 20px;
 
     &:last-child {
       margin-right: 0;
@@ -16,11 +16,12 @@
     color: $black;
     font-size: 22px;
     font-weight: 300;
+    word-spacing: 2px;
     transition: all 0.2s;
 
     &:hover {
-      transform: translatey(-2px);
       font-weight: 600;
+      transform: scale(1.05);
     }
   }
 

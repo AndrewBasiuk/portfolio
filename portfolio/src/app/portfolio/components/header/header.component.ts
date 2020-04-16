@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, HostListener, Inject, OnInit} from '@angular/core';
+import {DOCUMENT} from '../../../document';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  fixedHeader = false;
 
-  ngOnInit(): void {
+  @HostListener('window:scroll', ['$event']) onScrollEvent(event){
+    const siteHead = this.document.querySelector('.head');
+    (event.currentTarget.pageYOffset > siteHead.clientHeight) ? this.fixedHeader = true : this.fixedHeader = false;
   }
+
+  constructor(
+    @Inject(DOCUMENT) private document: Document,
+  ) {}
+
+  ngOnInit(): void {}
 
 }

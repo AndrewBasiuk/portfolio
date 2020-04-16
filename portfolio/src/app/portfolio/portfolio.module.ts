@@ -11,19 +11,21 @@ import {MatIconModule} from '@angular/material/icon';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LangComponent } from './components/lang/lang.component';
+import { AboutComponent } from './pages/about/about.component';
 
 const COMPONENTS = [
   PortfolioComponent,
-  MainComponent
+  MainComponent,
+  SocialComponent,
+  NavigationComponent,
+  HeaderComponent,
+  LangComponent,
+  AboutComponent
 ];
 
 @NgModule({
   declarations: [
-    ...COMPONENTS,
-    SocialComponent,
-    NavigationComponent,
-    HeaderComponent,
-    LangComponent
+    ...COMPONENTS
   ],
     imports: [
         CommonModule,

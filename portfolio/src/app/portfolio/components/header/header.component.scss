@@ -1,3 +1,6 @@
+@import '../../../../assets/style/colors';
+@import '~@angular/material/theming';
+
 .header {
   position: absolute;
   top: 0;
@@ -6,10 +9,34 @@
   width: 100%;
   z-index: 100;
 
+  &.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 100;
+    transform: translateY(-100px);
+    background-color: $white;
+    @include mat-elevation(2);
+    animation: heder-slide 0.3s 0s ease forwards;
+  }
+  @keyframes heder-slide {
+    0% {
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
   &__container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 30px 40px;
+    padding: 25px 40px;
   }
 
   &-nav {

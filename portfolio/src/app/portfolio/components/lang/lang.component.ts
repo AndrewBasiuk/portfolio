@@ -7,7 +7,7 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class LangComponent implements OnInit {
 
-  @Input() vertical: true;
+  @Input() vertical = true;
 
   constructor() { }
 
