@@ -6,7 +6,7 @@
     flex-direction: column;
 
     .social-list__item {
-      margin-bottom: 5px;
+      margin-bottom: 15px;
 
       &:last-child {
         margin-bottom: 0;
@@ -18,8 +18,6 @@
       align-items: center;
       justify-content: center;
       line-height: 1;
-      width: 40px;
-      height: 40px;
       border-radius: 50%;
       transition: background-color 0.2s;
 
@@ -29,8 +27,8 @@
     }
 
     .mat-icon {
-      width: 24px;
-      height: 24px;
+      width: 26px;
+      height: 26px;
     }
   }
 
