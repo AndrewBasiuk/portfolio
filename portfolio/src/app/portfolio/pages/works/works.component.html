@@ -1,0 +1,15 @@
+<section class="works">
+  <div class="container works__container">
+    <h2 class="section-title works__title">мої роботи</h2>
+
+    <ul class="works-list">
+      <li *ngFor="let work of list" class="works-list__item">
+        <img src="{{ work.imageUrl }}" alt="works-image" class="works-list__image">
+        <div class="works-list__description">
+          <p class="works-list__title">Опис</p>
+          <p class="works-list__text">{{ work.text }}</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>

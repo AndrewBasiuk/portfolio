@@ -12,6 +12,7 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { HeaderComponent } from './components/header/header.component';
 import { LangComponent } from './components/lang/lang.component';
 import { AboutComponent } from './pages/about/about.component';
+import { WorksComponent } from './pages/works/works.component';
 
 const COMPONENTS = [
   PortfolioComponent,
@@ -25,7 +26,8 @@ const COMPONENTS = [
 
 @NgModule({
   declarations: [
-    ...COMPONENTS
+    ...COMPONENTS,
+    WorksComponent
   ],
     imports: [
         CommonModule,
