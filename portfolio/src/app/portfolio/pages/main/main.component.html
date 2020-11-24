@@ -5,10 +5,15 @@
       <span class="head-title__row head-title__row_white">Love what you Do</span>
     </h1>
     <div class="head-social">
-      <app-social [vertical]="true"></app-social>
+      <app-social [animation]="true"
+                  [position]="'ver'"
+                  [color]="'white'">
+      </app-social>
     </div>
     <div class="head-lang">
-      <app-lang [vertical]="true"></app-lang>
+      <app-lang [animation]="true"
+                [align]="'ver'">
+      </app-lang>
     </div>
   </div>
 </section>

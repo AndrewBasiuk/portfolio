@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "open": "ng serve --open",
+    "open": "ng serve --open --port=4300",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",

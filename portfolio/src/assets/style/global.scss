@@ -3,6 +3,7 @@
 @import "_variables";
 @import "mixin/_breakpoints";
 @import "colors";
+@import "material";
 
 body {
   font-family: Lato, Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -30,20 +31,5 @@ body {
   max-width: 1440px;
   padding: 0 20px;
   margin: 0 auto;
-}
-
-
-//social-icons
-.social-list.vertical {
-  .logo {
-    fill: $black;
-    transition: fill 0.2s;
-  }
-
-  .social-list__link:hover {
-    .logo {
-      fill: $white;
-    }
-  }
 }
 

@@ -4,7 +4,9 @@
       <app-navigation></app-navigation>
     </div>
     <div *ngIf="fixedHeader" class="header-lang">
-      <app-lang [vertical]="false"></app-lang>
+      <app-lang [animation]="false"
+                [align]="'hor'">
+      </app-lang>
     </div>
   </div>
 </header>

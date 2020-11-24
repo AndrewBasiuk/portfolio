@@ -7,7 +7,8 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class LangComponent implements OnInit {
 
-  @Input() vertical = true;
+  @Input() animation = false;
+  @Input() align: string = 'ver' || 'hor';
 
   constructor() { }
 

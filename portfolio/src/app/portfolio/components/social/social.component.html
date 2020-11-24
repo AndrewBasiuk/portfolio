@@ -1,5 +1,13 @@
 
-<ul class="social-list" [ngClass]="{'animation': vertical, 'vertical': vertical}">
+<ul class="social-list"
+    [ngClass]=
+      "
+      { 'animation': animation,
+        'vertical': position === 'ver',
+        'white': color === 'white'
+        }
+      "
+>
   <li class="social-list__item social-list__item_1">
     <a href="#" class="social-list__link">
       <mat-icon svgIcon="facebook" aria-hidden="false" aria-label="Twitter icon"></mat-icon>

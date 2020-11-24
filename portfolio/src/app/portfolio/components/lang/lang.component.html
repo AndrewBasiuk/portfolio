@@ -1,4 +1,12 @@
-<ul class="lang-list" [ngClass]="{animation: vertical, vertical: vertical}">
+<ul class="lang-list"
+    [ngClass]=
+      "
+      {
+        'animation': animation,
+        'vertical': align === 'ver'
+       }
+      "
+>
   <li class="lang-list__item lang-list__item_1 active">
     <a href="#" class="lang-list__link">
       <span class="lang-list__text">en</span>

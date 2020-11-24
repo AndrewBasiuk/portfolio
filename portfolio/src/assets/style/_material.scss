@@ -1,0 +1,26 @@
+//social-icons
+.social-list {
+
+  svg {
+    fill: $black;
+    transition: fill 0.2s
+  }
+
+  .social-list__link:hover {
+    svg {
+      fill: $white;
+    }
+  }
+
+  &.white {
+    svg {
+      fill: $white;
+    }
+
+    .social-list__link:hover {
+      svg {
+        fill: $black;
+      }
+    }
+  }
+}
