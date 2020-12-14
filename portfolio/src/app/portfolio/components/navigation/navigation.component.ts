@@ -8,6 +8,7 @@ import {Component, Input, OnInit} from '@angular/core';
 export class NavigationComponent implements OnInit {
 
   @Input() animation = true;
+  @Input() revertColor = false;
 
   constructor() { }
 

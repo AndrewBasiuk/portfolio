@@ -1,3 +1,26 @@
+$enable-grid-classes: true !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 767px,
+  lg: 1025px,
+  xl: 1200px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+);
+
+$grid-columns:                12 !default;
+$grid-gutter-width:           30px !default;
+$grid-row-columns:            6 !default;
+
+$container-padding-x: $grid-gutter-width / 2 !default;
+
 // Breakpoint viewport sizes and media queries.
 //
 // Breakpoints are defined as a map of (name: minimum width), order from small to large:
@@ -119,5 +142,18 @@
     @include media-breakpoint-down($name, $breakpoints) {
       @content;
     }
+  }
+}
+
+@mixin mat-elevation-transition-with(
+  $properties,
+  $duration: $mat-elevation-transition-duration,
+  $easing: $mat-elevation-transition-timing-function) {
+  @if $properties {
+    $transition: '';
+    @each $prop in $properties {
+      $transition: str-insert($transition, #{$prop #{$duration} #{$easing}#{', '}}, 1);
+    }
+    transition: #{$transition} mat-elevation-transition-property-value($duration, $easing);
   }
 }

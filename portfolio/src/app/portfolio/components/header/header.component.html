@@ -1,10 +1,11 @@
 <header class="header" [ngClass]="{fixed: fixedHeader}" >
   <div class="header__container">
     <div class="header-nav">
-      <app-navigation></app-navigation>
+      <app-navigation [revertColor]="(mobile$ | async) && !fixedHeader"></app-navigation>
     </div>
-    <div *ngIf="fixedHeader" class="header-lang">
+    <div class="header-lang">
       <app-lang [animation]="false"
+                [revertColor]="(tablet$ | async) && !fixedHeader"
                 [align]="'hor'">
       </app-lang>
     </div>

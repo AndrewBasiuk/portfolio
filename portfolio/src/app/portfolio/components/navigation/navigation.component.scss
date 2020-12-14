@@ -1,17 +1,28 @@
 @import '../../../../assets/style/colors';
+@import '../../../../assets/style/breakpoints/breakpoints';
 
 .nav-list {
   display: flex;
 
-  .nav-list__item {
+  &.revert-color {
+    .nav-list__link {
+      color: $white;
+    }
+  }
+
+  &__item {
     margin-right: 20px;
+
+    @media screen and (max-width: 360px) {
+      margin-right: 14px;
+    }
 
     &:last-child {
       margin-right: 0;
     }
   }
 
-  .nav-list__link {
+  &__link {
     display: block;
     color: $black;
     font-size: 22px;
@@ -23,7 +34,18 @@
       font-weight: 600;
       transform: scale(1.05);
     }
-  }
 
+    @include media-breakpoint-down(md) {
+      font-size: 18px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      font-size: 18px;
+    }
+
+    @media screen and (max-width: 360px) {
+      font-size: 20px;
+    }
+  }
 }
 

@@ -1,4 +1,5 @@
 @import '../../../../assets/style/colors';
+@import '../../../../assets/style/breakpoints/breakpoints';
 @import '~@angular/material/theming';
 
 .header {
@@ -18,9 +19,14 @@
     transform: translateY(-100px);
     background-color: $white;
     @include mat-elevation(2);
-    animation: heder-slide 0.3s 0s ease forwards;
+    animation: header-slide 0.3s 0s ease forwards;
+
+    .header-lang {
+      display: block;
+    }
   }
-  @keyframes heder-slide {
+
+  @keyframes header-slide {
     0% {
       opacity: 0;
       transform: translateY(-100px);
@@ -40,12 +46,27 @@
     box-sizing: border-box;
     max-width: 1600px;
     margin: 0 auto;
+
+    @include media-breakpoint-down(md) {
+      padding: 18px 26px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      flex-direction: column;
+    }
   }
 
   &-nav {
     animation: slide-left 1s 0.2s ease forwards;
     opacity: 0;
     transform: translateX(-200px);
+
+    @include media-breakpoint-down(md) {
+      animation: none;
+      opacity: 1;
+      transform: translateX(0);
+      margin-bottom: 20px;
+    }
   }
   @keyframes slide-left {
     0% {
@@ -56,6 +77,14 @@
     100% {
       opacity: 1;
       transform: translateX(0);
+    }
+  }
+
+  &-lang {
+    display: none;
+
+    @include media-breakpoint-down(sm) {
+      display: block;
     }
   }
 }

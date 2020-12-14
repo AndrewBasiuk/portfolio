@@ -6,7 +6,7 @@
     transition: fill 0.2s
   }
 
-  .social-list__link:hover {
+  .social-list__link:hover, .social-list__link:focus {
     svg {
       fill: $white;
     }
@@ -17,10 +17,17 @@
       fill: $white;
     }
 
-    .social-list__link:hover {
+    .social-list__link:hover, .social-list__link:focus {
       svg {
         fill: $black;
       }
     }
+  }
+}
+
+//head
+.head-down {
+  &:hover .mat-icon, &:active .mat-icon, &:focus .mat-icon {
+    stroke: $white;
   }
 }
