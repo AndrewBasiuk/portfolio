@@ -10,16 +10,14 @@ body {
   font-size: 18px;
 }
 
-//@include media-breakpoint-down(lg) {
-//  body {
-//    background-color: greenyellow;
-//  }
-//}
-
 .section-title {
   font-size: 46px;
   text-transform: uppercase;
   font-weight: 300;
+
+  @include media-breakpoint-down(xs) {
+    font-size: 35px;
+  }
 }
 
 .text {

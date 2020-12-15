@@ -21,6 +21,10 @@ export const MAIN_SKILL: Icon[] = [
     label: 'js-icon'
   },
   {
+    id: 'rxjs',
+    label: 'rxjs-icon'
+  },
+  {
     id: 'sass',
     label: 'sass-icon'
   },
@@ -31,6 +35,10 @@ export const MAIN_SKILL: Icon[] = [
   {
     id: 'npm',
     label: 'npm-icon'
+  },
+  {
+    id: 'webpack',
+    label: 'webpack-icon'
   },
   {
     id: 'gulp',
