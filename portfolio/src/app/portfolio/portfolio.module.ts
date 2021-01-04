@@ -13,6 +13,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { LangComponent } from './components/lang/lang.component';
 import { AboutComponent } from './pages/about/about.component';
 import { WorksComponent } from './pages/works/works.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 const COMPONENTS = [
   PortfolioComponent,
@@ -27,7 +28,8 @@ const COMPONENTS = [
 @NgModule({
   declarations: [
     ...COMPONENTS,
-    WorksComponent
+    WorksComponent,
+    FooterComponent
   ],
     imports: [
         CommonModule,

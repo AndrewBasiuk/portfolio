@@ -53,6 +53,10 @@
   &__title {
     margin-bottom: 60px;
     color: $white;
+
+    @include media-breakpoint-down(sm) {
+      text-align: center;
+    }
   }
 
   &__text {
@@ -89,7 +93,7 @@
     @include media-breakpoint-down(xs) {
       width: 100%;
       min-height: auto;
-      padding: 40px 15px 60px;
+      padding: 40px 15px 30px;
     }
 
     &__container {
