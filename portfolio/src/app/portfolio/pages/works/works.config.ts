@@ -5,39 +5,35 @@ export interface Work {
 
 export const WORKS_LIST: Work[] = [
   {
-    imageUrl: './assets/images/portfolio-images/works/work.png',
+    imageUrl: './assets/images/portfolio-images/works/mgid.jpg',
     text: 'Україна — унітарна держава. Вона складається з 24 областей, Автономної Республіки Крим і двох міст зі спеціальним статусом: Києва — столиці та найбільшого міста, і Севастополя.'
   },
   {
-    imageUrl: './assets/images/portfolio-images/works/work.png',
+    imageUrl: './assets/images/portfolio-images/works/mgid-land.jpg',
     text: 'Україна — унітарна держава. Вона складається з 24 областей, Автономної Республіки Крим і двох міст зі спеціальним статусом: Києва — столиці та найбільшого міста, і Севастополя.'
   },
   {
-    imageUrl: './assets/images/portfolio-images/works/work.png',
+    imageUrl: './assets/images/portfolio-images/works/weather-app.jpg',
     text: 'Україна — унітарна держава. Вона складається з 24 областей, Автономної Республіки Крим і двох міст зі спеціальним статусом: Києва — столиці та найбільшого міста, і Севастополя.'
   },
   {
-    imageUrl: './assets/images/portfolio-images/works/work.png',
+    imageUrl: './assets/images/portfolio-images/works/portfolio.jpg',
     text: 'Україна — унітарна держава. Вона складається з 24 областей, Автономної Республіки Крим і двох міст зі спеціальним статусом: Києва — столиці та найбільшого міста, і Севастополя.'
   },
   {
-    imageUrl: './assets/images/portfolio-images/works/work.png',
+    imageUrl: './assets/images/portfolio-images/works/smartorange.jpg',
     text: 'Україна — унітарна держава. Вона складається з 24 областей, Автономної Республіки Крим і двох міст зі спеціальним статусом: Києва — столиці та найбільшого міста, і Севастополя.'
   },
   {
-    imageUrl: './assets/images/portfolio-images/works/work.png',
+    imageUrl: './assets/images/portfolio-images/works/sandler.jpg',
     text: 'Україна — унітарна держава. Вона складається з 24 областей, Автономної Республіки Крим і двох міст зі спеціальним статусом: Києва — столиці та найбільшого міста, і Севастополя.'
   },
   {
-    imageUrl: './assets/images/portfolio-images/works/work.png',
+    imageUrl: './assets/images/portfolio-images/works/notarius.jpg',
     text: 'Україна — унітарна держава. Вона складається з 24 областей, Автономної Республіки Крим і двох міст зі спеціальним статусом: Києва — столиці та найбільшого міста, і Севастополя.'
   },
   {
-    imageUrl: './assets/images/portfolio-images/works/work.png',
-    text: 'Україна — унітарна держава. Вона складається з 24 областей, Автономної Республіки Крим і двох міст зі спеціальним статусом: Києва — столиці та найбільшого міста, і Севастополя.'
-  },
-  {
-    imageUrl: './assets/images/portfolio-images/works/work.png',
+    imageUrl: './assets/images/portfolio-images/works/lexus.jpg',
     text: 'Україна — унітарна держава. Вона складається з 24 областей, Автономної Республіки Крим і двох міст зі спеціальним статусом: Києва — столиці та найбільшого міста, і Севастополя.'
   }
 

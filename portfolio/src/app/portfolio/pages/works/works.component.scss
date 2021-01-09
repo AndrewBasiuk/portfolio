@@ -1,5 +1,6 @@
 @import '../../../../assets/style/colors';
 @import '../../../../assets/style/breakpoints/breakpoints';
+@import '~@angular/material/theming';
 
 .works {
   min-height: 100vh;
@@ -64,22 +65,23 @@
       margin-bottom: 30px;
       margin-right: 5%;
       position: relative;
+      @include mat-elevation(2);
 
       &:nth-child(3n), &:last-child {
         margin-right: 0;
       }
 
-      &:nth-last-child(-n+3) {
-        margin-bottom: 0;
-      }
+      //&:nth-last-child(-n+3) {
+      //  margin-bottom: 0;
+      //}
 
       @include media-breakpoint-down(md) {
         width: 47%;
         margin-right: 0;
 
-        &:nth-last-child(-n+3) {
-          margin-bottom: 30px;
-        }
+        //&:nth-last-child(-n+3) {
+        //  margin-bottom: 30px;
+        //}
 
         &:nth-last-child {
           margin-bottom: 0;
@@ -104,6 +106,7 @@
 
     &__image {
       transition: all 0.5s;
+      display: block;
     }
 
     &__description {
