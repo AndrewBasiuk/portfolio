@@ -1,4 +1,4 @@
-<ul class="lang-list"
+<ul *transloco="let t" class="lang-list"
     [ngClass]=
       "
       {
@@ -8,14 +8,9 @@
        }
       "
 >
-  <li class="lang-list__item lang-list__item_1 active">
-    <a href="#" class="lang-list__link">
-      <span class="lang-list__text">en</span>
-    </a>
-  </li>
-  <li class="lang-list__item lang-list__item_2">
-    <a href="#" class="lang-list__link active">
-      <span class="lang-list__text">ua</span>
+  <li *ngFor="let lang of langs" class="lang-list__item lang-list__item_1">
+    <a routerLinkActive="active-lang" class="lang-list__link">
+      <span class="lang-list__text">{{ lang.name }}</span>
     </a>
   </li>
 </ul>

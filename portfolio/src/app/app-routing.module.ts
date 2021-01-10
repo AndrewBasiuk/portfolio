@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { PORTFOLIO_ROUTS } from './portfolio/portfolio-routing';
+import {PortfolioComponent} from './portfolio/portfolio.component';
 
 
 const routes: Routes = [
-  PORTFOLIO_ROUTS,
+  {
+    path: 'portfolio',
+    component: PortfolioComponent,
+  }
 ];
 
 @NgModule({

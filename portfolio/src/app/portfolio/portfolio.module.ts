@@ -14,6 +14,7 @@ import { LangComponent } from './components/lang/lang.component';
 import { AboutComponent } from './pages/about/about.component';
 import { WorksComponent } from './pages/works/works.component';
 import { FooterComponent } from './components/footer/footer.component';
+import {TranslocoModule} from '@ngneat/transloco';
 
 const COMPONENTS = [
   PortfolioComponent,
@@ -34,7 +35,8 @@ const COMPONENTS = [
     imports: [
         CommonModule,
         RouterModule,
-        MatIconModule
+        MatIconModule,
+        TranslocoModule
     ],
   exports: [
     ...COMPONENTS
