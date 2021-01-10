@@ -1,13 +1,14 @@
 <section class="works">
   <div class="container works__container">
-    <h2 class="section-title works__title">мої кращі роботи</h2>
+    <h2 class="section-title works__title">деякі мої роботи</h2>
 
     <ul class="works-list">
       <li *ngFor="let work of list" class="works-list__item">
         <img src="{{ work.imageUrl }}" alt="works-image" class="works-list__image">
         <div class="works-list__description">
-<!--          <p class="works-list__title">Опис</p>-->
+          <p class="works-list__title">Використовував:</p>
           <p class="works-list__text">{{ work.text }}</p>
+          <a *ngIf="work.outer"  [href]="work.link" [target]="'_blank'" class="works-list__btn">подивитися</a>
         </div>
       </li>
     </ul>

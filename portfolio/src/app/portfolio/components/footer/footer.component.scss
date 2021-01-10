@@ -1,9 +1,10 @@
 @import '../../../../assets/style/colors';
 @import '../../../../assets/style/breakpoints/breakpoints';
+@import '~@angular/material/theming';
 
 .footer {
   padding: 24px 0;
-  border-top: 1px solid $black;
+  @include mat-elevation(10);
 
   &__text {
     text-align: center;

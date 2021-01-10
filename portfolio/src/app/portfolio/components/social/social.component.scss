@@ -21,7 +21,7 @@
     width: 40px;
     height: 40px;
 
-    &:hover {
+    &:hover, &:focus, &:active {
       background-color: $black;
     }
   }
@@ -43,7 +43,10 @@
       }
     }
 
-    .social-list__link:hover {
+
+    .social-list__link:hover,
+    .social-list__link:active,
+    .social-list__link:focus {
       background-color: $white;
     }
   }
@@ -61,6 +64,9 @@
       }
       &_4 {
         animation-delay: 1.6s;
+      }
+      &_5 {
+        animation-delay: 1.7s;
       }
 
       @keyframes bounce {

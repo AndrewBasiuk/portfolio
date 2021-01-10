@@ -8,24 +8,9 @@
         }
       "
 >
-  <li class="social-list__item social-list__item_1">
-    <a href="#" class="social-list__link">
-      <mat-icon svgIcon="facebook" aria-hidden="false" aria-label="Twitter icon"></mat-icon>
-    </a>
-  </li>
-  <li class="social-list__item social-list__item_2">
-    <a href="#" class="social-list__link">
-      <mat-icon svgIcon="telegram" aria-hidden="false" aria-label="Twitter icon"></mat-icon>
-    </a>
-  </li>
-  <li class="social-list__item social-list__item_3">
-    <a href="#" class="social-list__link">
-      <mat-icon svgIcon="git" aria-hidden="false" aria-label="Twitter icon"></mat-icon>
-    </a>
-  </li>
-  <li class="social-list__item social-list__item_4">
-    <a href="#" class="social-list__link">
-      <mat-icon svgIcon="linkedin" aria-hidden="false" aria-label="Twitter icon"></mat-icon>
+  <li *ngFor="let item of socialList" class="social-list__item" [ngClass]="item.className">
+    <a [href]="item.link" [target]="'_blank'" class="social-list__link">
+      <mat-icon svgIcon="{{ item.icon }}" aria-hidden="false" aria-label="icon"></mat-icon>
     </a>
   </li>
 </ul>
