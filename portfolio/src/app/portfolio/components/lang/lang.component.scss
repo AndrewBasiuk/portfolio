@@ -61,7 +61,7 @@
     flex-direction: column;
 
     .lang-list__item {
-      margin-bottom: 5px;
+      margin: 0 0 5px;
 
       &:last-child {
         margin-bottom: 0;
@@ -99,8 +99,4 @@
       }
     }
   }
-}
-
-.active-lang {
-  background-color: black;
 }

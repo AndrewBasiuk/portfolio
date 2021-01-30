@@ -1,16 +1,20 @@
-<ul *transloco="let t" class="lang-list"
-    [ngClass]=
-      "
-      {
-        'animation': animation,
-        'revert-color': revertColor,
-        'vertical': align === 'ver'
-       }
-      "
->
-  <li *ngFor="let lang of langs" class="lang-list__item lang-list__item_1">
-    <a routerLinkActive="active-lang" class="lang-list__link">
-      <span class="lang-list__text">{{ lang.name }}</span>
-    </a>
-  </li>
-</ul>
+
+<ng-container *ngIf="activeLang$ | async as activeLang">
+  <ul *transloco="let t" class="lang-list"
+      [ngClass]=
+        "
+        {
+          'animation': animation,
+          'revert-color': revertColor,
+          'vertical': align === 'ver'
+         }
+        "
+  >
+    <li *ngFor="let lang of langList; let i = index" class="lang-list__item" [ngClass]="animationClass[i]">
+      <a class="lang-list__link" (click)="changeLang(lang.name, activeLang)"
+         [ngClass]="{ 'active': lang.name === activeLang }">
+        <span class="lang-list__text">{{ lang.name }}</span>
+      </a>
+    </li>
+  </ul>
+</ng-container>

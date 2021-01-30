@@ -1,18 +1,18 @@
-<nav class="nav">
+<nav class="nav" *transloco="let t; read: 'nav'">
   <ul class="nav-list" [ngClass]="{'animation': animation, 'revert-color': revertColor}">
     <li class="nav-list__item">
       <a href="#" class="nav-list__link">
-        хто я
+        {{ t('about') }}
       </a>
     </li>
     <li class="nav-list__item nav-list__item_3">
       <a href="#" class="nav-list__link">
-        мої роботи
+        {{ t('works') }}
       </a>
     </li>
     <li class="nav-list__item nav-list__item_4">
       <a href="#" class="nav-list__link">
-        контакти
+        {{ t('contacts') }}
       </a>
     </li>
   </ul>

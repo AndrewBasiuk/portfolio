@@ -5,15 +5,14 @@ export enum langType {
 
 export interface LangConfig {
   name: langType;
-  className?: string;
 }
 
 
 export const LANGS: LangConfig[] = [
   {
-    name: langType.UA,
+    name: langType.EN,
   },
   {
-    name: langType.EN
+    name: langType.UA,
   }
 ];

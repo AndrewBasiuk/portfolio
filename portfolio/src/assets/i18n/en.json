@@ -1,3 +1,33 @@
 {
-  "title": "hi"
+  "title": "hi",
+
+  "nav": {
+    "about": "about me",
+    "works": "my works",
+    "contacts": "contacts"
+  },
+
+  "about": {
+    "title": "about me",
+    "text": {
+      "par1": "Hi! My name is Andrew and i'm front end developer",
+      "par2": "In early 2016 i holds master degree in radiotechnics from National Technical University of Ukraine “Igor Sikorsky Kyiv Polytechnic Institute”. After six months of work in the specialty i understand than this is ”not my”. So i started search what i really want to do. After long searching and thinking i accidentally opened for my self web developing. And after one and half year learning ang struggling in searching new job, i finally had my first offer as jr. front end developer.",
+      "par3": "So, in early 2018 my IT-career was begin:) Now i work in MGID inc. and create web application using Angular",
+      "par4": "For more info you can watch my ",
+      "cv": "CV"
+    },
+    "skill": {
+      "title1": "In my work i use:",
+      "title2": "Also i'm familiar with:"
+    }
+  },
+
+  "work": {
+    "title": "some of my works",
+    "use": "i use",
+    "btn": "watch",
+    "contacts": {
+      "title": "Contact with me:"
+    }
+  }
 }

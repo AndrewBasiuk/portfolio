@@ -1,20 +1,20 @@
-<section class="works">
+<section class="works" *transloco="let t; read: 'work'">
   <div class="container works__container">
-    <h2 class="section-title works__title">деякі мої роботи</h2>
+    <h2 class="section-title works__title">{{ t('title') }}</h2>
 
     <ul class="works-list">
       <li *ngFor="let work of list" class="works-list__item">
         <img src="{{ work.imageUrl }}" alt="works-image" class="works-list__image">
         <div class="works-list__description">
-          <p class="works-list__title">Використовував:</p>
+          <p class="works-list__title">{{ t('use') }}</p>
           <p class="works-list__text">{{ work.text }}</p>
-          <a *ngIf="work.outer"  [href]="work.link" class="works-list__btn">подивитися</a>
+          <a *ngIf="work.outer"  [href]="work.link" class="works-list__btn">{{ t('btn') }}</a>
         </div>
       </li>
     </ul>
 
     <div class="works-social">
-      <p class="works-social__title">Мої контакти:</p>
+      <p class="works-social__title">{{ t('contacts.title') }}</p>
       <app-social [animation]="false"
                   [position]="'hor'"
                   [color]="'black'">

@@ -1,26 +1,26 @@
-<section class="about">
+<section class="about" *transloco="let t; read: 'about'">
   <div class="container about__container">
     <div class="about-info">
       <h2 class="section-title about__title">
-        про мене
+        {{ t('title') }}
       </h2>
       <p class="text about__text">
-        Привіт! Мене звуть Андрій і я front end розробник.
+        {{ t('text.par1') }}
       </p>
       <p class="text about__text">
-        В 2016 році я закінчив Радіотехнічний факультет НТУУ "Київський політехнічний інститут ім. Ігоря Сікорського". Через пів року роботи за спеціальністю, я зрозумів, що це "не моє". Тому паралельно почав шукати те, чим чим дійсно хочу займатись. Й одного разу натрапим web-розробку. Через півтора роки самоосвіти й довгих пошуків першої роботи в цій сфері, нарешті влаштувався на позицію jr. Front end developer.
+        {{ t('text.par2') }}
       </p>
       <p class="text about__text">
-        Так, з початку 2018 року почалась моя професійна кар'єра:) На даний момент працюю в компанії MGID inc. й займаюсь розробкою web-додатків на Angular
+        {{ t('text.par3') }}
       </p>
       <p class="text about__text">
-        Більш детальну інформацію можете переглянути в моєму <a [href]="'#'" [target]="'blank'" class="text about__link">резюме</a>
+        {{ t('text.par4') }} <a [href]="'#'" [target]="'blank'" class="text about__link">{{ t('text.cv') }}</a>
       </p>
     </div>
     <div class="about-skill">
       <div class="about-skill__container">
         <div class="about-skill__item">
-          <div class="about-skill__title">В своїй роботі я використовую:</div>
+          <div class="about-skill__title">{{ t('skill.title1') }}</div>
           <ul class="about-skill-list">
             <li *ngFor="let item of mainSkill" class="about-skill-list__item">
               <mat-icon svgIcon="{{ item.id }}" aria-hidden="false" aria-label="main-skill-icon"></mat-icon>
@@ -28,7 +28,7 @@
           </ul>
         </div>
         <div class="about-skill__item">
-          <div class="about-skill__title">також я знайомий з:</div>
+          <div class="about-skill__title">{{ t('skill.title2') }}</div>
           <ul class="about-skill-list">
             <li *ngFor="let item of addSkill" class="about-skill-list__item">
               <mat-icon svgIcon="{{ item.id }}" aria-hidden="false" aria-label="main-skill-icon"></mat-icon>
