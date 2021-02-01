@@ -5,6 +5,7 @@
     </div>
     <div class="header-lang">
       <app-lang [animation]="false"
+                [place]="'header'"
                 [revertColor]="(tablet$ | async) && !fixedHeader"
                 [align]="'hor'">
       </app-lang>

@@ -3,6 +3,7 @@ export interface Work {
   text: string;
   link?: string;
   outer?: boolean;
+  additional?: string;
 }
 
 export const WORKS_LIST: Work[] = [
@@ -27,6 +28,7 @@ export const WORKS_LIST: Work[] = [
   {
     imageUrl: './assets/images/portfolio-images/works/portfolio.jpg',
     text: 'Angular 9+, Angular Material, SCSS',
+    additional: 'additional.work4'
   },
   {
     imageUrl: './assets/images/portfolio-images/works/smartorange.jpg',

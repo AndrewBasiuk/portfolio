@@ -67,6 +67,10 @@
       transform: translateX(0);
       margin-bottom: 20px;
     }
+
+    @media screen and (max-height: 700px) {
+      margin-bottom: 0;
+    }
   }
   @keyframes slide-left {
     0% {

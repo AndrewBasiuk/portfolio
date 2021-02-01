@@ -12,6 +12,7 @@
   }
 
   &__link {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,7 +23,24 @@
     height: 40px;
 
     &:hover, &:focus, &:active {
+      &:before {
+        height: 100%;
+      }
+    }
+
+    &:before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+      width: 100%;
+      height: 0;
       background-color: $black;
+      border-radius: 50%;
+      content: '';
+      z-index: -1;
+      transition: all 0.2s;
     }
   }
 
@@ -44,9 +62,7 @@
     }
 
 
-    .social-list__link:hover,
-    .social-list__link:active,
-    .social-list__link:focus {
+    .social-list__link:before {
       background-color: $white;
     }
   }

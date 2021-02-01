@@ -1,4 +1,4 @@
-<section class="about" *transloco="let t; read: 'about'">
+<section id="about" class="about" *transloco="let t; read: 'about'">
   <div class="container about__container">
     <div class="about-info">
       <h2 class="section-title about__title">
@@ -14,7 +14,7 @@
         {{ t('text.par3') }}
       </p>
       <p class="text about__text">
-        {{ t('text.par4') }} <a [href]="'#'" [target]="'blank'" class="text about__link">{{ t('text.cv') }}</a>
+        {{ t('text.par4') }} <a [href]="'./assets/Basiuk_Andrii_eng.pdf'" [target]="'blank'" class="text about__link">{{ t('text.cv') }}</a>
       </p>
     </div>
     <div class="about-skill">

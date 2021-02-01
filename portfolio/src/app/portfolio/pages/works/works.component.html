@@ -1,4 +1,4 @@
-<section class="works" *transloco="let t; read: 'work'">
+<section id="work" class="works" *transloco="let t; read: 'work'">
   <div class="container works__container">
     <h2 class="section-title works__title">{{ t('title') }}</h2>
 
@@ -8,12 +8,16 @@
         <div class="works-list__description">
           <p class="works-list__title">{{ t('use') }}</p>
           <p class="works-list__text">{{ work.text }}</p>
+          <div class="works-list__additional"  *ngIf="work.additional">
+            <p class="works-list__title">{{ t('additional.title') }}</p>
+            <p class="works-list__text">{{ t(work.additional) }}</p>
+          </div>
           <a *ngIf="work.outer"  [href]="work.link" class="works-list__btn">{{ t('btn') }}</a>
         </div>
       </li>
     </ul>
 
-    <div class="works-social">
+    <div id="contacts" class="works-social">
       <p class="works-social__title">{{ t('contacts.title') }}</p>
       <app-social [animation]="false"
                   [position]="'hor'"

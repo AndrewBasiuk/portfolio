@@ -11,6 +11,7 @@ import { Location } from '@angular/common';
 })
 export class LangComponent implements OnInit {
 
+  @Input() place?: string = 'main' || 'header';
   @Input() revertColor?: boolean | null;
   @Input() animation = false;
   @Input() align: string = 'ver' || 'hor';

@@ -1,17 +1,17 @@
 <nav class="nav" *transloco="let t; read: 'nav'">
   <ul class="nav-list" [ngClass]="{'animation': animation, 'revert-color': revertColor}">
     <li class="nav-list__item">
-      <a href="#" class="nav-list__link">
+      <a [ngxScrollTo]="'#about'" class="nav-list__link">
         {{ t('about') }}
       </a>
     </li>
     <li class="nav-list__item nav-list__item_3">
-      <a href="#" class="nav-list__link">
+      <a [ngxScrollTo]="'#work'" class="nav-list__link">
         {{ t('works') }}
       </a>
     </li>
     <li class="nav-list__item nav-list__item_4">
-      <a href="#" class="nav-list__link">
+      <a [ngxScrollTo]="'#contacts'" class="nav-list__link">
         {{ t('contacts') }}
       </a>
     </li>

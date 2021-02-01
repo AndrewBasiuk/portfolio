@@ -18,9 +18,9 @@ import { TranslocoRootModule } from './transloco/transloco-root.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    PortfolioModule,
     HttpClientModule,
-    TranslocoRootModule
+    TranslocoRootModule,
+    PortfolioModule,
   ],
   providers: [
     { provide: WINDOW, useFactory: windowProvider },

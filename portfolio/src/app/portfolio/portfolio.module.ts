@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 import { PortfolioComponent } from './portfolio.component';
-
-import {PortfolioService} from './portfolio.service';
+import { PortfolioService } from './portfolio.service';
 import { MainComponent } from './pages/main/main.component';
 import { SocialComponent } from './components/social/social.component';
 import {MatIconModule} from '@angular/material/icon';
@@ -36,7 +36,8 @@ const COMPONENTS = [
         CommonModule,
         RouterModule,
         MatIconModule,
-        TranslocoModule
+        TranslocoModule,
+        ScrollToModule.forRoot()
     ],
   exports: [
     ...COMPONENTS

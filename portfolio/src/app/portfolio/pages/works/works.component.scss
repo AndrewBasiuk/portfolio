@@ -159,6 +159,13 @@
         color: $black;
       }
     }
+
+    &__additional {
+      .works-list__title {
+        text-transform: lowercase;
+        margin-bottom: 5px;
+      }
+    }
   }
 
   &-social {
