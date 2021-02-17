@@ -1,0 +1,33 @@
+<div class="chat-wrapper">
+  <div class="chat-reg">
+    <button
+        mat-button
+        mat-flat-button
+        color="primary"
+        (click)="selectRegistrationType(this.registrationType.SignIn)"
+        class="chat-reg-btn">
+      Sign In
+    </button>
+    <p class="chat-reg-text">or</p>
+    <button
+        mat-button
+        mat-flat-button
+        color="accent"
+        (click)="selectRegistrationType(this.registrationType.Login)"
+        class="chat-reg-btn">
+      Login
+    </button>
+  </div>
+
+  <ng-container *ngIf="registrationType$ | async as registrationType">
+    <ng-container *ngIf="registrationType === 'sign-in'; else login">
+      {{registrationType}}
+      <app-login></app-login>
+    </ng-container>
+
+    <ng-template #login>
+      {{registrationType}}
+      <app-login></app-login>
+    </ng-template>
+  </ng-container>
+</div>

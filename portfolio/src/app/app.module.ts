@@ -9,6 +9,10 @@ import { PortfolioModule } from './portfolio/portfolio.module';
 import {windowProvider, WINDOW} from './window';
 import {DOCUMENT, documentProvider} from './document';
 import { TranslocoRootModule } from './transloco/transloco-root.module';
+import {ChatModule} from './chat/chat.module';
+import {AngularFireModule} from '@angular/fire';
+import {AngularFireDatabaseModule} from '@angular/fire/database';
+import {environment} from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -21,6 +25,9 @@ import { TranslocoRootModule } from './transloco/transloco-root.module';
     HttpClientModule,
     TranslocoRootModule,
     PortfolioModule,
+    ChatModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig, 'fcc-book-trading'),
+    AngularFireDatabaseModule
   ],
   providers: [
     { provide: WINDOW, useFactory: windowProvider },
