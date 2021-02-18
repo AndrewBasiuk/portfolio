@@ -2,28 +2,32 @@
   <form class="login-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
     <mat-form-field class="login-form-field">
       <mat-label>Email</mat-label>
-      <input matInput formControlName="email" placeholder="Email">
+      <input matInput formControlName="email" placeholder="Email" required>
     </mat-form-field>
 
     <mat-form-field class="login-form-field">
       <mat-label>Password</mat-label>
-      <input matInput formControlName="pass" placeholder="Password">
+      <input matInput formControlName="pass" placeholder="Password" required>
     </mat-form-field>
 
-    <button mat-button
-            mat-flat-button
-            color="primary"
-            type="submit"
-            class="login-form-btn">
-      Login
-    </button>
+    <ng-container *ngIf="type === registrationTypes.SignIn; else login">
+      <button mat-button
+              mat-flat-button
+              color="primary"
+              type="submit"
+              class="login-form-btn">
+        {{ btnText }}
+      </button>
+    </ng-container>
 
-    <button mat-button
-            mat-flat-button
-            color="primary"
-            type="submit"
-            class="login-form-btn">
-      Login
-    </button>
+    <ng-template #login>
+      <button mat-button
+              mat-flat-button
+              color="accent"
+              type="submit"
+              class="login-form-btn">
+        {{ btnText }}
+      </button>
+    </ng-template>
   </form>
 </div>

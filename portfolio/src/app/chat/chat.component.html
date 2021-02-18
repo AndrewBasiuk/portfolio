@@ -4,7 +4,7 @@
         mat-button
         mat-flat-button
         color="primary"
-        (click)="selectRegistrationType(this.registrationType.SignIn)"
+        (click)="selectRegistrationType(registrationTypes.SignIn)"
         class="chat-reg-btn">
       Sign In
     </button>
@@ -13,21 +13,23 @@
         mat-button
         mat-flat-button
         color="accent"
-        (click)="selectRegistrationType(this.registrationType.Login)"
+        (click)="selectRegistrationType(registrationTypes.Login)"
         class="chat-reg-btn">
       Login
     </button>
   </div>
 
-  <ng-container *ngIf="registrationType$ | async as registrationType">
-    <ng-container *ngIf="registrationType === 'sign-in'; else login">
-      {{registrationType}}
-      <app-login></app-login>
+  <ng-container *ngIf="registrationType$ | async as type">
+    <ng-container *ngIf="type === 'sign-in'; else login">
+      <app-login [type]="registrationTypes.SignIn"
+                 [btnText]="'Sign in'">
+      </app-login>
     </ng-container>
 
     <ng-template #login>
-      {{registrationType}}
-      <app-login></app-login>
+      <app-login [type]="registrationTypes.Login"
+                 [btnText]="'Log In'">
+      </app-login>
     </ng-template>
   </ng-container>
 </div>

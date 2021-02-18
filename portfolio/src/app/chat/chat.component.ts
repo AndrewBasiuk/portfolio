@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {AngularFireAuth} from '@angular/fire/auth';
 import {BehaviorSubject, Observable} from 'rxjs';
 
-export enum RegistrationType {
+export enum RegistrationTypes {
   Login = 'login',
   SignIn = 'sign-in'
 }
@@ -14,8 +14,8 @@ export enum RegistrationType {
 })
 export class ChatComponent implements OnInit {
 
-  registrationType = RegistrationType;
-  registrationTypeSub = new BehaviorSubject<string>('');
+  registrationTypes = RegistrationTypes;
+  registrationTypeSub = new BehaviorSubject<string>(this.registrationTypes.SignIn);
   registrationType$ = this.registrationTypeSub as Observable<string>;
 
 
@@ -41,7 +41,6 @@ export class ChatComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.registrationType$.subscribe((item) => console.log(item));
   }
 
 }
