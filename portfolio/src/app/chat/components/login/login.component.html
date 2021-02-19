@@ -3,11 +3,13 @@
     <mat-form-field class="login-form-field">
       <mat-label>Email</mat-label>
       <input matInput formControlName="email" placeholder="Email" required>
+      <mat-error *ngIf="getField('email').invalid">{{ errorMessage('email') }}</mat-error>
     </mat-form-field>
 
     <mat-form-field class="login-form-field">
       <mat-label>Password</mat-label>
       <input matInput formControlName="pass" placeholder="Password" required>
+      <mat-error *ngIf="getField('pass').invalid">{{ errorMessage('pass') }}</mat-error>
     </mat-form-field>
 
     <ng-container *ngIf="type === registrationTypes.SignIn; else login">
