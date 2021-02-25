@@ -13,10 +13,16 @@ import {ChatModule} from './chat/chat.module';
 import {AngularFireModule} from '@angular/fire';
 import {AngularFireDatabaseModule} from '@angular/fire/database';
 import {environment} from '../environments/environment';
+import { SummaryComponent } from './summary/summary.component';
+import { NavComponent } from './summary/components/nav/nav.component';
+import { ContentComponent } from './summary/components/content/content.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    SummaryComponent,
+    NavComponent,
+    ContentComponent,
   ],
   imports: [
     BrowserModule,

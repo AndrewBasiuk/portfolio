@@ -2,10 +2,11 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import {ChatComponent} from './chat/chat.component';
+import {SummaryComponent} from './summary/summary.component';
 
 const routes: Routes = [
   { path: '',
-    redirectTo: '/live-chat',
+    redirectTo: '/summary',
     pathMatch: 'full'
   },
   {
@@ -13,8 +14,8 @@ const routes: Routes = [
     component: PortfolioComponent,
   },
   {
-    path: 'live-chat',
-    component: ChatComponent,
+    path: 'summary',
+    component: SummaryComponent,
   },
   {
     path: ':lang/portfolio',
