@@ -1,19 +1,27 @@
 export interface NavConfig {
   name: string;
-  subMenu?: { name: string; };
+  id: string;
 }
 
 export const NAV_LIST: NavConfig[] = [
   {
-    name: 'Angular'
+    name: 'Angular',
+    id: 'angular'
   },
   {
-    name: 'JavaScript'
+    name: 'JavaScript',
+    id: 'js'
   },
   {
-    name: 'HTML'
+    name: 'HTML',
+    id: 'html'
   },
   {
-    name: 'CSS'
+    name: 'CSS',
+    id: 'css'
+  },
+  {
+    name: 'Other',
+    id: 'other'
   }
 ];

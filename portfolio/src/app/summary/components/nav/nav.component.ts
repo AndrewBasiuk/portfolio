@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NAV_LIST } from './nav.config';
 import {AngularFirestore, AngularFirestoreDocument} from '@angular/fire/firestore';
-import {Observable} from 'rxjs';
+import {AngularFirestoreCollection} from '@angular/fire/firestore/collection/collection';
 
 @Component({
   selector: 'app-nav',
@@ -12,18 +12,26 @@ export class NavComponent implements OnInit {
 
   navList = NAV_LIST;
 
-  items: AngularFirestoreDocument<unknown>;
+  collection: AngularFirestoreCollection;
+  doc: AngularFirestoreDocument;
 
-  constructor(
-    db: AngularFirestore
-  ) {
-    this.items = db.collection('/data').doc();
+  constructor(private db: AngularFirestore) {
+    this.collection = this.db.collection(`summary`);
+    this.doc = this.db.doc('summary/data');
+  }
 
-    // console.log(this.items.snapshotChanges().subscribe());
+  getData(collectionId: string) {
+    this.collection.valueChanges().subscribe((item) => {
+      console.log(item);
+    });
+    this.doc.collection('angular').valueChanges().subscribe((item) => {
+      console.log(item);
+    });
+  }
 
-    this.items.snapshotChanges().subscribe(item => { console.log(item); });
-
-    // this.items.subscribe(item => {console.log(item)});
+  setData(collectionId: string) {
+    // this.collection.add({post: 3});
+    // this.doc.update({post: 'new1'});
   }
 
   ngOnInit(): void {

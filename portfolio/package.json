@@ -6,6 +6,7 @@
     "open": "ng serve --open --port=4300",
     "start": "ng serve",
     "build": "ng build",
+    "deploy": "firebase deploy --only hosting",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

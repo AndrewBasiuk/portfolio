@@ -6,7 +6,7 @@ import {SummaryComponent} from './summary/summary.component';
 
 const routes: Routes = [
   { path: '',
-    redirectTo: '/summary',
+    redirectTo: '/portfolio',
     pathMatch: 'full'
   },
   {
