@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
@@ -6,14 +6,9 @@ import { Title } from '@angular/platform-browser';
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.scss']
 })
-export class PortfolioComponent implements OnInit {
+export class PortfolioComponent {
 
   constructor(private titleService: Title) {
     this.titleService.setTitle('Andrew Basiuk Portfolio');
   }
-
-  ngOnInit(): void {
-
-  }
-
 }

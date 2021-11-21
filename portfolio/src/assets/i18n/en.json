@@ -17,7 +17,7 @@
       "cv": "CV"
     },
     "skill": {
-      "title1": "In my work i use:",
+      "title1": "i have a different experience with:",
       "title2": "Also i'm familiar with:"
     }
   },
@@ -30,8 +30,9 @@
       "title": "My contacts:"
     },
     "additional": {
-      "title": "also",
-      "work4": "design is mine"
+      "title": "additionally:",
+      "portfolio": "design is mine",
+      "cheatsheets": "my little pet project"
     }
   }
 }

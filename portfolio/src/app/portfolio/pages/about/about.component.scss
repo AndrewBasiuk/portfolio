@@ -87,6 +87,7 @@
   &-skill {
     width: 50%;
     min-height: 100%;
+    padding-left: 40px;
 
     @include media-breakpoint-down(xs) {
       width: 100%;
@@ -95,9 +96,7 @@
     }
 
     &__container {
-      max-width: 500px;
       margin: 0 auto;
-      padding-left: 30px;
 
       @include media-breakpoint-down(xs) {
         padding: 0;
@@ -117,6 +116,7 @@
       font-size: 25px;
       font-weight: 300;
       margin-bottom: 30px;
+      text-align: center;
 
       @include media-breakpoint-down(xs) {
         font-size: 20px;
@@ -133,29 +133,16 @@
       }
 
       &__item {
-        margin: 0 20px 25px 0;
-
-        &:nth-child(6n) {
-          margin-right: 0;
-        }
-
-        @include media-breakpoint-down(md) {
-          &:nth-child(6n) {
-            margin-right: 20px;
-          }
-        }
-
-        @media screen and (max-width: 358px) {
-
-          &:nth-child(4n) {
-            margin-right: 0;
-          }
-        }
+        margin: 0 0 25px 0;
+        width: 80px;
+        display: flex;
+        justify-content: center;
       }
 
       .mat-icon {
         width: 60px;
         height: 60px;
+        filter: grayscale(100);
 
         @include media-breakpoint-down(md) {
           width: 50px;

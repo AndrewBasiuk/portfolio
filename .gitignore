@@ -1,2 +1,9 @@
 portfolio/node_modules
 
+portfolio/.idea
+portfolio/.project
+portfolio/.classpath
+portfolio/.c9/
+portfolio/*.launch
+portfolio/.settings/
+portfolio/*.sublime-workspace

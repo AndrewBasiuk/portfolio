@@ -25,12 +25,32 @@ export const MAIN_SKILL: Icon[] = [
     label: 'rxjs-icon'
   },
   {
+    id: 'akita',
+    label: 'akita'
+  },
+  {
+    id: 'storybook',
+    label: 'icon-storybook'
+  },
+  {
+    id: 'nx',
+    label: 'nx-icon'
+  },
+  {
     id: 'sass',
     label: 'sass-icon'
   },
   {
     id: 'git',
     label: 'git-icon'
+  },
+  {
+    id: 'figma',
+    label: 'figma-icon'
+  },
+  {
+    id: 'firebase',
+    label: 'firebase-icon'
   },
   {
     id: 'npm',
@@ -43,10 +63,6 @@ export const MAIN_SKILL: Icon[] = [
   {
     id: 'gulp',
     label: 'gulp-icon'
-  },
-  {
-    id: 'git',
-    label: 'git-icon'
   },
   {
     id: 'wordpress',
@@ -67,6 +83,26 @@ export const MAIN_SKILL: Icon[] = [
   {
     id: 'zeplin',
     label: 'zeplin-icon'
+  },
+  {
+    id: 'vue',
+    label: 'vue-icon'
+  },
+  {
+    id: 'react',
+    label: 'react-icon'
+  },
+  {
+    id: 'bootstrap',
+    label: 'css-icon'
+  },
+  {
+    id: 'canvas',
+    label: 'canvas-icon'
+  },
+  {
+    id: 'php',
+    label: 'sass-icon'
   }
 ];
 
